@@ -1,0 +1,21 @@
+---
+layout: base
+---
+<article class="article h-entry" itemtype="https://schema.org/WebPage">
+    <header>
+        <h1 class="p-name" itemprop="name">{{ title }}</h1>
+        {% if page.summary %}
+            <p class="p-summary" itemprop="description">{{ page.summary }}</p>
+        {% endif %}
+    </header>
+    <section class="e-content">
+        {{ content | safe }}
+    </section>
+    <footer class="metadados">
+        <p itemprop="author" itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+            Publicado por 
+            <a class="h-card" rel="me" href="{{ info.site }}"><span itemprop="name" class="p-author"></span>{{ author }}</span></a>
+            em <time  datetime="{{ page.date }}" class="dt-published"  itemprop="datePublished">{{ page.date | formatdata }}</time>
+        </p>
+    </footer>
+</article>

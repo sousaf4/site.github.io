@@ -1,0 +1,36 @@
+---
+layout: base
+---
+<article
+    class="h-entry article" 
+    role="article" 
+    itemscope 
+    itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 class="p-name article-title" itemprop="headline">{{ title }}</h1>
+        {% if summary %}
+            <p class="p-summary lead" itemprop="description">{{ summary }}</p>
+        {% endif %}
+    </header>
+    <section class="e-content" itemprop="articleBody">
+        {{ content | safe }}
+    </section>
+    <footer class="metadados">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+            Publicado por 
+            <a class="h-card" itemprop="url" rel="me" href="{{ info.site }}" > <span itemprop="name" class="p-author">{{ author }}</span></a> em 
+            <time datetime="{{ page.date }}" class="dt-published" itemprop="datePublished">{{ page.date | formatdata }}</time>
+        </p>
+        {% if keys %}
+        <p>Palavras chaves: 
+            {% for key in keys %}
+            <span>&nbsp;-&nbsp;{{ key }}</span> 
+            {% endfor %}
+        </p>
+        {% endif %}
+        <p>
+            <span>URL:</span><input id="urlacopiar" type="text" value="{{ info.site }}{{ page.url }}">
+            <button id="botaocopiar1">Copiar URL</button>
+        </p>
+    </footer>
+</article>

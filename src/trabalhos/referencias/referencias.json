@@ -1,0 +1,6 @@
+{
+    "author": "Rodolfo Maciel",
+    "layout": "artigo",
+    "tags": ["trabalho"],
+    "permalink": "/t/f/{{ page.fileSlug }}/index.html"
+}

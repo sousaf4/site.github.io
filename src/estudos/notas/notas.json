@@ -1,0 +1,6 @@
+{
+    "author": "Rodolfo Maciel",
+    "layout": "artigo",
+    "tags": ["computacao"],
+    "permalink": "/s/n/{{ page.fileSlug }}/index.html"
+}

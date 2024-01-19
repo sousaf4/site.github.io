@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    
+    <meta name='title' content='{{ title }}'>
+    <meta name='description' content='{{ description }}'>
+    <meta name="theme-color" content="#cacaca" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0e14" media="(prefers-color-scheme: dark)">
+
+    <meta name=twitter:site content='{{ info.site }}'>
+    <meta name=twitter:card content="summary_large_image" />
+    <meta name=twitter:image content='{{ img }}'>
+    <meta name=twitter:title content='{{ title }}'>
+    <meta name=twitter:description content='{{ description }}'>
+
+    <meta property=og:title content='{{ title }}'>
+    <meta property=og:description content='{{ description }}'>
+    <meta property=og:type content='{{ tags }}'>
+    <meta property=og:url content='{{ url }}'>
+    <meta property=og:image content='{{ img }}'>
+    <meta property=og:updated_time content='{{ date }}'>
+
+    <meta property="og:locale" content="{{ info.locale }}" />
+    <meta property="og:site_name" content="{{ info.site }}" />
+
+    <link rel="canonical" href="{{ info.site }}" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <link href="/estaticos/pub.key" rel="pgpkey">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;900&family=Source+Sans+3:wght@200;400;900&family=Source+Serif+4:opsz,wght@8..60,200;8..60,400;8..60,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estaticos/estilos/main.css">
+    
+    {% if scripts %}
+      {% if scripts == "playerx" %}
+        <script type="module" src="https://cdn.jsdelivr.net/npm/playerx/+esm"></script>
+      {% endif %}
+      {% for item in scripts %}
+        <script type="module" src="/estaticos/scripts/{{ item }}.js"></script>
+      {% endfor %}
+    {% endif %}
+
+    {% if styles %}
+      {% for item in styles %}
+        <link rel="stylesheet" href="/estaticos/estilos/{{ item }}.css">
+      {% endfor %}
+    {% endif %}
+
+    
+    {% if scriptstyles %}
+      {% for item in scriptstyles %}
+        <link rel="stylesheet" href="/estaticos/estilos/{{ item }}.css">
+        <script defer src="/estaticos/scripts/{{ item }}.js"></script>
+      {% endfor %}
+    {% endif %}    
+  </head>
+  
+  <body class="window serif">
+    <div class="board">
+      {% include 'header.html' %}
+      
+      <main class="block">
+        {{ content | safe }}
+      </main>
+      
+      {% include 'footer.html' %}
+    </div>
+  </body>
+  </html>
+  
+  

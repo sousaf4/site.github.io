@@ -1,0 +1,6 @@
+{
+    "author": "Rodolfo Maciel",
+    "layout": "artigo",
+    "tags": ["espiritual"],
+    "permalink": "/e/n/{{ page.fileSlug }}/index.html"
+}

@@ -1,0 +1,77 @@
+---
+title: Against All Odds - Mariah Carey
+faixa: https://www.youtube.com/watch?v=yPW9bNRfTCs
+letra: https://www.letras.mus.br/phil-collins/against-all-odds/
+id: yPW9bNRfTCs
+scriptstyles: ["lite-youtube"]
+---
+
+How can I just let you walk away?
+
+Just let you leave without a trace?
+
+When I stand here taking every breath with you, uh uh
+
+You're the only one who really knew me at all
+
+How can you just walk away from me?
+
+When all I can do is watch you leave?
+
+'Cause we shared the laughter and the pain
+
+And even shared the tears
+
+You're the only one who really knew me at all
+
+So take a look at me now
+
+Oh there's just an empty space
+
+And there's nothin' left here to remind me
+
+Just the memory of your face
+
+Ooh, Take a look at me now
+
+'Cause there's just an empty space
+
+And you comin' back to me is against the odds
+
+And that's what I've got to face
+
+I wish I could just make you turn around
+
+Turn around and see me cry
+
+There's so much I need to say to you
+
+So many reasons why
+
+You're the only one who really knew me at all
+
+So take a look at me now
+
+Well there's just an empty space
+
+And there's nothin' left here to remind me
+
+Just the memory of your face
+
+Take a look at me now
+
+'Cause there's just an empty space
+
+But to wait for you, well that's all I can do
+
+And that's what I gotta face
+
+Take a good look at me now
+
+'Cause I'll still be standin' here
+
+And you coming back to me is against all odds
+
+It's the chance I've gotta take
+
+Take a look at me now

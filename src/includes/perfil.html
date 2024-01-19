@@ -1,0 +1,32 @@
+{% block perfil %}
+<section class="perfil">
+    <span>Você também me encontra em: </span>
+    <ul>
+        <li class="perfil-item">
+            <a href="{{ info.site }}" rel="me">
+                <img class="icon-footer" src="/midias/icons/minha-foto.jpeg" alt="{{ info.site }}">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="{{ info.github }}" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-github.svg" alt="{{ info.github }}">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="{{ info.mastodon }}" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-mastodon.svg" alt="{{ info.mastodon }}">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="{{ info.bsky }}" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-blsky.png" alt="{{ info.bsky }}">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="{{ info.site }}/feed.xml">
+                <img class="icon-footer icon-feed" src="/midias/icons/icon-feed.svg" alt="{{ info.site }}/feed.xml">
+            </a>
+        </li>
+    </ul>
+</section>
+{% endblock %}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Common Lisp</title>
+    
+    <meta name='title' content='Introdução ao Common Lisp'>
+    <meta name='description' content=''>
+    <meta name="theme-color" content="#cacaca" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0e14" media="(prefers-color-scheme: dark)">
+
+    <meta name=twitter:site content='https://arquivos.de'>
+    <meta name=twitter:card content="summary_large_image" />
+    <meta name=twitter:image content=''>
+    <meta name=twitter:title content='Introdução ao Common Lisp'>
+    <meta name=twitter:description content=''>
+
+    <meta property=og:title content='Introdução ao Common Lisp'>
+    <meta property=og:description content=''>
+    <meta property=og:type content='computacao'>
+    <meta property=og:url content=''>
+    <meta property=og:image content=''>
+    <meta property=og:updated_time content='Tue Jan 16 2024 16:26:17 GMT-0300 (Horário Padrão de Brasília)'>
+
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="https://arquivos.de" />
+
+    <link rel="canonical" href="https://arquivos.de" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <link href="/estaticos/pub.key" rel="pgpkey">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;900&family=Source+Sans+3:wght@200;400;900&family=Source+Serif+4:opsz,wght@8..60,200;8..60,400;8..60,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estaticos/estilos/main.css">
+    
+    
+
+    
+
+    
+    
+      
+        <link rel="stylesheet" href="/estaticos/estilos/syntax-coding.css">
+        <script defer src="/estaticos/scripts/syntax-coding.js"></script>
+      
+        
+  </head>
+  
+  <body class="window serif">
+    <div class="board">
+      
+<header class="header">
+    <nav class="menu">
+      <ul>
+        <li class="menu-item logo">
+          ARQ
+        </li>
+        <li class="menu-item">
+            <a class="menu-item-link" href="/">INÍCIO</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/artigos">ARTIGOS</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/notas">NOTAS</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/referencias">REFERÊNCIAS</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/recursos">RECURSOS</a>
+        </li>
+      </ul>
+    </nav>
+</header>
+  
+
+
+      
+      <main class="block">
+        <article
+    class="h-entry article" 
+    role="article" 
+    itemscope 
+    itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 class="p-name article-title" itemprop="headline">Introdução ao Common Lisp</h1>
+        
+            <p class="p-summary lead" itemprop="description">Primeiras construções usando o SBCL - Common Lisp. Idéias de composições e modelagem de funções em Lisp</p>
+        
+    </header>
+    <section class="e-content" itemprop="articleBody">
+        <p>Subtrai 1 do número dado.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">sub1</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">-</span> n <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Subtrai 2 do número dado e utilizando a função <code>sub1</code>.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">sub2</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">sub1</span> <span class="token punctuation">(</span><span class="token car">sub1</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Soma 1 ao número dado.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">add1</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">+</span> n <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Soma 2 ao número dado. Faz uso da função <code>add1</code>.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">add2</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">add1</span> <span class="token punctuation">(</span><span class="token car">add1</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Essa função é conhecida como predicado pois verifica se a entrada é igual a 2.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">twop2</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">zerop</span> <span class="token punctuation">(</span><span class="token car">sub2</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Essa função verifica se dois números são diferentes.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">not-equal</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span> <span class="token argument variable">m</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token keyword">not</span> <span class="token punctuation">(</span><span class="token car">equal</span> n m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Essa função adiciona 1 ao segundo numero dado e compara se os dois são iguais.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">onemorep</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span> <span class="token argument variable">m</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">equal</span> n <span class="token punctuation">(</span><span class="token car">add1</span> m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Função retorna a metade do número.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">half</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+  <span class="token punctuation">(</span><span class="token car">/</span> n <span class="token number">2.0</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Função divide o valor por 2.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">div2</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">/</span> n <span class="token number">2.0</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Outra forma de retornar a metade do valor.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">half2</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">div2</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Essa função verifica se o numero tem dois digitos ou mais.</p>
+<pre class="language-sbcl" tabindex="0"><code class="language-sbcl">(defun multi-digit-p (n)
+  (or
+    (> n 9)
+    (< n -9)))</code></pre>
+<p>Função média.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">average</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token rest-vars"><span class="token lisp-marker">&amp;rest</span> <span class="token argument variable">m</span></span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">/</span> <span class="token punctuation">(</span><span class="token car">apply</span> <span class="token quoted-symbol variable symbol">#'+</span> m<span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token car">length</span> m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Verifica se o número é igual a 1.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">onep</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+  <span class="token punctuation">(</span><span class="token car">equal</span> n <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Verifica se o número é diferente de 1.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">not-onep</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token keyword">not</span> <span class="token punctuation">(</span><span class="token car">onep</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Verifica se o número é maior que 0.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">plusp</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token car">></span> n <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p>Verifica se o número é menor que 0.</p>
+<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">not-plusp</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">n</span></span><span class="token punctuation">)</span></span>
+    <span class="token punctuation">(</span><span class="token keyword">not</span> <span class="token punctuation">(</span><span class="token car">plusp</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+
+    </section>
+    <footer class="metadados">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+            Publicado por 
+            <a class="h-card" itemprop="url" rel="me" href="https://arquivos.de" > <span itemprop="name" class="p-author">Rodolfo Maciel</span></a> em 
+            <time datetime="Tue Jan 16 2024 16:26:17 GMT-0300 (Horário Padrão de Brasília)" class="dt-published" itemprop="datePublished">16 de janeiro de 2024 às 16:26</time>
+        </p>
+        
+        <p>Palavras chaves: 
+            
+            <span>&nbsp;-&nbsp;introducao</span> 
+            
+            <span>&nbsp;-&nbsp;common-lisp</span> 
+            
+        </p>
+        
+        <p>
+            <span>URL:</span><input id="urlacopiar" type="text" value="https://arquivos.de/s/i/introducao-ao-common-lisp/">
+            <button id="botaocopiar1">Copiar URL</button>
+        </p>
+    </footer>
+</article>
+      </main>
+      
+      
+<footer class="footer">
+    
+<section class="perfil">
+    <span>Você também me encontra em: </span>
+    <ul>
+        <li class="perfil-item">
+            <a href="https://arquivos.de" rel="me">
+                <img class="icon-footer" src="/midias/icons/minha-foto.jpeg" alt="https://arquivos.de">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://github.com/sousaf4" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-github.svg" alt="https://github.com/sousaf4">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://mastodon.social/@rodolfomaciel" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-mastodon.svg" alt="https://mastodon.social/@rodolfomaciel">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://bsky.app/profile/rodolfomaciel.bsky.social" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-blsky.png" alt="https://bsky.app/profile/rodolfomaciel.bsky.social">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://arquivos.de/feed.xml">
+                <img class="icon-footer icon-feed" src="/midias/icons/icon-feed.svg" alt="https://arquivos.de/feed.xml">
+            </a>
+        </li>
+    </ul>
+</section>
+
+    <p>Todo conteúdo sob a licença <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons 4.0</a> <img style="width:44px" src="/midias/by-nc-sa.png" alt=""/> para livre utilização .</p>
+</footer>
+
+
+    </div>
+  </body>
+  </html>
+  
+  

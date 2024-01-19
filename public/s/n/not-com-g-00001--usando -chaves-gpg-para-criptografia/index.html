@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPG - Criptgografia de Arquivos e Emails</title>
+    
+    <meta name='title' content='GPG - Criptgografia de Arquivos e Emails'>
+    <meta name='description' content=''>
+    <meta name="theme-color" content="#cacaca" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0e14" media="(prefers-color-scheme: dark)">
+
+    <meta name=twitter:site content='https://arquivos.de'>
+    <meta name=twitter:card content="summary_large_image" />
+    <meta name=twitter:image content=''>
+    <meta name=twitter:title content='GPG - Criptgografia de Arquivos e Emails'>
+    <meta name=twitter:description content=''>
+
+    <meta property=og:title content='GPG - Criptgografia de Arquivos e Emails'>
+    <meta property=og:description content=''>
+    <meta property=og:type content='computacao'>
+    <meta property=og:url content=''>
+    <meta property=og:image content=''>
+    <meta property=og:updated_time content='Tue Jan 16 2024 20:33:17 GMT-0300 (Horário Padrão de Brasília)'>
+
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="https://arquivos.de" />
+
+    <link rel="canonical" href="https://arquivos.de" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <link href="/estaticos/pub.key" rel="pgpkey">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;900&family=Source+Sans+3:wght@200;400;900&family=Source+Serif+4:opsz,wght@8..60,200;8..60,400;8..60,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estaticos/estilos/main.css">
+    
+    
+
+    
+
+    
+    
+      
+        <link rel="stylesheet" href="/estaticos/estilos/syntax-coding.css">
+        <script defer src="/estaticos/scripts/syntax-coding.js"></script>
+      
+        
+  </head>
+  
+  <body class="window serif">
+    <div class="board">
+      
+<header class="header">
+    <nav class="menu">
+      <ul>
+        <li class="menu-item logo">
+          ARQ
+        </li>
+        <li class="menu-item">
+            <a class="menu-item-link" href="/">INÍCIO</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/artigos">ARTIGOS</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/notas">NOTAS</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/referencias">REFERÊNCIAS</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/recursos">RECURSOS</a>
+        </li>
+      </ul>
+    </nav>
+</header>
+  
+
+
+      
+      <main class="block">
+        <article
+    class="h-entry article" 
+    role="article" 
+    itemscope 
+    itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 class="p-name article-title" itemprop="headline">GPG - Criptgografia de Arquivos e Emails</h1>
+        
+            <p class="p-summary lead" itemprop="description">O PGP é um software criptográfico para gerar chaves que podemos usar para proteger dados e transmitir com segurança.</p>
+        
+    </header>
+    <section class="e-content" itemprop="articleBody">
+        <p>Comandos básicos para criar e exportar um par de chaves criptográficas no PGP.</p>
+<pre class="language-js" tabindex="0"><code class="language-js">gpg <span class="token operator">--</span>full<span class="token operator">-</span>generate<span class="token operator">-</span>key
+
+gpg <span class="token operator">--</span><span class="token keyword">export</span> <span class="token operator">-</span>a <span class="token punctuation">[</span>idkey<span class="token punctuation">]</span> <span class="token operator">></span> <span class="token punctuation">[</span>publicnamekey<span class="token punctuation">]</span><span class="token punctuation">.</span>key
+
+gpg <span class="token operator">--</span><span class="token keyword">export</span><span class="token operator">-</span>secret<span class="token operator">-</span>key <span class="token operator">-</span>a <span class="token punctuation">[</span>idkey<span class="token punctuation">]</span> <span class="token operator">></span> <span class="token punctuation">[</span>privatenamekey<span class="token punctuation">]</span><span class="token punctuation">.</span>key</code></pre>
+
+    </section>
+    <footer class="metadados">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+            Publicado por 
+            <a class="h-card" itemprop="url" rel="me" href="https://arquivos.de" > <span itemprop="name" class="p-author">Rodolfo Maciel</span></a> em 
+            <time datetime="Tue Jan 16 2024 20:33:17 GMT-0300 (Horário Padrão de Brasília)" class="dt-published" itemprop="datePublished">16 de janeiro de 2024 às 20:33</time>
+        </p>
+        
+        <p>Palavras chaves: 
+            
+            <span>&nbsp;-&nbsp;gpg</span> 
+            
+            <span>&nbsp;-&nbsp;criptografia</span> 
+            
+        </p>
+        
+        <p>
+            <span>URL:</span><input id="urlacopiar" type="text" value="https://arquivos.de/s/n/not-com-g-00001--usando -chaves-gpg-para-criptografia/">
+            <button id="botaocopiar1">Copiar URL</button>
+        </p>
+    </footer>
+</article>
+      </main>
+      
+      
+<footer class="footer">
+    
+<section class="perfil">
+    <span>Você também me encontra em: </span>
+    <ul>
+        <li class="perfil-item">
+            <a href="https://arquivos.de" rel="me">
+                <img class="icon-footer" src="/midias/icons/minha-foto.jpeg" alt="https://arquivos.de">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://github.com/sousaf4" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-github.svg" alt="https://github.com/sousaf4">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://mastodon.social/@rodolfomaciel" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-mastodon.svg" alt="https://mastodon.social/@rodolfomaciel">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://bsky.app/profile/rodolfomaciel.bsky.social" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-blsky.png" alt="https://bsky.app/profile/rodolfomaciel.bsky.social">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://arquivos.de/feed.xml">
+                <img class="icon-footer icon-feed" src="/midias/icons/icon-feed.svg" alt="https://arquivos.de/feed.xml">
+            </a>
+        </li>
+    </ul>
+</section>
+
+    <p>Todo conteúdo sob a licença <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons 4.0</a> <img style="width:44px" src="/midias/by-nc-sa.png" alt=""/> para livre utilização .</p>
+</footer>
+
+
+    </div>
+  </body>
+  </html>
+  
+  

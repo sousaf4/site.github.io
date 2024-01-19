@@ -1,0 +1,109 @@
+---
+layout: base
+---
+
+<article class="h-entry hentry post">
+    <header>
+        {% if inreplyto %}
+            <h1 class="p-name entry-title lead">
+                {{ title }}
+            </h1>
+            <p>Em resposta a <a href="{{ inreplyto }}" class="u-in-reply-to">{{ inreplyto }}</a></p>
+        {% endif %}
+
+        {% if likeof %}
+            <h1 class="p-name entry-title lead">{{ title }}</h1>
+               <p>
+                Curti esse conteúdo <a href="{{ likeof }}" class="u-like-of">{{ likeof }}</a>
+               </p>
+        {% endif %}
+
+        {% if repostof %}
+            <div class="h-cite u-repost-of">
+                <h1 class="p-name entry-title lead">
+                    {{ title }}
+                </h1>
+                    <p>
+                        Compartilhando
+                        <a class="u-url url" href="{{ repostof }}">{{ repostof }}</a>
+                        de <span class="p-author author h-card">
+                                <a class="u-url url p-name" href="{{ urlauthor }}">{{ citeauthor }}</a>
+                           </span>
+                    </p>
+            </div>
+        {% endif %}
+
+        {% if bookmarkof %}
+            <h1 class="p-name entry-title lead">
+                {{ title }}
+            </h1>
+            <p class="p-summary entry-summary">Marcador em <a class="u-bookmark-of h-cite" href="{{ bookmarkof }}">{{ bookmarkof }}</a></p>
+        {% endif %}
+
+        {% if video %}
+            <h1 class="p-name entry-title lead">
+                {{ title }}
+            </h1>
+            <p class="p-summary entry-summary">Video em <a href='{{ video }}'>{{ video }}</a></p>
+            <player-x src="{{ video }}" controls></player-x>
+        {% endif %}
+
+        {% if faixa %}
+            <h1 class="p-name entry-title lead">
+                {{ title }}
+            </h1>
+            <lite-youtube class="u-video" videoid="{{ id }}"></lite-youtube>
+            {% if faixa %}
+                <p>Música em <a href="{{ faixa }}">{{ faixa }}</a></p>
+            {% endif %}
+            {% if letra %}
+                <p>Letra em <a href="{{ letra }}">{{ letra }}</a></p>
+            {% endif %}
+        {% endif %}
+
+        {% if videolocal %}
+            <h1 class="p-name entry-title lead">
+                {{ title }}
+            </h1>
+            {% if summary %}
+                <p class="p-summary entry-summary">{{ summary }}</p>
+            {% endif %}
+            <video
+                class="u-featured"
+                controls
+                {% if poster %}
+                    poster="{{ poster }}"
+                {% endif %}>
+                    <source class="u-video" src="{{ videolocal }}" />    
+                    {% if poster %}
+                    <img src="{{ poster }}" class="u-photo" />
+                    {% endif %}
+            </video>
+        {% endif %}
+
+        {% if photo %}
+            <h1 class="p-name entry-title lead">
+                {{ title }}
+            </h1>
+            <p class="p-summary entry-summary">Imagem em <a href="{{ photo }}">{{ photo }}</a></p>
+            <figure class="h-entry"><img class="u-photo" src="{{ photo }}" alt="{{ description }}">
+                <figcaption  class="p-content">{{ description }}</figcaption>
+            </figure>
+        {% endif %}
+
+    </header>
+    <section class="p-content">
+      {{ content | safe }}
+    </section>
+    <footer class="metadados">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+            Publicado por 
+            <a class="h-card vcard" rel="me" itemprop="url" href="{{ info.site }}" > <span itemprop="name" class="p-author">{{ author }}</span></a> em 
+            <time datetime="{{ page.date }}" class="dt-published" itemprop="datePublished">{{ page.date | formatdata }}</time>
+        </p>
+        <p>
+            <span>URL:</span><input id="urlacopiar" type="text" value="{{ info.site }}{{ page.url }}">
+            <button id="botaocopiar1">Copiar URL</button>
+        </p>
+    </footer>
+</article>

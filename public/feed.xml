@@ -1,0 +1,14 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://arquivos.de/">
+  <title>ARQ</title>
+  <subtitle>Arquivos de meus estudos e pesquisas de matemática, computação, tecnologias, ficção, filmes e assim por diante</subtitle>
+  <link href="https://arquivos.de/feed.xml" rel="self"/>
+  <link href="https://arquivos.de/"/>
+  <updated>2024-01-19T13:34:33Z</updated>
+  <id>https://arquivos.de/</id>
+  <author>
+    <name>Rodolfo Maciel</name>
+    <email>macielrdev@gmail.com</email>
+  </author>
+</feed>
