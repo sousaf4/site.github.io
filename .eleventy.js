@@ -66,7 +66,7 @@ module.exports = function(eleventyConfig){
         layouts:'layouts',
         data:'data',
         input:'src',
-        output:'public'
+        output:'docs'
       },
       pathPrefix: "/",
     }
