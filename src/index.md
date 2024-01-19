@@ -2,7 +2,7 @@
 author: "Rodolfo Maciel"
 layout: pagina
 date: 2024-01-04T16:57:44-03:00
-title: Olá, seja bem vindo ao arquivos.de.
+title: Olá, seja bem vindo ao meu site.
 ---
 
 Eu sou Rodolfo Maciel e criei esse site para organizar meus estudos e aprendizados em diversas áreas.
