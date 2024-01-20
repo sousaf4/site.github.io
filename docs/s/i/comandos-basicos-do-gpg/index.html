@@ -31,7 +31,7 @@
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-    <link href="/estaticos/scripts/pub.key" rel="pgpkey">
+    <link href="/estaticos/chaves/pub.key" rel="pgpkey">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -127,7 +127,13 @@ gpg <span class="token parameter variable">-c</span> <span class="token operator
 
 <span class="token comment"># descriptografar usando uma senha</span>
 gpg <span class="token parameter variable">-d</span> <span class="token operator">&lt;</span>file_path<span class="token operator">></span>
-gpg <span class="token parameter variable">-d</span> mensagem.txt.gpg <span class="token operator">></span> mensagem.txt</code></pre>
+gpg <span class="token parameter variable">-d</span> mensagem.txt.gpg <span class="token operator">></span> mensagem.txt
+
+<span class="token comment"># enviar e receber chaves de um servidor</span>
+gpg <span class="token parameter variable">--keyserver</span> <span class="token punctuation">[</span>url-server<span class="token punctuation">]</span> --recv-key <span class="token punctuation">[</span>email<span class="token operator">|</span>id<span class="token punctuation">]</span>
+
+gpg <span class="token parameter variable">--keyserver</span> <span class="token punctuation">[</span>url-server<span class="token punctuation">]</span> --send-key <span class="token punctuation">[</span>email<span class="token operator">|</span>id<span class="token punctuation">]</span>
+</code></pre>
 
     </section>
     <footer class="metadados">
