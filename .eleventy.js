@@ -59,7 +59,7 @@ module.exports = function(eleventyConfig){
       markdownTemplateEngine: 'njk',
       dataTemplateEngine: 'njk',
       htmlTemplateEngine: 'njk',
-      templateFormats: ['md','njk','css','js','jpg','svg','png','webp','avif','html','webc'],
+      templateFormats: ['md','njk','css','js','jpg','svg','png','webp','avif','html','webc','gpg'],
       
       dir: {
         includes:'includes',

@@ -42,4 +42,10 @@ gpg -c <file_path>
 # descriptografar usando uma senha
 gpg -d <file_path>
 gpg -d mensagem.txt.gpg > mensagem.txt
+
+# enviar e receber chaves de um servidor
+gpg --keyserver [url-server] --recv-key [email|id]
+
+gpg --keyserver [url-server] --send-key [email|id]
+
 ```
