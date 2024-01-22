@@ -1,6 +1,8 @@
 {
     "site":"https://maciel.netlify.app",
     "creator":"Rodolfo Maciel",
+    "author":"Rodolfo Maciel",
+    "email":"macielrdev@gmail.com",
     "description":"Tudo sobre matemática e computação",
     "locale":"pt_BR",
     "github": "https://github.com/sousaf4",
