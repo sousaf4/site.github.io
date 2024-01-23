@@ -8,5 +8,3 @@ title: Olá, seja bem vindo ao meu site.
 Eu sou Rodolfo Maciel e criei esse site para organizar meus estudos e aprendizados em diversas áreas.
 
 Fique a vontade para aproveitar o que desejar. Essas são algumas áreas do meu interesse: matemática, computação, astronomia, ficção, cinema, música e muitos outros.
-
-Aqui estão os meus contatos:

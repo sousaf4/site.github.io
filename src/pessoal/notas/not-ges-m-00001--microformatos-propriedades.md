@@ -2,6 +2,7 @@
 title: Propriedades do Microformato
 date: 2024-01-10T15:37:46-03:00
 summary: Qual a finalidade e como utilizar as propriedades do microformato?
+tags: ["código"]
 keys: ["microformat", "propriedades"]
 ---
 

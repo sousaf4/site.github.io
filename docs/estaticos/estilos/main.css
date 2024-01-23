@@ -84,14 +84,7 @@ html {
     padding: 0;
 }
 
-.post,
-.article,
-.footer,
-.header {
-    width: 100%;
-    max-width: 72rem;
-    margin: 0 auto;
-}
+
 .footer {
     border-top: var(--gray-2) solid 0.1rem ;
     padding: 2rem 0;
@@ -124,8 +117,8 @@ h3, blockquote { font-size: 2.2rem }
 h4 { font-size: 2.1rem } 
 h5 { font-size: 2rem }
 h6 { font-size: 1.9rem }
-article { font-size: 1.8rem; }
-.article, .header, .footer  { max-width: 72rem; margin: auto }
+article { font-size: 2rem; }
+.post, .article, .header, .footer  { width: 100%; max-width: 72rem; margin: 0 auto }
 
 blockquote {
     font-style: italic;
@@ -346,7 +339,9 @@ a:active {
 }
 .article-metadata {
     color: var(--gray-0);
-    font-size: 1.4rem;
+    padding-top: 1rem;
+    font-size:1.25rem;
+    line-height:1.4;
 }
 .article > p {
     line-height: 1.6;

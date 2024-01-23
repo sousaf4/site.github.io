@@ -1,5 +1,5 @@
 ---
-title: Adoração em Familia - Semana de 22012024
+title: Adoração em Familia - 22012024
 summary: Nesta adoração vamos aprender sobre a criação de Jeová - o elefante. Sua serva fiel do passado - Ana. E por fim a importância de confiar em Jeová.
 date: 2024-01-16T19:22:18 -03:00
 keys: ["família", "adoração"]

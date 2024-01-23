@@ -5,6 +5,7 @@
     "email":"macielrdev@gmail.com",
     "description":"Tudo sobre matemática e computação",
     "locale":"pt_BR",
+    "feeds":["matemática","computação"],
     "github": "https://github.com/sousaf4",
     "mastodon": "https://mastodon.social/@rodolfomaciel",
     "bsky": "https://bsky.app/profile/rodolfomaciel.bsky.social"

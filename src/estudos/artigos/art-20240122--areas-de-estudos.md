@@ -42,7 +42,6 @@ keys: ["matemática", "computação"]
 - Sistemas Operacionais
 - Computação distribuída
 - Computação paralela
-
 - Inteligência Artificial
 - Banco de Dados
 - Compiladores

@@ -1,6 +1,6 @@
 {
     "author": "Rodolfo Maciel",
     "layout": "postagem",
-    "tags": ["pessoal"],
+    "tags": ["estudos"],
     "permalink": "/s/c/{{ page.fileSlug }}/index.html"
 }

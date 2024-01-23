@@ -17,6 +17,8 @@ code[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	margin: inheirit -1rem;
+	padding: inherit 1rem;
 }
 
 pre[class*="language-"]::selection,
@@ -35,8 +37,8 @@ code[class*="language-"] *::selection {
 }
 
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
+	padding: 1rem;
+	margin: 0;
 	overflow: auto;
 	background: #1e1e1e;
 }
