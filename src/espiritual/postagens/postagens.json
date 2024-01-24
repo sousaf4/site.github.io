@@ -2,5 +2,5 @@
     "author": "Rodolfo Maciel",
     "layout": "postagem",
     "tags": ["espiritual"],
-    "permalink": "/e/g/{{ page.fileSlug }}/index.html"
+    "permalink": "/e/g/{{ title | slugify }}/index.html"
 }

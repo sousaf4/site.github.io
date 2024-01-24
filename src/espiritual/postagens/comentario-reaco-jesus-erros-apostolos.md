@@ -1,5 +1,5 @@
 ---
-title: Comentário ao Estudo 14 Parágrafo 13 da Sentinela 03/2023
+title: Como Jesus Reagiu aos Erros dos Apóstolos
 date: 2024-01-23T11:28:19-03:00
 inreplyto: https://www.jw.org/finder?wtlocale=T&docid=2023326&srctype=wol&srcid=share&par=20
 ---
