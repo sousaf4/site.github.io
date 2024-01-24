@@ -1,6 +1,0 @@
-{
-    "author": "Rodolfo Maciel",
-    "layout": "postagem",
-    "tags": ["pessoal"],
-    "permalink": "/p/c/{{ page.fileSlug }}/index.html"
-}
