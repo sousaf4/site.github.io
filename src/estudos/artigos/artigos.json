@@ -1,6 +1,6 @@
 {
     "author": "Rodolfo Maciel",
     "layout": "artigo",
-    "tags": ["computacao"],
+    "tags": ["artigoss"],
     "permalink": "/s/i/{{ title | slugify }}/index.html"
 }

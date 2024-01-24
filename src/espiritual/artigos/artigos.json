@@ -1,6 +1,6 @@
 {
     "author": "Rodolfo Maciel",
     "layout": "artigo",
-    "tags": ["espiritual"],
+    "tags": ["artigose"],
     "permalink": "/e/i/{{ title | slugify }}/index.html"
 }

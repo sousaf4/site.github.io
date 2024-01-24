@@ -4,6 +4,7 @@ date: 2024-01-19T19:13:07-03:00
 summary: Uma lista com alguns servidores de chaves públicas GPG para compartilhar sua própria chave
 keys: ["gpg", "servidor", "chave"]
 scriptstyles: ["syntax-coding"]
+tags: ["codigo"]
 ---
 
 Segue abaixo alguns endereços que você pode usar:

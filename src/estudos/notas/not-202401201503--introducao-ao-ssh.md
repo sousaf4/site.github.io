@@ -4,6 +4,7 @@ date: 2024-01-20T15:03:43-03:00
 summary: O SSH é um sistema que conecta seu terminal ao de um computador remoto de forma segura.
 keys: ["ssh", "criptografia", "terminal"]
 scriptstyles: ["syntax-coding"]
+tags: ["codigo"]
 ---
 
 Acessando um servidor remoto com ssh

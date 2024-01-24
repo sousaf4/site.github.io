@@ -1,33 +1,32 @@
 ---json
 {
-  "permalink": "feed.xml",
+  "permalink": "feeds/matematica.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
     "title": "rdms",
     "subtitle": "Arquivos de meus estudos e pesquisas de matemática, computação, tecnologias, ficção, filmes e assim por diante",
     "language": "pt-BR",
-    "url": "{{ info.site }}",
+    "url": "https://maciel.netlify.app",
     "author": {
-      "name": "{{ info.author }}",
-      "email": "{{ info.email }}"
+      "name": "Rodolfo Maciel",
+      "email": "macielrdev@gmail.com"
     }
   }
 }
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{{ collections.codigo | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for post in collections.posts | reverse %}
+  {%- for post in collections.matematica | reverse %}
   {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
   <entry>
     <title>{{ post.data.title }}</title>

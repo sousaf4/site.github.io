@@ -1,6 +1,6 @@
 {
     "author": "Rodolfo Maciel",
     "layout": "postagem",
-    "tags": ["espiritual"],
+    "tags": ["postagense"],
     "permalink": "/e/g/{{ title | slugify }}/index.html"
 }

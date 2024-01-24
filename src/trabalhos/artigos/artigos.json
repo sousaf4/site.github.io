@@ -1,6 +1,6 @@
 {
     "author": "Rodolfo Maciel",
     "layout": "artigo",
-    "tags": ["trabalho"],
+    "tags": ["artigost"],
     "permalink": "/t/i/{{ title | slugify }}/index.html"
 }

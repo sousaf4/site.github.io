@@ -4,7 +4,22 @@ summary: Existem diversas marcações que otimizam e acrescentam boas práticas 
 date: 2024-01-12T17:02:05 -03:00
 keys: ["conteúdo", "html", "markup"]
 scriptstyles: ["syntax-coding"]
+tags: ["codigo"]
 ---
+
+Usando o iframe odysee:
+
+```html
+<div class="iframe u-video">
+  <iframe
+    id="odysee-iframe"
+    width="560"
+    height="315"
+    src="https://odysee.com/$/embed/@alvarohenrique:7/walter-burle-marx-walterburlemarx:4?r=G5jHQ6pyV3rLtNWLatmWng2f3HGoXzWV"
+    allowfullscreen
+  ></iframe>
+</div>
+```
 
 Usando o [playerx](https://github.com/luwes/playerx) para qualquer tipo de video
 

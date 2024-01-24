@@ -1,6 +1,6 @@
 {
     "author": "Rodolfo Maciel",
     "layout": "artigo",
-    "tags": ["trabalho"],
+    "tags": ["notast"],
     "permalink": "/t/n/{{ page.fileSlug }}/index.html"
 }

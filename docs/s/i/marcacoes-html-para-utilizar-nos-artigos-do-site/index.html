@@ -18,7 +18,7 @@
 
     <meta property=og:title content='Marcações HTML para utilizar nos Artigos do Site'>
     <meta property=og:description content=''>
-    <meta property=og:type content='computacao'>
+    <meta property=og:type content='artigoss,codigo'>
     <meta property=og:url content=''>
     <meta property=og:image content=''>
     <meta property=og:updated_time content='Fri Jan 12 2024 17:02:05 GMT-0300 (Horário Padrão de Brasília)'>
@@ -69,12 +69,6 @@
         <li class="menu-item">
           <a class="menu-item-link" href="/notas">NOTAS</a>
         </li>
-        <li class="menu-item">
-          <a class="menu-item-link" href="/referencias">REFERÊNCIAS</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-item-link" href="/recursos">RECURSOS</a>
-        </li>
       </ul>
     </nav>
 </header>
@@ -95,7 +89,17 @@
         
     </header>
     <section class="e-content" itemprop="articleBody">
-        <p>Usando o <a href="https://github.com/luwes/playerx">playerx</a> para qualquer tipo de video</p>
+        <p>Usando o iframe odysee:</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>iframe u-video<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span>
+    <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>odysee-iframe<span class="token punctuation">"</span></span>
+    <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>560<span class="token punctuation">"</span></span>
+    <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>315<span class="token punctuation">"</span></span>
+    <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://odysee.com/$/embed/@alvarohenrique:7/walter-burle-marx-walterburlemarx:4?r=G5jHQ6pyV3rLtNWLatmWng2f3HGoXzWV<span class="token punctuation">"</span></span>
+    <span class="token attr-name">allowfullscreen</span>
+  <span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p>Usando o <a href="https://github.com/luwes/playerx">playerx</a> para qualquer tipo de video</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>player-x</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.youtube.com/watch?v=dzKJ_1i78Y8<span class="token punctuation">"</span></span> <span class="token attr-name">controls</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>player-x</span><span class="token punctuation">></span></span></code></pre>
 <p>Usando <a href="https://github.com/luwes/lite-vimeo-embed?tab=readme-ov-file">lite-youtube</a> para videos do Youtube:</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>lite-youtube</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>u-video<span class="token punctuation">"</span></span> <span class="token attr-name">videoid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rkZzg7Vowao<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>lite-youtube</span><span class="token punctuation">></span></span></code></pre>
@@ -156,11 +160,11 @@
                 <img class="icon-footer" src="/midias/icons/icon-blsky.png" alt="https://bsky.app/profile/rodolfomaciel.bsky.social">
             </a>
         </li>
-        <!-- <li class="perfil-item">
-            <a href="https://maciel.netlify.app/feed.xml">
+        <li class="perfil-item">
+            <a href="/feeds/">
                 <img class="icon-footer icon-feed" src="/midias/icons/icon-feed.svg" alt="https://maciel.netlify.app/feed.xml">
             </a>
-        </li> -->
+        </li>
     </ul>
 </section>
 

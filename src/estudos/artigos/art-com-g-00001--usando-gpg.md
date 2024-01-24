@@ -4,6 +4,7 @@ summary:
 date: 2024-01-18T09:06:59 -03:00
 keys: ["basico", "gpg"]
 scriptstyles: ["syntax-coding"]
+tags: ["codigo"]
 ---
 
 ```bash

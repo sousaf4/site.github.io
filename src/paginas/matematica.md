@@ -1,7 +1,7 @@
 ---
-title: Artigos - Computação
+title: Artigos - Matemática
 date: 2024-01-23T14:09:34 -03:00
-description: Uma lista com todos os artigos que escrevi sobre computação e áreas relacionadas
+description: Uma lista com todos os artigos que escrevi sobre matemática e áreas relacionadas
 eleventyImport:
   collections: ["matematica"]
 ---
@@ -10,7 +10,7 @@ eleventyImport:
 <p class="p-summary site-description">{{ description }}</p>
 </header>
 <ul class='list'>
-{%- for item in collections.computacao | reverse -%}
+{%- for item in collections.matematica | reverse -%}
   <li class="h-entry hentry list-item">
     <a href="{{ item.url }}" class="u-url" rel="bookmark" >
       <span  class="p-name entry-title" >{{ item.data.title }}</span>

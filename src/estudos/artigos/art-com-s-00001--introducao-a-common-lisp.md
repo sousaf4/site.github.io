@@ -4,6 +4,7 @@ summary: Primeiras construções usando o SBCL - Common Lisp. Idéias de composi
 date: 2024-01-16T16:26:17 -03:00
 keys: ["introducao", "common-lisp"]
 scriptstyles: ["syntax-coding"]
+tags: ["codigo"]
 ---
 
 Subtrai 1 do número dado.
