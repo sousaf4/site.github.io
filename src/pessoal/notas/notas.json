@@ -2,5 +2,5 @@
     "author": "Rodolfo Maciel",
     "layout": "artigo",
     "tags": ["pessoal"],
-    "permalink": "/p/n/{{ page.fileSlug }}/index.html"
+    "permalink": "/p/n/{{ title | slugify }}/index.html"
 }

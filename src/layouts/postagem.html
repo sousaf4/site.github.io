@@ -4,6 +4,10 @@ layout: base
 
 <article class="h-entry hentry post">
     <header>
+        {% if redirect %}
+            <h1>Redirecionamento</h1>
+            <p>Voce será redirecionado em breve para <a href="{{ redirect }}">{{ redirect }}</a></p>
+        {% endif %}
         {% if inreplyto %}
             <h1 class="p-name entry-title lead">
                 {{ title }}

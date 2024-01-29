@@ -9,8 +9,6 @@ Os tipos de conteúdos podem ser classificados conforme abaixo:
 
 - Artigos (i)
 - Notas (n)
-- Referências (f)
-- Recursos (c)
 - Postagens (g)
 
 As categorias seguem como abaixo alistado:
@@ -19,7 +17,8 @@ As categorias seguem como abaixo alistado:
   - Livros
   - Cinema
   - Músicas
-  - Natureza
+  - Astronomia
+  - Ficção
 - Espiritual (e)
   - Jóias Espirituais
   - Tesouros da Palavra de Deus

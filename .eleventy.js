@@ -3,9 +3,16 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const markdownIt = require("markdown-it");
 
 
 module.exports = function(eleventyConfig){
+    let options = {
+      html: true,
+      breaks: true,
+      linkify: true
+    };
+    eleventyConfig.setLibrary("md", markdownIt(options));
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(EleventyRenderPlugin);
     eleventyConfig.addPlugin(pluginSyntaxHighlight, {

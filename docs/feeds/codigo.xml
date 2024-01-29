@@ -12,9 +12,9 @@
   </author>
   <entry>
     <title>Introdução ao SSH</title>
-    <link href="https://maciel.netlify.app/s/n/not-202401201503--introducao-ao-ssh/"/>
+    <link href="https://maciel.netlify.app/s/n/introducao-ao-ssh/"/>
     <updated>2024-01-20T18:03:43Z</updated>
-    <id>https://maciel.netlify.app/s/n/not-202401201503--introducao-ao-ssh/</id>
+    <id>https://maciel.netlify.app/s/n/introducao-ao-ssh/</id>
     <content xml:lang="pt-BR" type="html">&lt;p&gt;Acessando um servidor remoto com ssh&lt;/p&gt;
 &lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;username&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;@&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;urlserver&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; james@142.93.58.60
@@ -32,9 +32,9 @@ ssh-keygen&lt;/code&gt;&lt;/pre&gt;
   </entry>
   <entry>
     <title>Servidores de Chaves Públicas GPG</title>
-    <link href="https://maciel.netlify.app/s/n/not-g-00002--servidores-de-chaves-gpg/"/>
+    <link href="https://maciel.netlify.app/s/n/servidores-de-chaves-publicas-gpg/"/>
     <updated>2024-01-19T22:13:07Z</updated>
-    <id>https://maciel.netlify.app/s/n/not-g-00002--servidores-de-chaves-gpg/</id>
+    <id>https://maciel.netlify.app/s/n/servidores-de-chaves-publicas-gpg/</id>
     <content xml:lang="pt-BR" type="html">&lt;p&gt;Segue abaixo alguns endereços que você pode usar:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://keybase.io/&quot;&gt;https://keybase.io&lt;/a&gt;&lt;/li&gt;
@@ -100,9 +100,9 @@ gpg &lt;span class=&quot;token parameter variable&quot;&gt;--keyserver&lt;/span&
   </entry>
   <entry>
     <title>GPG - Criptgografia de Arquivos e Emails</title>
-    <link href="https://maciel.netlify.app/s/n/not-com-g-00001--usando%20-chaves-gpg-para-criptografia/"/>
+    <link href="https://maciel.netlify.app/s/n/gpg-criptgografia-de-arquivos-e-emails/"/>
     <updated>2024-01-16T23:33:17Z</updated>
-    <id>https://maciel.netlify.app/s/n/not-com-g-00001--usando%20-chaves-gpg-para-criptografia/</id>
+    <id>https://maciel.netlify.app/s/n/gpg-criptgografia-de-arquivos-e-emails/</id>
     <content xml:lang="pt-BR" type="html">&lt;p&gt;Comandos básicos para criar e exportar um par de chaves criptográficas no PGP.&lt;/p&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;gpg &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;full&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;generate&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;key
 

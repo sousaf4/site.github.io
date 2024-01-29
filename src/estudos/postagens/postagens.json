@@ -2,5 +2,5 @@
     "author": "Rodolfo Maciel",
     "layout": "postagem",
     "tags": ["postagenss"],
-    "permalink": "/s/g/{{ page.fileSlug }}/index.html"
+    "permalink": "/s/g/{{ title | slugify }}/index.html"
 }

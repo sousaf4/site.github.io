@@ -1,0 +1,6 @@
+{
+    "author": "Rodolfo Maciel",
+    "layout": "postagem",
+    "tags": ["redirects"],
+    "permalink": "/r/{{ title | slugify }}/index.html"
+}

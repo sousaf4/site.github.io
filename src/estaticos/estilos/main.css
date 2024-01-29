@@ -129,7 +129,8 @@ blockquote {
 
 img,
 video,
-.video {
+.video,
+.img {
     height: auto;
     width: 100%;
 }
@@ -387,4 +388,7 @@ player-x {
 .icon-footer {
     width: 1.6rem;
     padding: 0 0.2rem
+}
+mark {
+    background-color: var(--amarelo)
 }

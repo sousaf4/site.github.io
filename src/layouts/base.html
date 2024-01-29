@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - {{ info.site }}</title>
-    
+    {% if redirect %}
+      <meta http-equiv="refresh" content="0; url={{ redirect }}">
+    {% endif %}
+
     <meta name='title' content='{{ title }}'>
     <meta name='description' content='{{ description }}'>
     <meta name="theme-color" content="#cacaca" media="(prefers-color-scheme: light)">
@@ -72,7 +75,7 @@
       
       {% include 'footer.html' %}
     </div>
-    <script defer src="/estaticos/scripts/copyurl.js"></script>
+    <script defer src="/estaticos/scripts/cpurl.js"></script>
   </body>
   </html>
   
