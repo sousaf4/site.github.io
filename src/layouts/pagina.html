@@ -13,8 +13,11 @@ layout: base
     </section>
     <footer class="metadados">
         <p itemprop="author" itemprop="publisher" itemscope itemtype="https://schema.org/Person">
-            Publicado por 
-            <a class="h-card" rel="me" href="{{ info.site }}"><span itemprop="name" class="p-author"></span>{{ author }}</span></a>
+            Publicado por
+            <a class="h-card" rel="me" href="{{ info.site }}">
+                <img style="display: inline; width:12px" class="u-photo" src="/midias/icons/minha-foto.avif" alt="{{ info.site }}">
+                <span itemprop="name" class="p-author">{{ author }}</span>
+            </a>
             em <time  datetime="{{ page.date }}" class="dt-published"  itemprop="datePublished">{{ page.date | formatdata }}</time>
         </p>
     </footer>
