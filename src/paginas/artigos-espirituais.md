@@ -1,13 +1,14 @@
 ---
-title: Postagens
-description: Ultimas postagens rápidas sobre coisas que gostei de descobrir
+date: 2024-01-31T15:25:53-03:00
+title: Artigos - Espirituais
+description: Lista dos artigos na categoria Espiritual publicados no site
 ---
 
 <header class="h-feed hfeed">
 <p class="p-summary site-description">{{ description }}</p>
 </header>
 <ul class='list'>
-{%- for item in collections.postagensp | reverse -%}
+{%- for item in collections.artigose | reverse -%}
   <li class="h-entry hentry list-item">
     <a href="{{ item.url }}" class="u-url" rel="bookmark" >
       <span  class="p-name entry-title" >{{ item.data.title }}</span>

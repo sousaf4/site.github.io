@@ -1,6 +1,6 @@
 {
     "author": "Rodolfo Maciel",
     "layout": "artigo",
-    "tags": ["pessoal"],
+    "tags": ["notasp"],
     "permalink": "/p/n/{{ title | slugify }}/index.html"
 }
