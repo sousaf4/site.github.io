@@ -1,4 +1,5 @@
 ---
+date: 2024-01-29T09:33:17-03:00
 title: Sweet Home Alabama - Lynyrd Skynyrd
 faixa: https://www.youtube.com/watch?v=-35W_FWCT9Q
 letra: https://www.letras.mus.br/lynyrd-skynyrd/23829/

@@ -1,4 +1,5 @@
 ---
+date: 2024-01-08T09:26:29-03:00
 title: Beth Balanco - Barao-vermelho
 faixa: https://www.youtube.com/watch?v=IMK8XhR4yl8
 id: IMK8XhR4yl8

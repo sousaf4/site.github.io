@@ -1,4 +1,5 @@
 ---
+date: 2024-01-18T09:28:12-03:00
 title: Marina - Fullgas
 faixa: https://music.youtube.com/watch?v=3iGP33b_fxM
 letra: https://www.letras.mus.br/marina-lima/88108/

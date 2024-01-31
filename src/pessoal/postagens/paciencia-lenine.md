@@ -1,4 +1,5 @@
 ---
+date: 2024-01-27T09:32:09-03:00
 title: Paciência - Lenine
 faixa: https://music.youtube.com/watch?v=L3YblLix5Lo&si=xYHtJGvUX7s9YBbo
 letra: https://www.letras.mus.br/lenine/47001/

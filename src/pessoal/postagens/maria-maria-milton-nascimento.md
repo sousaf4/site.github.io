@@ -1,8 +1,9 @@
 ---
+date: 2024-01-08T09:31:06-03:00
 title: Maria Maria - Milton Nascimento
-faixa:
+faixa: https://www.youtube.com/watch?v=7tbNG0KqTUA
 letra: https://www.letras.mus.br/milton-nascimento/47431/
-id: sY5zlYK450b-M33K
+id: 7tbNG0KqTUA
 scriptstyles: ["lite-youtube"]
 ---
 

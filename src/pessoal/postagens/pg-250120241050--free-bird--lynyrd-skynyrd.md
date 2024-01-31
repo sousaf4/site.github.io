@@ -1,4 +1,5 @@
 ---
+date: 2024-01-31T09:33:01-03:00
 title: Free Bird - Lynyrd Skynyrd
 faixa: https://www.youtube.com/watch?v=3mExcPmReUM
 letra: https://www.letras.mus.br/lynyrd-skynyrd/23828/

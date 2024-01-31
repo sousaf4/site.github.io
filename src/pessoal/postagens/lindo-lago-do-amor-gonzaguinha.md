@@ -1,4 +1,5 @@
 ---
+date: 2024-01-05T09:29:39-03:00
 title: Lindo Lago Do Amor - Gonzaguinha
 faixa: https://www.youtube.com/watch?v=nF0-OxewolY
 letra: https://www.musixmatch.com/pt-br/letras/Gonzaguinha/Lindo-Lago-Do-Amor

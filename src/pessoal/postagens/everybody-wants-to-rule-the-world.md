@@ -1,4 +1,5 @@
 ---
+date: 2024-01-21T09:27:37-03:00
 title: Everybody Wants To Rule The World - Tears for Fears
 faixa: https://www.youtube.com/watch?v=awoFZaSuko4
 id: awoFZaSuko4

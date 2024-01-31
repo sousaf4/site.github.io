@@ -1,4 +1,5 @@
 ---
+date: 2024-01-29T09:32:26-03:00
 title: Papel Machê - João Bosco
 faixa: https://www.youtube.com/watch?v=ee8rPvt6zz0
 letra: https://www.deezer.com/en/track/112661432

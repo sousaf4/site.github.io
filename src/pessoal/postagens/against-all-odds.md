@@ -1,5 +1,6 @@
 ---
 title: Against All Odds - Mariah Carey
+date: 2024-01-11T09:26:11-03:00
 faixa: https://www.youtube.com/watch?v=yPW9bNRfTCs
 letra: https://www.letras.mus.br/phil-collins/against-all-odds/
 id: yPW9bNRfTCs

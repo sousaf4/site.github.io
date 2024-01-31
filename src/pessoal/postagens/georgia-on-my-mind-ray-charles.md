@@ -1,4 +1,5 @@
 ---
+date: 2024-01-16T09:28:30-03:00
 title: Georgia On My Mind - Ray Charles
 faixa: https://music.youtube.com/watch?v=QL3EZwSJAh0&si=mTj8mzDHA2-kiGdK
 id: QL3EZwSJAh0

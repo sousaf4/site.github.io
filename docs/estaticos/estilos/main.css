@@ -183,6 +183,7 @@ ul {
     padding-left: calc(var(--space) * 3);
 }
 a {
+    display: inline;
     text-decoration: underline;
     cursor: pointer;
     color: var(--green);
@@ -391,4 +392,20 @@ player-x {
 }
 mark {
     background-color: var(--amarelo)
+}
+
+.cyan {
+    background-color: var(--blue)
+}
+
+.green {
+    background-color: var(--green)
+}
+
+.fuchsia {
+    background-color: var(--fuchsia)
+}
+
+.purple {
+    background-color: var(--purple)
 }

@@ -1,4 +1,5 @@
 ---
+date: 2024-01-19T09:29:41-03:00
 title: Hoje eu quero sair só - Lenine
 faixa: https://www.youtube.com/watch?v=C_BXquGhjWg
 letra: https://www.deezer.com/br/track/75819179

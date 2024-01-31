@@ -1,4 +1,5 @@
 ---
+date: 2024-01-06T09:27:06-03:00
 title: Cheia de Charme - Guilherme Arantes
 faixa: https://www.youtube.com/watch?v=u1bObyCEG8U
 letra: https://www.letras.mus.br/guilherme-arantes/46303/

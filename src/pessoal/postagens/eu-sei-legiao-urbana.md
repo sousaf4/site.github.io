@@ -1,4 +1,5 @@
 ---
+date: 2024-01-25T09:27:23-03:00
 title: Eu sei - Legião Urbana
 faixa: https://www.youtube.com/watch?v=q9RJPTP_CJM
 letra: https://www.letras.mus.br/legiao-urbana/22498/

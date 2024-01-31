@@ -1,4 +1,5 @@
 ---
+date: 2024-01-26T09:32:43-03:00
 title: Simple Man - Lynyrd Skynyrd
 faixa: https://www.youtube.com/watch?v=8eNoms9wsGc
 letra: https://www.letras.mus.br/lynyrd-skynyrd/23830/
