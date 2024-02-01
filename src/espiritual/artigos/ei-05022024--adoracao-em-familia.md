@@ -15,7 +15,7 @@ keys: ["família", "adoração"]
 
 - Is 26:3, 4 - 3 <mark>Protegerás os que confiam plenamente em ti; Tu lhes darás contínua paz,</mark> Porque é em ti que eles confiam. 4 Confiem em Jeová para sempre, Pois Jah Jeová é a Rocha eterna.
 
-- Je 17:7, 8 - 7 Bendito o homem que confia em Jeová, Cuja esperança está em Jeová. 8 Ele se tornará como uma árvore plantada junto às águas, Que estende suas raízes até a corrente de água. Ele não perceberá quando o calor chegar, Mas suas folhas estarão sempre viçosas. No ano da seca <mark>ele não ficará preocupado</mark>, Nem deixará de produzir fruto.
+- Je 17:7, 8 - 7 Bendito o homem que confia em Jeová, Cuja esperança está em Jeová. 8 Ele se tornará como uma árvore plantada junto às águas, Que estende suas raízes até a corrente de água. Ele não perceberá quando o calor chegar, Mas suas folhas estarão sempre viçosas. No ano da seca <mark class='red'>ele não ficará preocupado</mark>, Nem deixará de produzir fruto.
 
 - Veja também Sal 34:8; 40:4, 5; Pr 20:22; Is 30:15.
 
@@ -33,7 +33,7 @@ keys: ["família", "adoração"]
     <figcaption>Homem orando a Jeová</figcaption>
 <figure>
 
-Jeová merece a nossa confiança. Como podemos confiar nele de todo o coração? <mark>Um modo é por fazer orações. Outra maneira é por meditar no significado do nome de Jeová, que nos garante que ele é capaz de cumprir todas as suas promessas.</mark> O capítulo 3 de Provérbios mostra que, se sempre confiarmos em Jeová, ele vai endireitar nossos caminhos.
+Jeová merece a nossa confiança. Como podemos confiar nele de todo o coração? <mark class='blue'>Um modo é por fazer orações. Outra maneira é por meditar no significado do nome de Jeová, que nos garante que ele é capaz de cumprir todas as suas promessas.</mark> O capítulo 3 de Provérbios mostra que, se sempre confiarmos em Jeová, ele vai endireitar nossos caminhos.
 
 Quem é sábio aos seus próprios olhos ...
 Pr 3:5-7
@@ -43,7 +43,7 @@ Pr 3:5-7
 
 Quem confia em Jeová ...
 
-- fortalece sua amizade com ele por meio do <mark>estudo da Bíblia, da meditação e da oração</mark>
+- fortalece sua amizade com ele por meio do <mark class='orange'>estudo da Bíblia, da meditação e da oração</mark>
 - procura saber o que Jeová pensa: <mark>pesquisa o que a Bíblia diz</mark> e depois toma uma decisão
 
 #### COMO VOCÊ TOMA DECISÕES?
@@ -62,7 +62,7 @@ Quem confia em Jeová ...
 
 AS PLANTAS usam um processo complexo chamado fotossíntese para extrair energia da luz solar a fim de produzir alimento. Estudos realizados com algumas espécies revelaram que elas conseguem ainda outra façanha — elas calculam a quantidade ideal do alimento que vão consumir durante a noite.
 
-Analise o seguinte: Durante o dia, as plantas convertem dióxido de carbono da atmosfera em amido e açúcares. À noite, muitas espécies consomem o amido estocado durante o dia para evitar a desnutrição e manter a produtividade e o crescimento. Além disso, <mark>elas processam o amido em estoque no ritmo certo — nem muito rápido nem muito devagar. Assim, consomem cerca de 95% desse amido até o amanhecer, quando começam a produzir mais.</mark>
+Analise o seguinte: Durante o dia, as plantas convertem dióxido de carbono da atmosfera em amido e açúcares. À noite, muitas espécies consomem o amido estocado durante o dia para evitar a desnutrição e manter a produtividade e o crescimento. Além disso, <mark  class='green'>elas processam o amido em estoque no ritmo certo — nem muito rápido nem muito devagar. Assim, consomem cerca de 95% desse amido até o amanhecer, quando começam a produzir mais.</mark>
 
 Essas descobertas se basearam em experimentos realizados com uma planta da família da mostarda, chamada Arabidopsis thaliana. <mark>Os pesquisadores constataram que essa planta regula cuidadosamente quanto deve consumir de suas reservas de alimento de acordo com a duração da noite, não importa se serão 8, 12 ou 16 horas até o amanhecer.</mark> Pelo visto, ela divide a quantidade de amido disponível pela duração da noite, determinando assim a taxa ideal de consumo.
 

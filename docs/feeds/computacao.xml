@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://maciel.netlify.app">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://rdms.me">
   <title>rdms</title>
   <subtitle>Arquivos de meus estudos e pesquisas de matemática, computação, tecnologias, ficção, filmes e assim por diante</subtitle>
-  <link href="https://maciel.netlify.app/feeds/computacao.xml" rel="self"/>
-  <link href="https://maciel.netlify.app"/>
+  <link href="https://rdms.me/feeds/computacao.xml" rel="self"/>
+  <link href="https://rdms.me"/>
   <updated>2024-01-20T18:03:43Z</updated>
-  <id>https://maciel.netlify.app</id>
+  <id>https://rdms.me</id>
   <author>
     <name>Rodolfo Maciel</name>
     <email>macielrdev@gmail.com</email>
