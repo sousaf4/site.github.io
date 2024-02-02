@@ -23,9 +23,9 @@ module.exports = function(eleventyConfig){
     });
 	  eleventyConfig.addPlugin(pluginNavigation);
 
-    // Filters 
+    // Filters hour:'2-digit',minute:'2-digit'
     eleventyConfig.addFilter('formatdata', (data) => {
-      return data.toLocaleDateString('pt-BR',{day:'numeric',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'})
+      return data.toLocaleDateString('pt-BR',{day:'numeric',month:'long',year:'numeric',})
     });
 
     // Return all the tags used in a collection

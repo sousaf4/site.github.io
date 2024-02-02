@@ -10,4 +10,81 @@
     <name>Rodolfo Maciel</name>
     <email>macielrdev@gmail.com</email>
   </author>
+  <entry>
+    <title>Tópicos da Matemática</title>
+    <link href="https://rdms.me/s/i/topicos-da-matematica/"/>
+    <updated>2024-02-02T19:57:35Z</updated>
+    <id>https://rdms.me/s/i/topicos-da-matematica/</id>
+    <content xml:lang="pt-BR" type="html">&lt;ul&gt;
+&lt;li&gt;Lógica e Fundamentos
+&lt;ul&gt;
+&lt;li&gt;Lógica Geral&lt;/li&gt;
+&lt;li&gt;Teoria do Modelo&lt;/li&gt;
+&lt;li&gt;Teoria da Computabilidade&lt;/li&gt;
+&lt;li&gt;Teoria dos Conjuntos&lt;/li&gt;
+&lt;li&gt;Teoria da Prova&lt;/li&gt;
+&lt;li&gt;Lógica Algébrica&lt;/li&gt;
+&lt;li&gt;Modelos Não-Padrão&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Combinatória
+&lt;ul&gt;
+&lt;li&gt;Combinatória enumerativa&lt;/li&gt;
+&lt;li&gt;Projetos e Configurações&lt;/li&gt;
+&lt;li&gt;Teoria dos Grafos&lt;/li&gt;
+&lt;li&gt;Combinatória Extrema&lt;/li&gt;
+&lt;li&gt;Combinatória Algébrica&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Estruturas Algébricas Ordenadas
+&lt;ul&gt;
+&lt;li&gt;Conjuntos Ordenados&lt;/li&gt;
+&lt;li&gt;Redes
+&lt;ul&gt;
+&lt;li&gt;Gerais&lt;/li&gt;
+&lt;li&gt;Modulares&lt;/li&gt;
+&lt;li&gt;Complementares&lt;/li&gt;
+&lt;li&gt;Distribuidas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Álgebra Booleana&lt;/li&gt;
+&lt;li&gt;Estruturas Ordenadas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Sistemas Álgebricos Gerais
+&lt;ul&gt;
+&lt;li&gt;Variedades&lt;/li&gt;
+&lt;li&gt;Estruturas Algébricas&lt;/li&gt;
+&lt;li&gt;Classes Algébricas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Teoria dos Números
+&lt;ul&gt;
+&lt;li&gt;Teoria Elementar&lt;/li&gt;
+&lt;li&gt;Sequencias e Conjuntos&lt;/li&gt;
+&lt;li&gt;Polinômios e Matrizes&lt;/li&gt;
+&lt;li&gt;Equações Diofantinas&lt;/li&gt;
+&lt;li&gt;Grupos Algébricos Lineares&lt;/li&gt;
+&lt;li&gt;Grupos Discontínuos e Automórficos&lt;/li&gt;
+&lt;li&gt;Geometria Diofantina&lt;/li&gt;
+&lt;li&gt;Geometria dos Números&lt;/li&gt;
+&lt;li&gt;Aproximação Diofantina&lt;/li&gt;
+&lt;li&gt;Teoria da Probabilidade&lt;/li&gt;
+&lt;li&gt;Somas exponenciais&lt;/li&gt;
+&lt;li&gt;Teoria Analítica&lt;/li&gt;
+&lt;li&gt;Teoria dos Números Multiplicativos&lt;/li&gt;
+&lt;li&gt;Teoria dos Números Aditivos&lt;/li&gt;
+&lt;li&gt;Teoria dos Números Algébricos&lt;/li&gt;
+&lt;li&gt;Campos Finitos e Anéis Comutativos&lt;/li&gt;
+&lt;li&gt;Teoria dos Números Computacionais&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Referência&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Classificação das Disciplinas na Matemática - &lt;a href=&quot;https://ems.press/journals/mag/articles/16798&quot;&gt;EMS MAgazine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ZB Math Open &lt;a href=&quot;https://zbmath.org/classification/&quot;&gt;MSC2020&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
 </feed>

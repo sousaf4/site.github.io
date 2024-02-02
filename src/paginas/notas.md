@@ -13,7 +13,9 @@ description: Últimas anotações e aprendizados
       <span  class="p-name entry-title" >{{ item.data.title }}</span>
     </a>
     <small>
-      <span>{% for key in item.data.keys %}<span rel="category tag" class="p-category">&nbsp;-&nbsp;{{ key }}</span> {% endfor %} - <time  class="dt-published published" datetime="{{ page.date }}">{{ item.date | formatdata }}</time></span>
+      <span>
+      <!-- {% for key in item.data.keys %}<span rel="category tag" class="p-category">&nbsp;-&nbsp;{{ key }}</span> {% endfor %} -->
+       - <time  class="dt-published published" datetime="{{ page.date }}">{{ item.date | formatdata }}</time></span>
       </small>
   </li>
 {%- endfor -%}

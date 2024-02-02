@@ -15,3 +15,17 @@ keys: ["joias-espirituais"]
 [w16.04 pp.27-31](https://wol.jw.org/pt/wol/d/r5/lp-t/2016288#h=20:0-21:0) Continue neutro neste mundo dividido
 
 [Salmo 2:12](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19002012&srcid=share) - **12 Honrem o filho, para que Deus não se ire E vocês não morram no caminho, Pois a Sua ira se acende de repente. Felizes todos os que se refugiam Nele.**
+
+[Salmo 3:5](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19003005&srcid=share) - **5 Eu me deitarei e dormirei, E acordarei em segurança, Pois Jeová continua a me sustentar.**
+
+[w11 15/5 p. 29 par. 7](https://www.jw.org/finder?wtlocale=T&docid=2011368&srctype=wol&srcid=share&par=11) Confiança plena em Jeová inspira segurança
+7 Certo de que orar a Deus não seria em vão, Davi não sentia pavor. Em vez disso, ele cantou: “Quanto a mim, vou deitar-me para dormir; hei de acordar, porque o próprio Jeová continua a sustentar-me.” (Sal. 3:5) Mesmo à noite, quando o perigo de um ataque surpresa era maior, Davi não tinha medo de dormir. <mark>Ele tinha certeza de que acordaria, pois suas experiências anteriores o deixaram totalmente confiante de que podia contar com o infalível apoio de Deus. Podemos ter essa mesma confiança se seguirmos os “caminhos de Jeová” e nunca nos afastarmos dele.</mark> — Leia [2 Samuel 22:21, 22](https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/10/22#study=discover&v=10:22:21-10:22:22).
+
+[Salmo 4:3](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19004003&srcid=share) - **3 Saibam que Jeová tratará de modo especial aquele que lhe é leal; Jeová ouvirá quando eu o chamar.**
+
+[w81 15/12 p.22 §28](https://www.jw.org/finder?wtlocale=T&docid=1981688&srctype=wol&srcid=share&par=37): 28 ... Sim, Deus destaca, honra e orienta os que são leais a ele e aos seus modos. Entre as muitas bênçãos que recebemos por tal lealdade está a alegria de estarmos entre aqueles que Deus aprova e aceita ‘no seu santo monte’. — Sal. 84:10, 11.
+
+[Salmo 4:8](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19004008&srcid=share) - **8 Vou me deitar e dormir em paz, Pois somente tu, ó Jeová, me fazes morar em segurança.**
+
+[w91 1/3 p. 17 par. 11](https://www.jw.org/finder?wtlocale=T&docid=1991165&srctype=wol&srcid=share&par=15) Que “a paz de Deus” guarde o seu coração
+11 Em toda a história da nação, <mark>os israelitas que fielmente tentaram guardar os estatutos de Jeová deveras usufruíram paz com ele, e isso não raro trouxe muitas outras bênçãos</mark>. Durante os primeiros anos do reinado do Rei Salomão, a paz com Deus trouxe prosperidade material bem como descanso de guerras com os vizinhos de Israel. Descrevendo esse tempo, a Bíblia diz: “Judá e Israel continuaram a morar em segurança, cada um debaixo da sua própria videira e debaixo da sua própria figueira, desde Dã até Berseba, todos os dias de Salomão.” (1 Reis 4:25) <mark>Mesmo quando irromperam hostilidades com países vizinhos, os israelitas fiéis ainda desfrutavam da paz que realmente importava, a paz com Deus.</mark>Assim, o Rei Davi, um renomado guerreiro, escreveu: “Vou tanto deitar-me como dormir em paz, pois somente tu, ó Jeová, me fazes morar em segurança.” — Salmo 4:8.

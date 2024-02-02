@@ -2,11 +2,17 @@
     --space: 0.8rem;
     --wsize: 10rem;
     --w6: calc(var(--wsize) * 6);
-    --orange: #D58243;
-    --green: #4D8A6A;
-    --blue: #2F437A;
-    --yellow: #C7AF4C;
-    --red: #C1666B;
+    --orange-m: #D58243;
+    --green-m: #4D8A6A;
+    --blue-m: #2F437A;
+    --yellow-m: #C7AF4C;
+    --red-m: #C1666B;
+    --orange: #DA7121;
+    --green: #377354;
+    --blue: #466AC6;
+    --yellow: #dbb622;
+    --red: #C03C43;
+
     --gray-0: #7a7a7a;
     --gray-1: #9a9a9a;
     --gray-2: #bababa;
@@ -191,21 +197,21 @@ a:link {
     color: var(--black-2);
 }
 a:visited {
-    color: var(--red);
+    color: var(--black-5);
 }
 a:hover,
 a:active {
-    color: var(--orange);
+    color: var(--blue);
 }
 .link {
     text-decoration: underline;
     cursor: pointer;
-    background: -webkit-linear-gradient(120deg, var(--orange), var(--fuchsia));
+    background: -webkit-linear-gradient(120deg, var(--blue), var(--black-0));
     --webkit-background-clip: text;
-    --webkit-text-fill-color: transparent;
-}
+    --webkit-text-fill-color: transparent;}
+
 .link:link {
-    color: var(--orange);
+    color: var(--black-0);
 }
 .link:hover,
 .link:visited {
@@ -255,7 +261,7 @@ a:active {
     color: var(--primary);
 }
 .menu-item-link:visited {
-    color: var(--gray-0);
+    color: var(--black-5);
 }
 .list {
     width: 100%;
@@ -274,6 +280,7 @@ a:active {
 }
 .list-item,
 .list-item-video {
+    font-size: 2.2rem;
     list-style-type: none;
     margin-bottom: 0.8rem;
 }
@@ -281,6 +288,24 @@ a:active {
     display: flex;
     flex-grow: 1;
     flex-basis: 20rem;
+}
+
+.list-item > a:link {
+    color: var(--black-2)
+}
+
+
+.list-item > a:hover {
+    color: var(--blue)
+}
+
+
+.list-item > a:active {
+    color: var(--blue)
+}
+
+.list-item > a:visited {
+    color: var(--black-4)
 }
 
 @media screen and (max-width: 32rem) {
@@ -392,23 +417,23 @@ player-x {
 }
 
 mark {
-    background-color: var(--yellow)
+    background-color: var(--yellow-m)
 }
 
 .blue {
-    background-color: var(--blue)
+    background-color: var(--blue-m)
 }
 
 .green {
-    background-color: var(--green)
+    background-color: var(--green-m)
 }
 
 .orange {
-    background-color: var(--orange)
+    background-color: var(--orange-m)
 }
 
 .red {
-    background-color: var(--red)
+    background-color: var(--red-m)
 }
 
 .logo, .logo:visited, .logo:hover {
