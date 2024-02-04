@@ -5,7 +5,7 @@ date: 2024-02-02T16:57:35 -03:00
 tags: ["matematica"]
 ---
 
-- Lógica e Fundamentos
+- **Lógica e Fundamentos**
   - Lógica Geral
   - Teoria do Modelo
   - Teoria da Computabilidade
@@ -13,13 +13,13 @@ tags: ["matematica"]
   - Teoria da Prova
   - Lógica Algébrica
   - Modelos Não-Padrão
-- Combinatória
+- **Combinatória**
   - Combinatória enumerativa
   - Projetos e Configurações
   - Teoria dos Grafos
   - Combinatória Extrema
   - Combinatória Algébrica
-- Estruturas Algébricas Ordenadas
+- **Estruturas Algébricas Ordenadas**
   - Conjuntos Ordenados
   - Redes
     - Gerais
@@ -28,11 +28,11 @@ tags: ["matematica"]
     - Distribuidas
   - Álgebra Booleana
   - Estruturas Ordenadas
-- Sistemas Álgebricos Gerais
+- **Sistemas Álgebricos Gerais**
   - Variedades
   - Estruturas Algébricas
   - Classes Algébricas
-- Teoria dos Números
+- **Teoria dos Números**
   - Teoria Elementar
   - Sequencias e Conjuntos
   - Polinômios e Matrizes
@@ -51,7 +51,7 @@ tags: ["matematica"]
   - Campos Finitos e Anéis Comutativos
   - Teoria dos Números Computacionais
 
-### Referência
+### Referências
 
 1. Classificação das Disciplinas na Matemática - [EMS MAgazine](https://ems.press/journals/mag/articles/16798)
 2. ZB Math Open [MSC2020](https://zbmath.org/classification/)

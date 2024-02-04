@@ -6,6 +6,12 @@ keys: ["joias-espirituais"]
 
 [Salmo 1:1-3](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19001001-19001003&srcid=share) - **1 Feliz é o homem que não anda segundo o conselho dos maus,Não pisa no caminho dos pecadores, Nem se senta com o grupo dos zombadores. 2 Mas seu prazer está na lei de Jeová, E ele lê a Sua lei em voz baixa dia e noite. 3 Ele será como uma árvore plantada junto a correntes de água, Uma árvore que dá fruto na sua estação E cuja folhagem não murcha. Tudo o que ele fizer será bem-sucedido.**
 
+[w07 1/1 p. 6](https://www.jw.org/finder?wtlocale=T&docid=2007001&srctype=wol&srcid=share&par=16) Como você pode ser bem-sucedido
+Comentário de A Sentinela: "<mark>Visualize uma criança sorridente sentada no colo do pai ou da mãe lendo juntos uma de suas histórias favoritas. Não importa quantas vezes a tenham lido antes, eles apreciam muito tais momentos preciosos.</mark> Da mesma forma, a pessoa que ama a Deus acha a leitura diária da Bíblia algo prazeroso — uma ocasião agradável que passa com seu Pai celestial. Por seguir os conselhos e as orientações de Jeová, essa pessoa se torna “qual árvore plantada junto a correntes de água, que dá seu fruto na sua estação e cuja folhagem não murcha, e tudo o que [ela] fizer será bem-sucedido”. — Salmo 1:3."
+
+[w17 novembro p. 30](https://www.jw.org/finder?wtlocale=T&docid=2017648&srctype=wol&srcid=share&par=7)
+Comentário de A Sentinela: "Uma árvore precisa de uma fonte constante de água para ter as folhas bonitas e dar frutos. Da mesma forma, <mark>um cristão precisa se nutrir regularmente com a Palavra de Deus para ficar forte em sentido espiritual</mark>. Por isso, continue a ler a Bíblia todos os dias e não perca as reuniões. Faça sua adoração em família e seu estudo pessoal toda semana. Para manter forte sua amizade com Jeová, você precisa continuar fazendo tudo o que fazia na sua congregação anterior."
+
 [Salmo 2:2](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19002002&srcid=share) - **2 Os reis da terra tomam sua posição E os governantes se unem Contra Jeová e contra o seu ungido.**
 
 [_w21 setembro pp. 15-16 par. 8_](https://www.jw.org/finder?wtlocale=T&docid=2021562&srctype=wol&srcid=share&par=15) “Vou fazer tremer todas as nações”

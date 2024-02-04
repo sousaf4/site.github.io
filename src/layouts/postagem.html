@@ -12,12 +12,15 @@ layout: base
             <h1 class="p-name entry-title lead">
                 {{ title }}
             </h1>
-            <p>Em resposta a <a href="{{ inreplyto }}" class="u-in-reply-to">{{ inreplyto }}</a></p>
+            <p>
+                <img class="icon-footer" src="/midias/icons/reply.svg" alt="comentario-a">
+                Em resposta a <a href="{{ inreplyto }}" class="u-in-reply-to">{{ inreplyto }}</a></p>
         {% endif %}
 
         {% if likeof %}
             <h1 class="p-name entry-title lead">{{ title }}</h1>
                <p>
+                <img class="icon-footer" src="/midias/icons/like.svg" alt="comentario-a">
                 Curti esse conteúdo <a href="{{ likeof }}" class="u-like-of">{{ likeof }}</a>
                </p>
         {% endif %}
@@ -28,6 +31,7 @@ layout: base
                     {{ title }}
                 </h1>
                     <p>
+                        <img class="icon-footer" src="/midias/icons/repost.svg" alt="compartilhar">
                         Compartilhando
                         <a class="u-url url" href="{{ repostof }}">{{ repostof }}</a>
                         de <span class="p-author author h-card">
@@ -41,14 +45,18 @@ layout: base
             <h1 class="p-name entry-title lead">
                 {{ title }}
             </h1>
-            <p class="p-summary entry-summary">Marcador em <a class="u-bookmark-of h-cite" href="{{ bookmarkof }}">{{ bookmarkof }}</a></p>
+            <p class="p-summary entry-summary">
+                <img class="icon-footer" src="/midias/icons/bookmark.svg" alt="marcador">
+                Marcador em <a class="u-bookmark-of h-cite" href="{{ bookmarkof }}">{{ bookmarkof }}</a></p>
         {% endif %}
 
         {% if video %}
             <h1 class="p-name entry-title lead">
                 {{ title }}
             </h1>
-            <p class="p-summary entry-summary">Video em <a href='{{ video }}'>{{ video }}</a></p>
+            <p class="p-summary entry-summary">
+                <img class="icon-footer" src="/midias/icons/video.svg" alt="headphone">
+                Video em <a href='{{ video }}'>{{ video }}</a></p>
             <player-x src="{{ video }}" controls></player-x>
         {% endif %}
 
@@ -58,17 +66,20 @@ layout: base
             </h1>
             <lite-youtube class="u-video" videoid="{{ id }}"></lite-youtube>
             {% if faixa %}
-                <p>Música em <a href="{{ faixa }}">{{ faixa }}</a></p>
-            {% endif %}
-            {% if letra %}
+            <p>
+                <img class="icon-footer" src="/midias/icons/headphone.svg" alt="headphone">
+                Música em <a href="{{ faixa }}">{{ faixa }}</a></p>
+                {% endif %}
+                {% if letra %}
                 <p>Letra em <a href="{{ letra }}">{{ letra }}</a></p>
-            {% endif %}
-        {% endif %}
-
-        {% if videolocal %}
-            <h1 class="p-name entry-title lead">
-                {{ title }}
-            </h1>
+                {% endif %}
+                <hr>
+                {% endif %}
+                
+                {% if videolocal %}
+                    <h1 class="p-name entry-title lead">
+                        {{ title }}
+                    </h1>
             {% if summary %}
                 <p class="p-summary entry-summary">{{ summary }}</p>
             {% endif %}

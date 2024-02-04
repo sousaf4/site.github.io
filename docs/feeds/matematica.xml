@@ -11,12 +11,92 @@
     <email>macielrdev@gmail.com</email>
   </author>
   <entry>
+    <title>Sistemas de Numeração Atuais</title>
+    <link href="https://rdms.me/s/i/sistemas-de-numeracao-atuais/"/>
+    <updated>2024-02-02T22:21:18Z</updated>
+    <id>https://rdms.me/s/i/sistemas-de-numeracao-atuais/</id>
+    <content xml:lang="pt-BR" type="html">&lt;p&gt;&lt;sup id=&quot;1&quot;&gt;1&lt;/sup&gt; Existem muitos sistemas diferentes usados ao longos dos séculos, porém, o mais usual em nossos dias é o sistema decimal.&lt;/p&gt;
+&lt;p&gt;&lt;sup id=&quot;2&quot;&gt;2&lt;/sup&gt; Diversos povos inventaram seus próprios sistemas para suas necessidades. Dentre eles podemos citar: (1) egípcios, (2) romanos, (3) sumérios, (4) gregos, (5) chinês e (6) maia. Mas o que prevaleceu na maior parte do mundo foi o sistema indo-arábico&lt;a href=&quot;https://rdms.me/s/i/sistemas-de-numeracao-atuais/#100&quot;&gt;&lt;sup&gt;a&lt;/sup&gt;&lt;/a&gt; que contém 10 símbolos, conforme é mostrado abaixo.&lt;/p&gt;
+&lt;math id=&quot;3&quot; xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
+  &lt;mstyle displaystyle=&quot;true&quot;&gt;
+    &lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;
+      &lt;mi&gt;N&lt;/mi&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mrow&gt;
+        &lt;mo&gt;{&lt;/mo&gt;
+        &lt;mn&gt;0&lt;/mn&gt;
+        &lt;mo&gt;,&lt;/mo&gt;
+        &lt;mn&gt;1&lt;/mn&gt;
+        &lt;mo&gt;,&lt;/mo&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+        &lt;mo&gt;,&lt;/mo&gt;
+        &lt;mn&gt;3&lt;/mn&gt;
+        &lt;mo&gt;,&lt;/mo&gt;
+        &lt;mn&gt;4&lt;/mn&gt;
+        &lt;mo&gt;,&lt;/mo&gt;
+        &lt;mn&gt;5&lt;/mn&gt;
+        &lt;mo&gt;,&lt;/mo&gt;
+        &lt;mn&gt;6&lt;/mn&gt;
+        &lt;mo&gt;,&lt;/mo&gt;
+        &lt;mn&gt;7&lt;/mn&gt;
+        &lt;mo&gt;,&lt;/mo&gt;
+        &lt;mn&gt;8&lt;/mn&gt;
+        &lt;mo&gt;,&lt;/mo&gt;
+        &lt;mn&gt;9&lt;/mn&gt;
+        &lt;mo&gt;}&lt;/mo&gt;
+      &lt;/mrow&gt;
+    &lt;/mrow&gt;
+  &lt;/mstyle&gt;
+&lt;/math&gt;
+&lt;p&gt;&lt;sup id=&quot;4&quot;&gt;3&lt;/sup&gt; Esses símbolos são usados para representar todas as quantidades e valores possíveis. A seguir vemos outros exemplos de símbolos semelhantes que são usados em diversos países.&lt;/p&gt;
+&lt;figure id=&quot;5&quot;&gt;
+&lt;img src=&quot;https://rdms.me/midias/imagens/sistemas-de-numeracao-no-mundo.svg&quot; alt=&quot;sistemas-de-numeracao&quot; /&gt;
+&lt;figcaption&gt;Sistemas de numeração decimal usados por diversos povos &lt;a href=&quot;https://rdms.me/s/i/sistemas-de-numeracao-atuais/#101&quot;&gt;&lt;sup&gt;b&lt;/sup&gt;&lt;/a&gt;. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;sup id=&quot;6&quot;&gt;4&lt;/sup&gt; O sistema decimal usa como base o número 10. Isso significa que a quantidade 10 e seus múltiplos são usados para agrupar e representar as quantidades. Eles tomam por base o valor posicional do algarismo para quantidades. O número 3829, por exemplo, contém os seguintes agrupamentos.&lt;/p&gt;
+&lt;figure id=&quot;7&quot;&gt;
+&lt;img src=&quot;https://rdms.me/midias/imagens/valor-posicional.png&quot; alt=&quot;valor-posicional&quot; /&gt;
+&lt;figcaption&gt;O valor posicional representa quantidades diferentes. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;sup id=&quot;8&quot;&gt;5&lt;/sup&gt; Mas essa não é a única base que existe ou que é utilizada atualmente. Abaixo há um exemplo que mostra o número 3829 representado em bases númericas diferentes.&lt;/p&gt;
+&lt;figure id=&quot;9&quot;&gt;
+&lt;img src=&quot;https://rdms.me/midias/imagens/sistemas-de-numeracao-do-2-ao-10.png&quot; alt=&quot;sistemas-de-numeracao-2-a-10&quot; /&gt;
+&lt;figcaption&gt;Representação do número 3829 em várias bases &lt;a href=&quot;https://rdms.me/s/i/sistemas-de-numeracao-atuais/#102&quot;&gt;&lt;sup&gt;c&lt;/sup&gt;&lt;/a&gt;. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;sup id=&quot;10&quot;&gt;6&lt;/sup&gt; Atualmente, além da base 10, outras três muito utilizadas na computação são as bases 2 (binária), 8 (octal) e 16 (hexadecimal).&lt;/p&gt;
+&lt;h3&gt;Referências&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;sup id=&quot;100&quot;&gt;a&lt;/sup&gt; Mundo da Educação. &lt;a href=&quot;https://mundoeducacao.uol.com.br/matematica/sistema-numeracao.htm&quot;&gt;Sistema de Numeração.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;sup id=&quot;101&quot;&gt;b&lt;/sup&gt; Wikipedia. Sistema de &lt;a href=&quot;https://www.wikiwand.com/pt/Sistema_de_numera%C3%A7%C3%A3o&quot;&gt;Numeração.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;sup id=&quot;102&quot;&gt;c&lt;/sup&gt; Wolfram Science. &lt;a href=&quot;https://www.wolframscience.com/nks/p116--the-notion-of-numbers--webview/&quot;&gt;Bases numéricas.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Números E Seus Significados</title>
+    <link href="https://rdms.me/s/i/numeros-e-seus-significados/"/>
+    <updated>2024-02-02T22:07:57Z</updated>
+    <id>https://rdms.me/s/i/numeros-e-seus-significados/</id>
+    <content xml:lang="pt-BR" type="html">&lt;p&gt;&lt;sup id=&quot;1&quot;&gt;1&lt;/sup&gt; Conforme o dicionário Priberam, número é &lt;a href=&quot;https://rdms.me/s/i/numeros-e-seus-significados/#100&quot;&gt;&lt;sup&gt;a&lt;/sup&gt;&lt;/a&gt;: &amp;quot;1. Relação entre uma quantidade e outra quantidade, tomada como termo de comparação e chamada unidade. 2. Partes da unidade. 3. Algarismo. 4. Quantidade, porção.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;sup id=&quot;2&quot;&gt;2&lt;/sup&gt; Além disso, o Dicionário Online de Português, define número como &lt;a href=&quot;https://rdms.me/s/i/numeros-e-seus-significados/#101&quot;&gt;&lt;sup&gt;b&lt;/sup&gt;&lt;/a&gt;: &amp;quot;A soma das várias unidades que compõem alguma coisa. Valor preciso ou quantidade delimitada.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;sup id=&quot;3&quot;&gt;3&lt;/sup&gt; E a Wikipedia diz &lt;a href=&quot;https://rdms.me/s/i/numeros-e-seus-significados/#102&quot;&gt;&lt;sup&gt;c&lt;/sup&gt;&lt;/a&gt;:&amp;quot;Número é um objeto abstrato da matemática usado para descrever quantidade, ordem ou medida.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;sup id=&quot;4&quot;&gt;4&lt;/sup&gt; Percebe-se assim que número é uma relação para descrever a quantidade de qualquer coisa. Essa intuição pode ser aplicada para descrever: temperatura, distância, tempo, posição, altura, lucro, prejuízo, dívida, ordem, peso, velocidade e assim por diante.&lt;/p&gt;
+&lt;p&gt;&lt;sup id=&quot;5&quot;&gt;5&lt;/sup&gt; E além do mais, os humanos encontram diversas outras formas de utilizar os números como criptografia, identificação, armazenamento, localização e muito mais.&lt;/p&gt;
+&lt;h3&gt;Referências&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;sup id=&quot;100&quot;&gt;a&lt;/sup&gt; Dicionário Priberam. &lt;a href=&quot;https://dicionario.priberam.org/n%C3%BAmero&quot;&gt;Verberte Número&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;sup id=&quot;101&quot;&gt;b&lt;/sup&gt; Dicionário Online de Português. &lt;a href=&quot;https://www.dicio.com.br/numero/&quot;&gt;Verbete Número&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;sup id=&quot;102&quot;&gt;c&lt;/sup&gt; Wikipedia. &lt;a href=&quot;https://www.wikiwand.com/pt/N%C3%BAmero&quot;&gt;Número&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
     <title>Tópicos da Matemática</title>
     <link href="https://rdms.me/s/i/topicos-da-matematica/"/>
     <updated>2024-02-02T19:57:35Z</updated>
     <id>https://rdms.me/s/i/topicos-da-matematica/</id>
     <content xml:lang="pt-BR" type="html">&lt;ul&gt;
-&lt;li&gt;Lógica e Fundamentos
+&lt;li&gt;&lt;strong&gt;Lógica e Fundamentos&lt;/strong&gt;
 &lt;ul&gt;
 &lt;li&gt;Lógica Geral&lt;/li&gt;
 &lt;li&gt;Teoria do Modelo&lt;/li&gt;
@@ -27,7 +107,7 @@
 &lt;li&gt;Modelos Não-Padrão&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Combinatória
+&lt;li&gt;&lt;strong&gt;Combinatória&lt;/strong&gt;
 &lt;ul&gt;
 &lt;li&gt;Combinatória enumerativa&lt;/li&gt;
 &lt;li&gt;Projetos e Configurações&lt;/li&gt;
@@ -36,7 +116,7 @@
 &lt;li&gt;Combinatória Algébrica&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Estruturas Algébricas Ordenadas
+&lt;li&gt;&lt;strong&gt;Estruturas Algébricas Ordenadas&lt;/strong&gt;
 &lt;ul&gt;
 &lt;li&gt;Conjuntos Ordenados&lt;/li&gt;
 &lt;li&gt;Redes
@@ -51,14 +131,14 @@
 &lt;li&gt;Estruturas Ordenadas&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Sistemas Álgebricos Gerais
+&lt;li&gt;&lt;strong&gt;Sistemas Álgebricos Gerais&lt;/strong&gt;
 &lt;ul&gt;
 &lt;li&gt;Variedades&lt;/li&gt;
 &lt;li&gt;Estruturas Algébricas&lt;/li&gt;
 &lt;li&gt;Classes Algébricas&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Teoria dos Números
+&lt;li&gt;&lt;strong&gt;Teoria dos Números&lt;/strong&gt;
 &lt;ul&gt;
 &lt;li&gt;Teoria Elementar&lt;/li&gt;
 &lt;li&gt;Sequencias e Conjuntos&lt;/li&gt;
@@ -80,7 +160,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Referência&lt;/h3&gt;
+&lt;h3&gt;Referências&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Classificação das Disciplinas na Matemática - &lt;a href=&quot;https://ems.press/journals/mag/articles/16798&quot;&gt;EMS MAgazine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;ZB Math Open &lt;a href=&quot;https://zbmath.org/classification/&quot;&gt;MSC2020&lt;/a&gt;&lt;/li&gt;

@@ -7,12 +7,12 @@ const markdownIt = require("markdown-it");
 
 
 module.exports = function(eleventyConfig){
-    let options = {
+    let opts = {
       html: true,
       breaks: true,
       linkify: true
     };
-    eleventyConfig.setLibrary("md", markdownIt(options));
+    eleventyConfig.setLibrary("md", markdownIt(opts));
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(EleventyRenderPlugin);
     eleventyConfig.addPlugin(pluginSyntaxHighlight, {

@@ -52,8 +52,8 @@ html {
     box-sizing: border-box;
     font: normal normal 400 62.5%/1.333 sans-serif;
     font-family: Helvetica, sans-serif;
-    --page-color: #cacaca;
-    --ink-color: #2b2b2bff;
+    --page-color: #A8A6A9;
+    --ink-color: #0A1312;
 }
 
 body {
@@ -109,6 +109,7 @@ body {
 }
 
 .footer {
+    font-family: 'Source Sans 3';
     border-top: var(--gray-2) solid 0.1rem ;
     padding-top: 1rem;;
     font-size: 1.4rem;
@@ -194,15 +195,16 @@ a {
     cursor: pointer;
 }
 a:link {
-    color: var(--black-2);
+    color: var(--black-1);
 }
 a:visited {
     color: var(--black-5);
 }
 a:hover,
 a:active {
-    color: var(--blue);
+    color: var(--green);
 }
+
 .link {
     text-decoration: underline;
     cursor: pointer;
@@ -211,15 +213,17 @@ a:active {
     --webkit-text-fill-color: transparent;}
 
 .link:link {
-    color: var(--black-0);
+    color: var(--black-1);
 }
-.link:hover,
-.link:visited {
-    color: var(--orange);
+.link:hover {
+    color: var(--green);
     text-decoration: underline;
 }
+.link:visited {
+    color: var(--black-1);
+}
 .link:active {
-    color: var(--fuchsia);
+    color: var(--green);
 }
 .button {
     background-color: transparent;
@@ -250,15 +254,17 @@ a:active {
 }
 
 .menu-item {
+    font-family: 'Source Sans 3';
     display: inline;
+    line-height: 1;
     font-size: 1.4rem;
     padding-right: 0.5rem;
 }
 .menu-item-link:link {
-    color: var(--primary);
+    color: var(--black-1);
 }
 .menu-item-link:hover {
-    color: var(--primary);
+    color: var(--green);
 }
 .menu-item-link:visited {
     color: var(--black-5);
@@ -280,7 +286,7 @@ a:active {
 }
 .list-item,
 .list-item-video {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     list-style-type: none;
     margin-bottom: 0.8rem;
 }
@@ -296,16 +302,16 @@ a:active {
 
 
 .list-item > a:hover {
-    color: var(--blue)
+    color: var(--green)
 }
 
 
 .list-item > a:active {
-    color: var(--blue)
+    color: var(--green)
 }
 
 .list-item > a:visited {
-    color: var(--black-4)
+    color: var(--black-5)
 }
 
 @media screen and (max-width: 32rem) {
@@ -370,6 +376,7 @@ a:active {
 }
 
 .article-metadata {
+    font-family: 'Source Sans 3';
     color: var(--black-2);
     padding-top: 1rem;
     font-size:1.4rem;
@@ -412,7 +419,7 @@ player-x {
 }
 
 .icon-footer {
-    width: 1.6rem;
+    width: 2rem;
     padding: 0 0.2rem
 }
 
@@ -442,4 +449,9 @@ mark {
     font-size: 2.2rem;
     font-weight: 900;
     color: var(--black-0);
-    text-decoration: none;}
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 1;
+    font-family: 'Source Sans 3';
+}
