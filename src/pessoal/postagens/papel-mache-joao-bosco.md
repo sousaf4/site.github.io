@@ -4,6 +4,7 @@ title: Papel Machê - João Bosco
 faixa: https://www.youtube.com/watch?v=ee8rPvt6zz0
 letra: https://www.deezer.com/en/track/112661432
 id: ee8rPvt6zz0
+scriptstyles: ["lite-youtube"]
 ---
 
 Cores do mar

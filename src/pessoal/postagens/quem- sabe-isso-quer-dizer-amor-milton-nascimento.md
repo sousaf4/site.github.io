@@ -1,8 +1,10 @@
 ---
+date: 2024-01-13T09:28:30-03:00
 title: Quem sabe isso quer dizer amor - Milton Nascimento
 faixa: https://www.youtube.com/watch?v=1edwebkYvYQ
 letra: https://www.letras.mus.br/milton-nascimento/70280/
 id: 1edwebkYvYQ
+scriptstyles: ["lite-youtube"]
 ---
 
 Cheguei a tempo de te ver acordar

@@ -1,7 +1,7 @@
 ---
 title: Adoração em Familia - 15012024
 summary:
-date: 2024-01-15T10:55:36 -03:00
+date: 2024-01-15T10:55:36-03:00
 keys: ["família", "adoração"]
 ---
 

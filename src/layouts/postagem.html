@@ -61,22 +61,21 @@ layout: base
         {% endif %}
 
         {% if faixa %}
-            <h1 class="p-name entry-title lead">
-                {{ title }}
-            </h1>
-            <lite-youtube class="u-video" videoid="{{ id }}"></lite-youtube>
-            {% if faixa %}
-            <p>
-                <img class="icon-footer" src="/midias/icons/headphone.svg" alt="headphone">
-                Música em <a href="{{ faixa }}">{{ faixa }}</a></p>
-                {% endif %}
-                {% if letra %}
-                <p>Letra em <a href="{{ letra }}">{{ letra }}</a></p>
-                {% endif %}
-                <hr>
-                {% endif %}
-                
-                {% if videolocal %}
+        <h1 class="p-name entry-title lead">
+            {{ title }}
+        </h1>
+        <lite-youtube class="u-video" videoid="{{ id }}"></lite-youtube>
+        
+        <p>
+            <img class="icon-footer" src="/midias/icons/headphone.svg" alt="headphone">
+            Música em <a href="{{ faixa }}">{{ faixa }}</a></p>
+            {% if letra %}
+            <p>Letra em <a href="{{ letra }}">{{ letra }}</a></p>
+            {% endif %}
+            <hr>
+        {% endif %}
+            
+            {% if videolocal %}
                     <h1 class="p-name entry-title lead">
                         {{ title }}
                     </h1>
