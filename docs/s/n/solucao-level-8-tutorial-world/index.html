@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maiores Avanços em Fisica em 2021 - Rodolfo Maciel</title>
+    <title>Solucao Level 8 - Tutorial World - Rodolfo Maciel</title>
     
 
-    <meta name='title' content='Maiores Avanços em Fisica em 2021'>
+    <meta name='title' content='Solucao Level 8 - Tutorial World'>
     <meta name='description' content=''>
     <meta name="theme-color" content="#A8A6A9" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0A1312" media="(prefers-color-scheme: dark)">
@@ -14,15 +14,15 @@
     <meta name=twitter:site content='https://rdms.me'>
     <meta name=twitter:card content="summary_large_image" />
     <meta name=twitter:image content=''>
-    <meta name=twitter:title content='Maiores Avanços em Fisica em 2021'>
+    <meta name=twitter:title content='Solucao Level 8 - Tutorial World'>
     <meta name=twitter:description content=''>
 
-    <meta property=og:title content='Maiores Avanços em Fisica em 2021'>
+    <meta property=og:title content='Solucao Level 8 - Tutorial World'>
     <meta property=og:description content=''>
-    <meta property=og:type content='postagenss'>
+    <meta property=og:type content='notass,codigo'>
     <meta property=og:url content=''>
     <meta property=og:image content=''>
-    <meta property=og:updated_time content='Wed Jan 24 2024 11:12:37 GMT-0300 (Horário Padrão de Brasília)'>
+    <meta property=og:updated_time content='Tue Feb 06 2024 11:53:07 GMT-0300 (Horário Padrão de Brasília)'>
 
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="https://rdms.me" />
@@ -51,8 +51,8 @@
     
     
       
-        <link rel="stylesheet" href="/estaticos/estilos/lite-youtube.css">
-        <script defer src="/estaticos/scripts/lite-youtube.js"></script>
+        <link rel="stylesheet" href="/estaticos/estilos/syntax-coding.css">
+        <script defer src="/estaticos/scripts/syntax-coding.js"></script>
       
         
   </head>
@@ -80,51 +80,55 @@
 
       
       <main class="main">
-        
-<article class="h-entry hentry post">
+        <article
+    class="h-entry article" 
+    role="article" 
+    itemscope 
+    itemtype="http://schema.org/BlogPosting">
     <header>
+        <h1 class="p-name article-title" itemprop="headline">Solucao Level 8 - Tutorial World</h1>
         
-        
-
-        
-            <h1 class="p-name entry-title lead">Maiores Avanços em Fisica em 2021</h1>
-               <p>
-                <img class="icon-footer" src="/midias/icons/like.svg" alt="comentario-a">
-                Curti esse conteúdo <a href="https://www.youtube.com/watch?v=FMM7GWnAv0A" class="u-like-of">https://www.youtube.com/watch?v=FMM7GWnAv0A</a>
-               </p>
-        
-
-        
-
-        
-
-        
-
-        
-            
-            
-
-        
-
     </header>
-    <section class="p-content">
-      <p><lite-youtube videoid="FMM7GWnAv0A"></lite-youtube></p>
-<p>O título do vídeo é <em>2021's Biggest Breakthroughs in Physics</em> feito pelo canal <a href="https://www.youtube.com/@QuantaScienceChannel">Quanta Magazine</a></p>
-<ol>
-<li>A póssível descoberta da 18ª particula do Modelo Padrão.</li>
-<li>A criação dos cristais do tempo que não obedecem a lei da entropia</li>
-<li>A captura da bolha dupla (norte e sul) no centro da Via Láctea pelo telescopio e-rosita</li>
-</ol>
+    <section class="e-content" itemprop="articleBody">
+        <p>Essa é a solução lógica para o desafio 8 do Tutorial World do Natural Number Game <code>2+2=4</code>:</p>
+<pre class="language-python" tabindex="0"><code class="language-python">nth_rewrite <span class="token number">2</span> <span class="token punctuation">[</span>two_eq_succ_one<span class="token punctuation">]</span>
+<span class="token operator">-</span><span class="token operator">-</span> only change the second `<span class="token number">2</span>` to `succ <span class="token number">1</span>`<span class="token punctuation">.</span>
+rw <span class="token punctuation">[</span>add_succ<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>one_eq_succ_zero<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>add_succ<span class="token punctuation">,</span> add_zero<span class="token punctuation">]</span>
+<span class="token operator">-</span><span class="token operator">-</span> two rewrites at once
+rw <span class="token punctuation">[</span>← three_eq_succ_two<span class="token punctuation">]</span>
+<span class="token operator">-</span><span class="token operator">-</span> change `succ <span class="token number">2</span>` to `<span class="token number">3</span>`
+rw <span class="token punctuation">[</span>← four_eq_succ_three<span class="token punctuation">]</span>
+rfl</code></pre>
+<p>A solução que eu encontrei para o mesmo desafio com 12 passos.</p>
+<pre class="language-python" tabindex="0"><code class="language-python">nth_rewrite <span class="token number">2</span> <span class="token punctuation">[</span>two_eq_succ_one<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>four_eq_succ_three<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>add_succ<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>two_eq_succ_one<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>three_eq_succ_two<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>two_eq_succ_one<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>succ_eq_add_one<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>succ_eq_add_one<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>succ_eq_add_one<span class="token punctuation">]</span>
+rw <span class="token punctuation">[</span>succ_eq_add_one<span class="token punctuation">]</span>
+rfl</code></pre>
 
     </section>
-    <footer class="metadados">
-        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
-            Publicado por 
-            <a class="h-card vcard" rel="me" itemprop="url" href="https://rdms.me" > <span itemprop="name" class="p-author">Rodolfo Maciel</span></a> em 
-            <time datetime="Wed Jan 24 2024 11:12:37 GMT-0300 (Horário Padrão de Brasília)" class="dt-published" itemprop="datePublished">24/01/2024</time>
-        </p>
+    <footer class="article-metadata">
         <p>
-            <span>URL:</span><input id="urlacopiar" type="text" value="https://rdms.me/s/g/maiores-avancos-em-fisica-em-2021/">
+            <span rel="author" class="h-card p-author" itemprop="author" itemprop="publisher" itemscope itemtype="https://schema.org/Person">Publicado por
+            <a class="u-url" rel="me" href="https://rdms.me">
+                <img style="display: inline; width:12px" class="u-photo" src="/midias/icons/minha-foto.avif" alt="https://rdms.me">
+                <span itemprop="name">Rodolfo Maciel</span>
+            </a>
+            </span>
+            em <span class="dt-published"  itemprop="datePublished">
+                <time  datetime="Tue Feb 06 2024 11:53:07 GMT-0300 (Horário Padrão de Brasília)">06/02/2024</time></span>
+        </p>
+        
+        <p>
+            <span>URL:</span><input class="u-url permalink" id="urlacopiar" type="text" value="https://rdms.me/s/n/solucao-level-8-tutorial-world/">
             <button id="botaocopiar1">Copiar URL</button>
         </p>
     </footer>

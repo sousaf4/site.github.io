@@ -7,12 +7,7 @@ const markdownIt = require("markdown-it");
 
 
 module.exports = function(eleventyConfig){
-    let opts = {
-      html: true,
-      breaks: true,
-      linkify: true
-    };
-    eleventyConfig.setLibrary("md", markdownIt(opts));
+    eleventyConfig.setLibrary("md", markdownIt({html: true,breaks: true,linkify: true}));
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(EleventyRenderPlugin);
     eleventyConfig.addPlugin(pluginSyntaxHighlight, {
@@ -23,9 +18,9 @@ module.exports = function(eleventyConfig){
     });
 	  eleventyConfig.addPlugin(pluginNavigation);
 
-    // Filters hour:'2-digit',minute:'2-digit'
+    // Filters hour:'2-digit',minute:'2-digit',{day:'numeric',month:'long',year:'numeric',}
     eleventyConfig.addFilter('formatdata', (data) => {
-      return data.toLocaleDateString('pt-BR',{day:'numeric',month:'long',year:'numeric',})
+      return data.toLocaleDateString('pt-BR')
     });
 
     // Return all the tags used in a collection

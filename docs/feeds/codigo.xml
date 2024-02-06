@@ -4,12 +4,42 @@
   <subtitle>Arquivos de meus estudos e pesquisas de matemática, computação, tecnologias, ficção, filmes e assim por diante</subtitle>
   <link href="https://rdms.me/feeds/codigo.xml" rel="self"/>
   <link href="https://rdms.me"/>
-  <updated>2024-01-20T18:03:43Z</updated>
+  <updated>2024-02-06T14:53:07Z</updated>
   <id>https://rdms.me</id>
   <author>
     <name>Rodolfo Maciel</name>
     <email>macielrdev@gmail.com</email>
   </author>
+  <entry>
+    <title>Solucao Level 8 - Tutorial World</title>
+    <link href="https://rdms.me/s/n/solucao-level-8-tutorial-world/"/>
+    <updated>2024-02-06T14:53:07Z</updated>
+    <id>https://rdms.me/s/n/solucao-level-8-tutorial-world/</id>
+    <content xml:lang="pt-BR" type="html">&lt;p&gt;Essa é a solução lógica para o desafio 8 do Tutorial World do Natural Number Game &lt;code&gt;2+2=4&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&quot;language-python&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;nth_rewrite &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;two_eq_succ_one&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; only change the second `&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;` to `succ &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;`&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;add_succ&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;one_eq_succ_zero&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;add_succ&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; add_zero&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; two rewrites at once
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;← three_eq_succ_two&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; change `succ &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;` to `&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;`
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;← four_eq_succ_three&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rfl&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A solução que eu encontrei para o mesmo desafio com 12 passos.&lt;/p&gt;
+&lt;pre class=&quot;language-python&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;nth_rewrite &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;two_eq_succ_one&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;four_eq_succ_three&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;add_succ&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;two_eq_succ_one&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;three_eq_succ_two&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;two_eq_succ_one&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;succ_eq_add_one&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;succ_eq_add_one&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;succ_eq_add_one&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rw &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;succ_eq_add_one&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rfl&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
   <entry>
     <title>Introdução ao SSH</title>
     <link href="https://rdms.me/s/n/introducao-ao-ssh/"/>
