@@ -52,11 +52,15 @@ Que sabedoria eles têm?
 
 [Tiago 1:5](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=59001005&srcid=share) 5 Portanto, se falta sabedoria a algum de vocês, que ele persista em pedi-la a Deus — pois ele dá a todos generosamente, sem censurar —, e ela lhe será dada.
 
+<div class="quadro">
+
 _Relatos bíblicos importantes:_
 
     2Cr 1:8-12 — O jovem Salomão orou pedindo sabedoria para ser um bom rei para Israel, e Jeová teve o maior prazer em atender ao pedido dele.
 
     Pr 2:1-5 — Sabedoria, entendimento e discernimento são comparados a tesouros escondidos, e Jeová recompensa os que se esforçam para encontrá-los.
+
+</div>
 
 4. **A Criação de Jeová**
 
