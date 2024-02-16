@@ -7,7 +7,7 @@ keys: ["família", "adoração"]
 
 1. Cântico [42](https://wol.jw.org/pt/wol/d/r5/lp-t/1102016842) e Oração Iniciais
 
-2. Orações da Bíblia
+2. **Perseverem em Oração**
 
 <figure>
     <img src="https://cms-imgp.jw-cdn.org/img/p/2016091/univ/art/2016091_univ_cnt_2_xl.jpg" alt="Rebeca era trabalhadeira e hospitaleira"/>
@@ -28,7 +28,7 @@ keys: ["família", "adoração"]
 
 <sup>11</sup> Eliézer “fitava-a admirado” ao observar esta milagrosa resposta à sua oração. Quando a elogiável virgem terminou a sua tarefa, ele a recompensou com uma argola de ouro para as narinas e duas pulseiras de ouro e perguntou: “De quem és filha?” Ao descobrir que ela era sobrinha-neta de Abraão, Eliézer inclinou-se perante Jeová em adoração reverente, dizendo: “Bendito seja Jeová, o Deus de meu amo Abraão, que não abandonou a sua benevolência e a sua fidedignidade para com o meu amo. Estando eu em caminho, Jeová me guiou à casa dos irmãos do meu amo.” — [Gênesis 24:21-27](https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/1/24#s=14&study=discover&v=1:24:21-1:24:27).
 
-3. Imite Sua Fé
+3. **Imite Sua Fé**
 
 <figure>
     <img src="https://cms-imgp.jw-cdn.org/img/p/2017172/univ/art/2017172_univ_lsr_xl.jpg
@@ -40,9 +40,9 @@ keys: ["família", "adoração"]
     <source src="https://download-a.akamaihd.net/files/media_publication/f5/jwb-100_T_20_r480P.mp4">
 </video>
 
-**Clive Martin: Imite a fé de Sara! (Heb. 11:11)**
+**<small>Clive Martin: Imite a fé de Sara! (Heb. 11:11)</small>**
 
-4. Ministério
+4. **Efetue Seu Ministério**
 
 [km 11/14 p. 1](https://wol.jw.org/pt/wol/d/r5/lp-t/202014401#h=1:0-12:0) - **Como Ser um Publicador Melhor — Mostre interesse**
 

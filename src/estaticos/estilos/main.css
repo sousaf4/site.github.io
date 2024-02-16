@@ -455,3 +455,8 @@ mark {
     line-height: 1;
     font-family: 'Source Sans 3';
 }
+
+.quadro {
+    border: 1px solid var(--black-2); 
+    padding: 1rem 2rem;
+}

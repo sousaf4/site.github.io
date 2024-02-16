@@ -37,9 +37,9 @@ module.exports = function(eleventyConfig){
     });
 
     //Shortcode
-    eleventyConfig.addShortcode('figure', function(path, description) {
-      return `<figure class="h-entry"><img class="u-photo" src="/midias/imagens/${path}" alt="${description}">
-      <figcaption  class="p-content">${description}</figcaption>
+    eleventyConfig.addShortcode('figure', function(path, alt) {
+      return `<figure class="h-entry"><img class="u-photo" src="${path}" alt="${alt}">
+      <figcaption  class="p-content">${alt}</figcaption>
       </figure>`
     });
 
