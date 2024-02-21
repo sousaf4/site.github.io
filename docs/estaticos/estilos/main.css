@@ -112,19 +112,19 @@ body {
     font-family: 'Source Sans 3';
     border-top: var(--gray-2) solid 0.1rem ;
     padding-top: 1rem;;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--black-2);
 }
 
-.subtitle { font-size: 3rem; font-weight: 500; }
-.lead { font-size: 2.4rem;}
+.subtitle { font-size: 3rem;}
+.lead { font-size: 2.6rem; font-style: italic; font-weight: 500;color:var(--black-0)}
 h1 { font-size: 3.4rem }
 h2 { font-size: 2.6rem }
 h3, blockquote { font-size: 2.2rem }
 h4 { font-size: 2.1rem } 
 h5 { font-size: 2rem }
 h6 { font-size: 1.9rem }
-article { font-size: 2rem; }
+article { font-size: 2.2rem; }
 
 
 blockquote {
@@ -379,7 +379,7 @@ a:active {
     font-family: 'Source Sans 3';
     color: var(--black-2);
     padding-top: 1rem;
-    font-size:1.4rem;
+    font-size:1.6rem;
     line-height:1.4;
 }
 
