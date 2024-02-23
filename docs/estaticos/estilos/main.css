@@ -114,6 +114,11 @@ body {
     padding-top: 1rem;;
     font-size: 1.6rem;
     color: var(--black-2);
+    margin-bottom: 2rem;
+}
+
+.footer > * {
+    margin: 0;
 }
 
 .subtitle { font-size: 3rem;}
@@ -381,16 +386,15 @@ a:active {
     padding-top: 1rem;
     font-size:1.6rem;
     line-height:1.4;
+    margin-bottom: 2rem;
+}
+
+.article-metadata > * {
+    margin: 0;
 }
 
 .article > p {
-    line-height: 2rem;
-}
-
-.metadados {
-    padding-top: 1rem;
-    font-size:1.25rem;
-    line-height:1.4;
+    line-height: 1.6;
 }
 
 math {
