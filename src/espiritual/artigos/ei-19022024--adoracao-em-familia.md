@@ -15,11 +15,11 @@ keys: ["família", "adoração"]
 
 <sup>9.</sup><small> Como Daniel 2:28, 31-35 descreve a última potência mundial, e quando ela surgiria?</small>
 
-9 Leia [Daniel 2:28, 31-35](https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/27/2#study=discover&v=27:2:28). Nós estamos vendo essa profecia se cumprir hoje. O sonho de Nabucodonosor indicou o que iria acontecer depois de Cristo começar a reinar, “na parte final dos dias”. Os inimigos de Jesus aqui na Terra incluiriam a última potência mundial, que é representada pelos pés “de ferro e de argila” da estátua. Essa potência já está governando. Ela surgiu durante a Primeira Guerra Mundial, quando a Grã-Bretanha e os Estados Unidos formaram uma parceria. A estátua do sonho de Nabucodonosor também indicou pelo menos duas características da Potência Mundial Anglo-Americana que a tornariam diferente de todas as potências anteriores.
+<sup>9</sup> Leia [Daniel 2:28, 31-35](https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/27/2#study=discover&v=27:2:28). Nós estamos vendo essa profecia se cumprir hoje. O sonho de Nabucodonosor indicou o que iria acontecer depois de Cristo começar a reinar, “na parte final dos dias”. Os inimigos de Jesus aqui na Terra incluiriam a última potência mundial, que é representada pelos pés “de ferro e de argila” da estátua. Essa potência já está governando. Ela surgiu durante a Primeira Guerra Mundial, quando a Grã-Bretanha e os Estados Unidos formaram uma parceria. A estátua do sonho de Nabucodonosor também indicou pelo menos duas características da Potência Mundial Anglo-Americana que a tornariam diferente de todas as potências anteriores.
 
 <sup>10.</sup><small> (a) Como a profecia de Daniel descreve com exatidão a Potência Anglo-Americana? (b) Que cuidado precisamos ter? (Veja o quadro “Cuidado com a argila!”.)</small>
 
-10 A primeira característica é que a Potência Anglo-Americana não é representada por apenas um material, como as potências anteriores mencionadas na visão de Daniel. Ela é representada por uma mistura de dois materiais: ferro e argila. A argila representa “a descendência da humanidade”, isto é, o povo comum. ([Dan. 2:43](https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/27/2#study=discover&v=27:2:43), nota) Hoje em dia, podemos ver claramente a influência que as pessoas em geral têm sobre os líderes políticos nas eleições e através de campanhas de direitos civis, manifestações e sindicatos. Por causa disso, os governos não conseguem realizar tudo o que querem.
+<sup>10</sup>A primeira característica é que a Potência Anglo-Americana não é representada por apenas um material, como as potências anteriores mencionadas na visão de Daniel. Ela é representada por uma mistura de dois materiais: ferro e argila. A argila representa “a descendência da humanidade”, isto é, o povo comum. ([Dan. 2:43](https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/27/2#study=discover&v=27:2:43), nota) Hoje em dia, podemos ver claramente a influência que as pessoas em geral têm sobre os líderes políticos nas eleições e através de campanhas de direitos civis, manifestações e sindicatos. Por causa disso, os governos não conseguem realizar tudo o que querem.
 
 3. **Nova Personalidade**
 
@@ -53,8 +53,7 @@ Que sabedoria eles têm?
 [Tiago 1:5](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=59001005&srcid=share) 5 Portanto, se falta sabedoria a algum de vocês, que ele persista em pedi-la a Deus — pois ele dá a todos generosamente, sem censurar —, e ela lhe será dada.
 
 <div class="quadro">
-
-_Relatos bíblicos importantes:_
+<em>Relatos bíblicos importantes:</em>
 
     2Cr 1:8-12 — O jovem Salomão orou pedindo sabedoria para ser um bom rei para Israel, e Jeová teve o maior prazer em atender ao pedido dele.
 
