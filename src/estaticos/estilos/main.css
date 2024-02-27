@@ -386,7 +386,7 @@ a:active {
     padding-top: 1rem;
     font-size:1.6rem;
     line-height:1.4;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .article-metadata > * {

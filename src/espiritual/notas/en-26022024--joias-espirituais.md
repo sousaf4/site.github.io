@@ -41,3 +41,11 @@ _1 Pedro 3:12 - 12 Porque os olhos de Jeová estão sobre os justos, e os seus o
 [Salmo 13:2](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19013002&srcid=share) 2 Até quando terei ansiedades e preocupações, Tristeza no meu coração todo dia? Até quando o meu inimigo triunfará sobre mim?
 
 <div class="quadro">Em momentos de aflição e sofrimento podemos concluir que estes nunca vão passar. Por vezes, as ansiedades e preocupações inundam nossas vidas e não vemos saída. Isso pode nos fazer duvidar de Jeová e de Sua aprovação.</div>
+
+[Salmo 14:2](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19014002&srcid=share) - Mas Jeová olha para baixo, desde o céu, para os filhos dos homens, <mark class='cyan'>Para ver se alguém tem entendimento, se alguém está buscando a Jeová.</mark>
+
+<div class="quadro">Jeová Deus tem muito interesse nas pessoas que desejam entender as verdades. Ele busca a esses em toda a Terra e mostra favor a eles. 2 Crônicas 16:9 - Pois os olhos de Jeová percorrem toda a terra, para mostrar a sua força a favor daqueles que têm o coração pleno para com ele. Mas o senhor agiu de modo tolo nesse caso; de agora em diante haverá guerras contra o senhor.”</div>
+
+[Salmo 14:3](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19014003&srcid=share) 3 Todos se desviaram; Todos são corruptos. Não há quem faça o bem, Nem sequer um.
+
+<div class="quadro"></div>
