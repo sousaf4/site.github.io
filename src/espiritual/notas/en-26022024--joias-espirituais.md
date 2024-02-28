@@ -46,6 +46,16 @@ _1 Pedro 3:12 - 12 Porque os olhos de Jeová estão sobre os justos, e os seus o
 
 <div class="quadro">Jeová Deus tem muito interesse nas pessoas que desejam entender as verdades. Ele busca a esses em toda a Terra e mostra favor a eles. 2 Crônicas 16:9 - Pois os olhos de Jeová percorrem toda a terra, para mostrar a sua força a favor daqueles que têm o coração pleno para com ele. Mas o senhor agiu de modo tolo nesse caso; de agora em diante haverá guerras contra o senhor.”</div>
 
-[Salmo 14:3](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19014003&srcid=share) 3 Todos se desviaram; Todos são corruptos. Não há quem faça o bem, Nem sequer um.
+[Salmo 14:3](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19014003&srcid=share) - Todos se desviaram; Todos são corruptos. Não há quem faça o bem, Nem sequer um.
 
-<div class="quadro"></div>
+<div class="quadro">É muito triste constatar que a maior parte dos humanos está mergulhada em corrupção e maldade. Eles não se importam com Deus e nem com o que Ele pensa.</div>
+
+[Salmo 15:2](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19015002&srcid=share) - Aquele que anda de modo íntegro, Que faz o que é certo E que fala a verdade no coração.
+
+<div class="quadro"><a href="https://wol.jw.org/pt/wol/pc/r5/lp-t/1204408/418/0">w03.08.01 pp.13-14 §18</a> - 18 Quem quiser ser amigo de Jeová tem de falar a verdade ‘no coração’, não apenas com os lábios. Os verdadeiros amigos de Deus precisam de um coração honesto e evidenciar ter “fé sem hipocrisia”, porque atos verazes vêm do coração. (1 Timóteo 1:5; Mateus 12:34, 35) Quem é amigo de Deus não é sinuoso ou enganoso, porque “Jeová detesta o homem  . . . que engana”. (Salmo 5:6)
+
+_O amigo de Jeová não imita os pecadores nem age conforme suas ideias mas faz sempre o que é certo mesmo quando é difícil para si. Ele faz assim porque sua devoção a Jeová vem do coração._ </div>
+
+[Salmo 15:3](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19015003&srcid=share) - Ele não usa a língua para caluniar. Não faz nenhum mal ao seu próximo E não difama seus amigos.
+
+<div class="quadro">A maneira como usamos nossa fala tem grande influencia sobre nossa família e amigos. Se usada de forma errada mesmo que sem intenção ela pode causar muito prejuízo.</div>

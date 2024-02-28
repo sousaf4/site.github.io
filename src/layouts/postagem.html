@@ -112,8 +112,23 @@ layout: base
     <footer class="article-metadata">
         <p itemprop="author" itemscope itemtype="https://schema.org/Person">
             Publicado por 
-            <a class="h-card vcard" rel="me" itemprop="url" href="{{ info.site }}" > <span itemprop="name" class="p-author">{{ author }}</span></a> em 
-            <time datetime="{{ page.date }}" class="dt-published" itemprop="datePublished">{{ page.date | formatdata }}</time>
+            <a 
+                class="h-card vcard"
+                rel="me"
+                itemprop="url"
+                href="{{ info.site }}">
+                    <span 
+                        itemprop="name"
+                        class="p-author">
+                            {{ author }}
+                    </span>
+            </a> em 
+            <time 
+                datetime="{{ page.date }}"
+                class="dt-published"
+                itemprop="datePublished">
+                    {{ page.date | formatdata }}
+                </time>
         </p>
         <p>
             <span>URL:</span><input id="urlacopiar" type="text" value="{{ info.site }}{{ page.url }}">
