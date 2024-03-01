@@ -31,3 +31,15 @@ Na tua presença há abundante alegria; A felicidade está à tua direita, para 
 (1 João 3:22) 22 e tudo o que pedimos recebemos dele, porque estamos obedecendo aos seus mandamentos e fazendo o que é agradável aos seus olhos.
 
 (1 João 5:14,15) 14 E esta é a confiança que temos nele: não importa o que peçamos segundo a sua vontade, ele nos ouve. 15 E, se sabemos que ele nos ouve com respeito àquilo que pedimos, sabemos que teremos as coisas pedidas, visto que as pedimos a ele.</div>
+
+[Salmo 17:1](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19017001&srcid=share) - Ouve o meu apelo por justiça, ó Jeová; Presta atenção ao meu clamor por ajuda; Escuta à minha oração, feita sem falsidade.
+
+<div class='quadro'>Quando somos sinceros e honestos em nossa conduta Jeová tem prazer em ouvir nossas orações.</div>
+
+[Salmo 17:3](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19017003&srcid=share) - Sondaste o meu coração, examinaste-me à noite; Tu me refinaste; Descobrirás que não tramei nada mau, E a minha boca não transgrediu.
+
+<div class='quadro'>Jeová tem a capacidade de conhecer nossos pensamentos e sentimentos mais íntimos e se permitirmos Ele pode corrigir nossos desvios.</div>
+
+[Salmo 17:15](https://www.jw.org/finder?wtlocale=T&pub=nwtsty&srctype=wol&bible=19017015&srcid=share) - Mas, quanto a mim, em retidão verei a tua face; Fico satisfeito ao acordar na tua presença.
+
+<div class='quadro'><a href="https://wol.jw.org/pt/wol/d/r5/lp-t/2006365#h=28:0-29:0">w06 15/5 p. 17-p. 20 par. 15</a> - 17:14, 15. Os “homens deste sistema” se empenham em ter um alto padrão de vida, criar filhos e deixar uma herança. O objetivo principal na vida de Davi era fazer um bom nome perante Deus, a fim de ‘contemplar sua face’, ou ter seu favor. Ao “acordar” para as promessas e garantias de Jeová, Davi se sentiria ‘satisfeito ao ver Sua figura’, quer dizer, se alegraria com a presença de Jeová. Não concorda que devemos fazer dos tesouros espirituais o ponto focal das nossas afeições, assim como Davi fez?

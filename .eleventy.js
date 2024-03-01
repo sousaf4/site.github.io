@@ -20,7 +20,7 @@ module.exports = function(eleventyConfig){
 
     // Filters hour:'2-digit',minute:'2-digit',{day:'numeric',month:'long',year:'numeric',}
     eleventyConfig.addFilter('formatdata', (data) => {
-      return data.toLocaleDateString('pt-BR')
+      return data.toLocaleDateString()
     });
 
     // Return all the tags used in a collection

@@ -12,11 +12,11 @@ description: Últimas anotações e aprendizados
     <a href="{{ item.url }}" class="u-url" rel="bookmark" >
       <span  class="p-name entry-title" >{{ item.data.title }}</span>
     </a>
-    <small>
+    <!--<small>
       <span>
-      <!-- {% for key in item.data.keys %}<span rel="category tag" class="p-category">&nbsp;-&nbsp;{{ key }}</span> {% endfor %} -->
+       {% for key in item.data.keys %}<span rel="category tag" class="p-category">&nbsp;-&nbsp;{{ key }}</span> {% endfor %} 
        - <time  class="dt-published published" datetime="{{ page.date }}">{{ item.date | formatdata }}</time></span>
-      </small>
+      </small>-->
   </li>
 {%- endfor -%}
 </ul>
