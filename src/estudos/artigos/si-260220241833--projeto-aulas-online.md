@@ -14,3 +14,20 @@ Algumas funções são listadas abaixos:
 - Permitir ao professor fazer <mark>correções</mark> e <mark>anotações</mark> nos trabalhos dos alunos.
 - Permitir aos alunos acessar o conteúdo das aulas e todo o material relacionado, bem como as correções, anotações e <mark>pontuações</mark> dadas pelo professor.
 - Permitir aos alunos enviar exercícios, trabalhos, provas, <mark>apresentações</mark>, <mark>perguntas</mark> e assim por diante.
+
+Os atores e suas ações:
+
+1. Professor
+   1.1. Aulas
+   1.2. Artigos
+   1.3. Exercícios
+   1.4. Correções
+2. Aluno
+   2.1. Redações
+   2.2. Apresentações
+   2.3. Resoluções
+3. Tutor
+   3.1. Sessões
+   3.2. Artigos
+   3.3. Exercícios
+   3.4. Correções
