@@ -1,6 +1,6 @@
 ---
 title: Adoração em Familia - 19022024
-summary:
+summary: A profecia de Daniel explica como seriam os governos dominantes no tempo do fim. Além disso, vamos aprender sobre o que significa sabedoria.
 date: 2024-02-19T14:49:27 -03:00
 keys: ["família", "adoração"]
 ---
