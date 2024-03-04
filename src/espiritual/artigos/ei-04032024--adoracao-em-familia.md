@@ -1,6 +1,6 @@
 ---
 title: Adoração em Familia - 04032024
-summary: MinisterioQualidadesExemplosProfecia
+summary: Na adoração em família dessa semana vamos aprender da oração que Elias fez na ocasião do desafio no monte Carmelo. Também vamos aprender do exemplo de Davi ao enfrentar o gigante Golias. E por fim vamos considerar como melhorar nossa arte de ensino.
 keys: ["família", "adoração"]
 ---
 
