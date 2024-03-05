@@ -22,15 +22,22 @@ Basicamente a rotina se resume a dedicar pelo menos 1 (uma) hora por dia nos est
 
 ## Analise de Horas e Sua Utilização
 
-Total = 24 horas x 7 dias = 168 horas
-Sono = 8 horas x 7 dias = 56 horas
-Trabalho = 8 horas x 7 dias = 56 horas
-Reuniões = 3 horas x 2 dias = 6 horas
-=> 50min + 1h45 + 20min + 20min
-Ministério = 1h45 x 7 dias = 12 horas
-Estudos Espirituais = 1 hora x 7 dias = 7 horas
-Estudos Academicos = 2 horas x 7 dias = 14 horas
-Afazeres = 1h x 7 dias = 7 horas
-Entretenimento = 1h x 6 dias = 6 horas
-Exercícios = 30 minutos x 7 dias = 3h30
-Restante = -6 horas
+| Descricacao  | Dia   | Sem  |
+| ------------ | ----- | ---- |
+| Total        | 24h   | 168h |
+| Descanso     | 8h    | 56h  |
+| Útil         | 16h   | 112h |
+| Espiritual   |       | 25h  |
+| - Reuniões   | 7h    |      |
+| - Adoração   | 2h    |      |
+| - Ministério | 12h30 |      |
+| - Rotinas    | 3h30  |      |
+| Pessoal      |       | 35h  |
+| - Afazeres   | 10h   |      |
+| - Exercícios | 3h30  |      |
+| - Lazer      | 7h    |      |
+| Trabalhos    |       | 36h  |
+| - Servir     | 8h    | 36h  |
+| Estudos      |       | 16h  |
+| - Matemática | 7h    |      |
+| - Computação | 7h    |      |

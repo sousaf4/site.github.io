@@ -6,7 +6,7 @@ keys: ["família", "adoração"]
 
 1. Cântico [12](https://wol.jw.org/pt/wol/d/r5/lp-t/1102016812) e Oração Iniciais
 
-2. **Orações da Bíblia**
+2. **Perseverem em Oração**
 
 {% figure 'https://cms-imgp.jw-cdn.org/img/p/1102016056/univ/art/1102016056_univ_lsr_xl.jpg', 'O profeta Elias ora a Jeová para que desça fogo dos céus e consuma os sacrifícios.' %}
 
@@ -24,7 +24,7 @@ keys: ["família", "adoração"]
 
 <sup>8</sup> O exemplo de Elias nos ensina muito sobre a oração. Para ele, o mais importante era a realização da vontade de Deus. Quando oramos, é bom nos lembrar do seguinte: “Não importa o que peçamos segundo a sua vontade [de Deus], ele nos ouve.” (1 João 5:14) Fica claro então que, para nossas orações serem aceitas, precisamos saber qual é a vontade de Deus — um bom motivo para fazer do estudo da Bíblia parte da nossa vida diária. Com certeza, Elias também queria ver o fim da seca por causa de todo o sofrimento que as pessoas de seu país estavam passando. É provável que ele se sentisse muito grato depois de ter visto o milagre que Jeová realizou naquele dia. Da mesma forma, queremos que nossas orações reflitam gratidão sincera e preocupação pelo bem-estar de outros. — Leia 2 Coríntios 1:11; Filipenses 4:6.
 
-3. **Exemplos da Bíblia**
+3. **Imite Sua Fé**
 
 {% figure "https://wol.jw.org/pt/wol/mp/r5/lp-t/mwb22/2022/249", "Davi enfrentando Golias" %}
 
@@ -42,7 +42,7 @@ Com a ajuda de Jeová, Davi venceu um inimigo terrível ([1 Sam. 17:48-50](https
 
 **Jonathan Smith: Sempre veja a situação como um todo (1 Sam. 17:42)**
 
-4. **Ministério Cristão**
+4. **Efetue Seu Ministério**
 
 [w22 abril pp. 4-9](https://wol.jw.org/pt/wol/pc/r5/lp-t/1200275706/6/0) Você é um ‘exemplo no falar’?
 
