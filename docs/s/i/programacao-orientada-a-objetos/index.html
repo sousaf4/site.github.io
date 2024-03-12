@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Orientada a Objetos - Rodolfo Maciel</title>
+    
+
+    <meta name='title' content='Programação Orientada a Objetos'>
+    <meta name='description' content='Essa é uma introdução aos principais conceitos da programação orientada a objetos e como você pode usá-los para implementar programas de computador.'>
+    <meta name="theme-color" content="#A8A6A9" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0A1312" media="(prefers-color-scheme: dark)">
+
+    <meta name=twitter:site content='https://rdms.me'>
+    <meta name=twitter:card content="summary_large_image" />
+    <meta name=twitter:image content=''>
+    <meta name=twitter:title content='Programação Orientada a Objetos'>
+    <meta name=twitter:description content='Essa é uma introdução aos principais conceitos da programação orientada a objetos e como você pode usá-los para implementar programas de computador.'>
+
+    <meta property=og:title content='Programação Orientada a Objetos'>
+    <meta property=og:description content='Essa é uma introdução aos principais conceitos da programação orientada a objetos e como você pode usá-los para implementar programas de computador.'>
+    <meta property=og:type content='artigoss,codigo'>
+    <meta property=og:url content=''>
+    <meta property=og:image content=''>
+    <meta property=og:updated_time content='Sun Mar 10 2024 14:34:35 GMT-0300 (Horário Padrão de Brasília)'>
+
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="https://rdms.me" />
+
+    <link rel="canonical" href="https://rdms.me" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <link href="https://rdms.me/midias/chaves/pub.key" rel="pgpkey">
+    <link href="https://rdms.me/midias/chaves/rdms.gpg" rel="pgpkey">
+    <link href="https://raw.githubusercontent.com/sousaf4/w/main/src/midias/chaves/pub.key" rel="pgpkey">
+
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;900&family=Source+Sans+3:wght@200;400;900&family=Source+Serif+4:opsz,wght@8..60,200;8..60,400;8..60,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estaticos/estilos/main.css">
+    
+    
+
+    
+
+    
+    
+      
+        <link rel="stylesheet" href="/estaticos/estilos/syntax-coding.css">
+        <script defer src="/estaticos/scripts/syntax-coding.js"></script>
+      
+        
+  </head>
+  
+  <body class="window serif">
+    <div class="board">
+      
+<header class="header">
+    <nav class="menu">
+      <ul>
+        <li class="menu-item">
+          <a class="menu-item-link logo" href="/">rdms</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/computacao">COMPUTAÇÃO</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="/matematica">MATEMÁTICA</a>
+        </li>
+      </ul>
+    </nav>
+</header>
+  
+
+
+      
+      <main class="main">
+        <article
+    class="h-entry article" 
+    role="article" 
+    itemscope 
+    itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 class="p-name article-title" itemprop="headline">Programação Orientada a Objetos</h1>
+        
+            <p class="p-summary lead" itemprop="description">Essa é uma introdução aos principais conceitos da programação orientada a objetos e como você pode usá-los para implementar programas de computador.</p>
+        
+    </header>
+    <section class="e-content" itemprop="articleBody">
+        <ol>
+<li>Classes - é um conjunto de atributos e métodos que são usados para projetar um tipo de dado abstrato. Eles reunem os dados e operações sobre os dados num único objeto.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Humano</span>
+  def initialize nome<span class="token punctuation">,</span> nasc
+    @nome <span class="token operator">=</span> nome
+    @nasc <span class="token operator">=</span> nasc
+  end
+end</code></pre>
+<p>Uma classe é um modelo para a criação de objetos (uma estrutura de dados específica), fornecendo valores iniciais para o estado (variáveis ​​ou atributos de membro) e implementações de comportamento (funções ou métodos de membro).</p>
+<ol start="2">
+<li>Objetos - é uma instância de uma classe. Ele tem identidade, estado e comportamento.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js">joao <span class="token operator">=</span> Humano<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"João"</span><span class="token punctuation">,</span> Date<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">1900</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">=></span> #<span class="token operator">&lt;</span>Humano<span class="token operator">:</span><span class="token number">0x00005644152a2f60</span>
+    @nasc<span class="token operator">=</span>#<span class="token operator">&lt;</span>Date<span class="token operator">:</span> <span class="token number">1900</span><span class="token operator">-</span><span class="token number">01</span><span class="token operator">-</span><span class="token number">01</span>
+    <span class="token punctuation">(</span><span class="token punctuation">(</span>2415021j<span class="token punctuation">,</span>0s<span class="token punctuation">,</span><span class="token number">0n</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">+</span>0s<span class="token punctuation">,</span>2299161j<span class="token punctuation">)</span><span class="token operator">></span><span class="token punctuation">,</span>
+    @nome<span class="token operator">=</span><span class="token string">"João Pedro"</span><span class="token operator">></span>
+
+joao<span class="token punctuation">.</span>__id__<span class="token punctuation">;</span>
+<span class="token operator">=></span> <span class="token number">260</span></code></pre>
+<p>Nesse exemplo vimos a criação do objeto joao com os atributos nome e nascimento que são o seu estado atual.</p>
+<ol start="3">
+<li>Encapsulamento - agrupar atributos e métodos essenciais em um único objeto e protegê-los. Também pode referir-se à limitação do acesso direto a alguns desses dados, como os componentes de um objeto.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Humano</span>
+  def initialize nome<span class="token punctuation">,</span> nasc
+    @nome <span class="token operator">=</span> nome
+    @nasc <span class="token operator">=</span> nasc
+  end
+
+  def quem
+    puts <span class="token string">"Eu sou #{@nome} e nasci em #{@nasc}"</span>
+  end
+end</code></pre>
+<p>O encapsulamento envolve agrupar dentro de uma única entidade toda a informação e operações necessárias para</p>
+<ol start="4">
+<li>Abstração - Fornecer ao 'mundo' exterior apenas as funcionalidades do objeto sem precisar revelar a implementação.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Quadrado</span>
+  def initialize lado
+    @lado <span class="token operator">=</span> lado
+  end
+
+  def area
+    lado <span class="token operator">*</span> lado
+  end
+end
+
+forma <span class="token operator">=</span> Quadrado<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+
+forma<span class="token punctuation">.</span><span class="token parameter">area</span>
+<span class="token operator">=></span> <span class="token number">25</span></code></pre>
+<ol start="5">
+<li>Herança - a capacidade de uma classe derivar os atributos e métodos de outra classe.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Human</span>
+  def initialize name
+    @name <span class="token operator">=</span> name
+  end
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Man</span> <span class="token operator">&lt;</span> Human
+  def initialize name<span class="token punctuation">,</span> burn
+    <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+    @burn <span class="token operator">=</span> burn
+  end
+end
+
+john <span class="token operator">=</span> Man<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"John Doe"</span><span class="token punctuation">,</span> Date<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">1900</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<ol start="6">
+<li>Polimorfirmos - várias classes podem ter mesmo nome de método com comportamentos diferentes. Uma mensagem pode ser exibida em mais de uma forma.</li>
+</ol>
+<p>Por meio de herança e interface. Também substituição de método</p>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Forma</span>
+  def area
+    raise NotImplementedError<span class="token punctuation">,</span> <span class="token string">"Método Não Implementado"</span>
+  end
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Retangulo</span> <span class="token operator">&lt;</span> Forma
+    def <span class="token function">initialize</span><span class="token punctuation">(</span>length<span class="token punctuation">,</span> width<span class="token punctuation">)</span>
+        @length <span class="token operator">=</span> length
+        @width <span class="token operator">=</span> width
+    end
+    def area
+      @length <span class="token operator">*</span> @width
+    end
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Circulo</span>  <span class="token operator">&lt;</span> Forma
+    def <span class="token function">initialize</span><span class="token punctuation">(</span>radius<span class="token punctuation">)</span>
+        @radius <span class="token operator">=</span> radius
+    end
+    def area
+        <span class="token literal-property property">Math</span><span class="token operator">:</span><span class="token operator">:</span><span class="token constant">PI</span> <span class="token operator">*</span> @radius<span class="token operator">**</span><span class="token number">2</span>
+    end
+end
+</code></pre>
+<p>Nesse caso a classe Retangulo e Circulo tem o mesmo método <code>area</code> mas são implementados de forma diferentes.</p>
+<p>Sobrecarga de método</p>
+<pre class="language-js" tabindex="0"><code class="language-js">def <span class="token function">sum</span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span>
+  total <span class="token operator">=</span> <span class="token number">0</span>
+  args<span class="token punctuation">.</span>each <span class="token keyword">do</span> <span class="token operator">|</span>arg<span class="token operator">|</span>
+    total <span class="token operator">=</span> total <span class="token operator">+</span> arg
+  end
+  <span class="token keyword">return</span> total
+end
+
+<span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token comment">// => 6</span>
+
+<span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token comment">// => 30</span></code></pre>
+<ol start="7">
+<li>Mensagem - É quando um objeto faz a solicitação de execução de um método de outro objeto.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Calc</span>
+  def <span class="token function">sum</span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span>
+    total <span class="token operator">=</span> <span class="token number">0</span>
+
+    args<span class="token punctuation">.</span>each <span class="token keyword">do</span> <span class="token operator">|</span>arg<span class="token operator">|</span>
+      total <span class="token operator">=</span> total <span class="token operator">+</span> arg
+    end
+    <span class="token keyword">return</span> total
+  end
+  def <span class="token function">mul</span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span>
+    total <span class="token operator">=</span> <span class="token number">1</span>
+
+    args<span class="token punctuation">.</span>each <span class="token keyword">do</span> <span class="token operator">|</span>arg<span class="token operator">|</span>
+      total <span class="token operator">=</span> total <span class="token operator">*</span> arg
+    end
+    <span class="token keyword">return</span> total
+  end
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Results</span>
+  def initialize operator
+    @op <span class="token operator">=</span> operator
+    @res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  end
+
+  def <span class="token function">call</span><span class="token punctuation">(</span>op<span class="token punctuation">,</span> <span class="token operator">*</span>values<span class="token punctuation">)</span>
+    total <span class="token operator">=</span> @op<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>op<span class="token punctuation">,</span><span class="token operator">*</span>values<span class="token punctuation">)</span>
+    @res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>total<span class="token punctuation">)</span>
+  end
+end
+</code></pre>
+<p>A classe <code>Results</code> recebe o objeto da classe <code>Calc</code> e envia mensagens para ele usando o método <code>call</code></p>
+<ol start="8">
+<li>
+<p>Vinculação</p>
+</li>
+<li>
+<p>Acoplamento - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.</p>
+</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">ShoppingCart</span>
+  <span class="token literal-property property">attr_accessor</span> <span class="token operator">:</span>items
+  def initialize
+    @items <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  end
+end
+<span class="token keyword">class</span> <span class="token class-name">Order</span>
+  def <span class="token function">process_order</span><span class="token punctuation">(</span>cart<span class="token punctuation">)</span>
+    cart<span class="token punctuation">.</span>items<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token operator">:</span>price<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">inject</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token operator">+</span><span class="token punctuation">)</span>
+  end
+end</code></pre>
+<p>Nessa implementação as classes <code>Order</code> e <code>Shopping</code> estão muito acoplados e sabem muito uma sobre a outra</p>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">ShoppingCart</span>
+  <span class="token literal-property property">attr_accessor</span> <span class="token operator">:</span>items
+  def initialize
+    @items <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  end
+  def calculate_total
+    items<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token operator">:</span>price<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">inject</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token operator">+</span><span class="token punctuation">)</span>
+  end
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Order</span>
+  def <span class="token function">process_order</span><span class="token punctuation">(</span>cart<span class="token punctuation">)</span>
+    cart<span class="token punctuation">.</span>calculate_total
+  end
+end</code></pre>
+<p>Neste segundo exemplo o acoplamento está baixo o que é o ideal. A classe Order só sabe que deve enviar uma mensagem para <code>cart</code> obtendo o preço total dos itens.</p>
+<ol start="10">
+<li>Coesão - é a proximidade que os atributos e métodos dentro de uma classe. Objetivo ideal: alta coesão.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Library</span>
+  def loan
+    puts <span class="token string">"code here loan"</span>
+  end
+
+  def book
+    puts <span class="token string">"code here book"</span>
+  end
+
+  def make_coffee
+    puts <span class="token string">"should not be here"</span>
+  end
+end</code></pre>
+<p>O método <code>make_coffee</code> não está coeso ou alinhado como o objetivo da classe <code>Library</code>. Ou seja a coesão está baixa.</p>
+<ol start="11">
+<li>
+<p>Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.</p>
+</li>
+<li>
+<p>Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.</p>
+</li>
+<li>
+<p>Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.</p>
+</li>
+<li>
+<p>Módulo - divisão de um sistema em muitos componentes funcionais.</p>
+</li>
+<li>
+<p>Construtores - sub-rotina chamada para criar um objeto.</p>
+</li>
+</ol>
+
+    </section>
+    <footer class="article-metadata">
+        <p>
+            <span rel="author" class="h-card p-author" itemprop="author" itemprop="publisher" itemscope itemtype="https://schema.org/Person">Publicado por
+            <a class="u-url" rel="me" href="https://rdms.me">
+                <img style="display: inline; width:12px; border-radius:50%;" class="u-photo" src="/midias/icons/minha-foto.avif" alt="https://rdms.me">
+                <span itemprop="name">Rodolfo Maciel</span>
+            </a>
+            </span>
+            em <span class="dt-published"  itemprop="datePublished">
+                <time  datetime="Sun Mar 10 2024 14:34:35 GMT-0300 (Horário Padrão de Brasília)">10/03/2024</time></span>
+        </p>
+        
+        <p>
+            <span>URL:</span><input class="u-url permalink" id="urlacopiar" type="text" value="https://rdms.me/s/i/programacao-orientada-a-objetos/">
+            <button id="botaocopiar1">Copiar</button>
+        </p>
+    </footer>
+</article>
+      </main>
+      
+      
+<footer class="footer">
+    
+<section class="perfil">
+    <span>Meus links: </span>
+    <ul>
+        <li class="perfil-item">
+            <a href="https://rdms.me">
+                <img class="icon-footer" src="/midias/icons/icon-site.svg" alt="https://rdms.me">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://github.com/sousaf4" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-github.svg" alt="https://github.com/sousaf4">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://mastodon.social/@rodolfomaciel" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-mastodon.svg" alt="https://mastodon.social/@rodolfomaciel">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="https://bsky.app/profile/rdms.me" rel="me">
+                <img class="icon-footer" src="/midias/icons/icon-blsky.png" alt="https://bsky.app/profile/rdms.me">
+            </a>
+        </li>
+        <li class="perfil-item">
+            <a href="/feeds/">
+                <img class="icon-footer icon-feed" src="/midias/icons/icon-feed.svg" alt="https://rdms.me/feed.xml">
+            </a>
+        </li>
+    </ul>
+</section>
+
+    <p>Este é um site <a href='https://indieweb.org/'>Indieweb</a> feito com <a href='https://www.11ty.dev/'>Eleventy</a> e <a href='https://www.cloudflare.com/pt-br/'>Cloudflare</a> sob a licença <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons 4.0</a> para livre utilização.</p>
+</footer>
+
+
+    </div>
+    <script defer src="/estaticos/scripts/cpurl.js"></script>
+  </body>
+  </html>
+  
+  

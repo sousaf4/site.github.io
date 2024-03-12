@@ -4,12 +4,238 @@
   <subtitle>Arquivos de meus estudos e pesquisas de matemática, computação, tecnologias, ficção, filmes e assim por diante</subtitle>
   <link href="https://rdms.me/feeds/codigo.xml" rel="self"/>
   <link href="https://rdms.me"/>
-  <updated>2024-02-06T14:53:07Z</updated>
+  <updated>2024-03-10T17:34:35Z</updated>
   <id>https://rdms.me</id>
   <author>
     <name>Rodolfo Maciel</name>
     <email>macielrdev@gmail.com</email>
   </author>
+  <entry>
+    <title>Programação Orientada a Objetos</title>
+    <link href="https://rdms.me/s/i/programacao-orientada-a-objetos/"/>
+    <updated>2024-03-10T17:34:35Z</updated>
+    <id>https://rdms.me/s/i/programacao-orientada-a-objetos/</id>
+    <content xml:lang="pt-BR" type="html">&lt;ol&gt;
+&lt;li&gt;Classes - é um conjunto de atributos e métodos que são usados para projetar um tipo de dado abstrato. Eles reunem os dados e operações sobre os dados num único objeto.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Humano&lt;/span&gt;
+  def initialize nome&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; nasc
+    @nome &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nome
+    @nasc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nasc
+  end
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Uma classe é um modelo para a criação de objetos (uma estrutura de dados específica), fornecendo valores iniciais para o estado (variáveis ​​ou atributos de membro) e implementações de comportamento (funções ou métodos de membro).&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Objetos - é uma instância de uma classe. Ele tem identidade, estado e comportamento.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;joao &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Humano&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;João&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1900&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; #&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Humano&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x00005644152a2f60&lt;/span&gt;
+    @nasc&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;#&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Date&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1900&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;01&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;01&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;2415021j&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;0s&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;0s&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;2299161j&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    @nome&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;João Pedro&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+
+joao&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__id__&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;260&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nesse exemplo vimos a criação do objeto joao com os atributos nome e nascimento que são o seu estado atual.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Encapsulamento - agrupar atributos e métodos essenciais em um único objeto e protegê-los. Também pode referir-se à limitação do acesso direto a alguns desses dados, como os componentes de um objeto.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Humano&lt;/span&gt;
+  def initialize nome&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; nasc
+    @nome &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nome
+    @nasc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nasc
+  end
+
+  def quem
+    puts &lt;span class=&quot;token string&quot;&gt;&quot;Eu sou #{@nome} e nasci em #{@nasc}&quot;&lt;/span&gt;
+  end
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O encapsulamento envolve agrupar dentro de uma única entidade toda a informação e operações necessárias para&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Abstração - Fornecer ao &#39;mundo&#39; exterior apenas as funcionalidades do objeto sem precisar revelar a implementação.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Quadrado&lt;/span&gt;
+  def initialize lado
+    @lado &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lado
+  end
+
+  def area
+    lado &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; lado
+  end
+end
+
+forma &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Quadrado&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+forma&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;area&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;25&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Herança - a capacidade de uma classe derivar os atributos e métodos de outra classe.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Human&lt;/span&gt;
+  def initialize name
+    @name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name
+  end
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Man&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; Human
+  def initialize name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; burn
+    &lt;span class=&quot;token keyword&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    @burn &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; burn
+  end
+end
+
+john &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Man&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;John Doe&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1900&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Polimorfirmos - várias classes podem ter mesmo nome de método com comportamentos diferentes. Uma mensagem pode ser exibida em mais de uma forma.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Por meio de herança e interface. Também substituição de método&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Forma&lt;/span&gt;
+  def area
+    raise NotImplementedError&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Método Não Implementado&quot;&lt;/span&gt;
+  end
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Retangulo&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; Forma
+    def &lt;span class=&quot;token function&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; width&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        @length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; length
+        @width &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; width
+    end
+    def area
+      @length &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; @width
+    end
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Circulo&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; Forma
+    def &lt;span class=&quot;token function&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;radius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        @radius &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; radius
+    end
+    def area
+        &lt;span class=&quot;token literal-property property&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; @radius&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    end
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nesse caso a classe Retangulo e Circulo tem o mesmo método &lt;code&gt;area&lt;/code&gt; mas são implementados de forma diferentes.&lt;/p&gt;
+&lt;p&gt;Sobrecarga de método&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;def &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  total &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+  args&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;each &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;arg&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+    total &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; total &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; arg
+  end
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; total
+end
+
+&lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; 6&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; 30&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;Mensagem - É quando um objeto faz a solicitação de execução de um método de outro objeto.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Calc&lt;/span&gt;
+  def &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    total &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+    args&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;each &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;arg&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+      total &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; total &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; arg
+    end
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; total
+  end
+  def &lt;span class=&quot;token function&quot;&gt;mul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    total &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+
+    args&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;each &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;arg&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+      total &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; total &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; arg
+    end
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; total
+  end
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Results&lt;/span&gt;
+  def initialize operator
+    @op &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; operator
+    @res &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  end
+
+  def &lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;op&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;values&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    total &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; @op&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;op&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;values&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    @res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;total&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A classe &lt;code&gt;Results&lt;/code&gt; recebe o objeto da classe &lt;code&gt;Calc&lt;/code&gt; e envia mensagens para ele usando o método &lt;code&gt;call&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Vinculação&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Acoplamento - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ShoppingCart&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;items
+  def initialize
+    @items &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  end
+end
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Order&lt;/span&gt;
+  def &lt;span class=&quot;token function&quot;&gt;process_order&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cart&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    cart&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;price&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;inject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  end
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nessa implementação as classes &lt;code&gt;Order&lt;/code&gt; e &lt;code&gt;Shopping&lt;/code&gt; estão muito acoplados e sabem muito uma sobre a outra&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ShoppingCart&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;items
+  def initialize
+    @items &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  end
+  def calculate_total
+    items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;price&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;inject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  end
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Order&lt;/span&gt;
+  def &lt;span class=&quot;token function&quot;&gt;process_order&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cart&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    cart&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;calculate_total
+  end
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Neste segundo exemplo o acoplamento está baixo o que é o ideal. A classe Order só sabe que deve enviar uma mensagem para &lt;code&gt;cart&lt;/code&gt; obtendo o preço total dos itens.&lt;/p&gt;
+&lt;ol start=&quot;10&quot;&gt;
+&lt;li&gt;Coesão - é a proximidade que os atributos e métodos dentro de uma classe. Objetivo ideal: alta coesão.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Library&lt;/span&gt;
+  def loan
+    puts &lt;span class=&quot;token string&quot;&gt;&quot;code here loan&quot;&lt;/span&gt;
+  end
+
+  def book
+    puts &lt;span class=&quot;token string&quot;&gt;&quot;code here book&quot;&lt;/span&gt;
+  end
+
+  def make_coffee
+    puts &lt;span class=&quot;token string&quot;&gt;&quot;should not be here&quot;&lt;/span&gt;
+  end
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O método &lt;code&gt;make_coffee&lt;/code&gt; não está coeso ou alinhado como o objetivo da classe &lt;code&gt;Library&lt;/code&gt;. Ou seja a coesão está baixa.&lt;/p&gt;
+&lt;ol start=&quot;11&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Módulo - divisão de um sistema em muitos componentes funcionais.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Construtores - sub-rotina chamada para criar um objeto.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   <entry>
     <title>Solucao Level 8 - Tutorial World</title>
     <link href="https://rdms.me/s/n/solucao-level-8-tutorial-world/"/>
