@@ -241,10 +241,173 @@ O método `make_coffee` não está coeso ou alinhado como o objetivo da classe `
 
 11. Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.
 
+Um para muitos
+
+```js
+class Person
+
+  attr_reader :cars
+
+  def initialize
+    @cars = []
+  end
+
+  def add_car(car)
+    # saving each car object in an array
+    @cars << car
+    # saving the current person object refered to as self
+    # to the car objects person variable
+    car.person = self
+  end
+
+end
+
+class Car
+
+  attr_accessor :person
+
+end
+```
+
+Muitos para muitos.
+
+```js
+class Restaurant
+
+  def best_patron
+    # finding all meals with this restaurant object
+    restaurant = Meal.all.select {|meal| meal.restaurant == self}
+    # creating array of all customers on this restaurant object
+    restaurant_customers = restaurant.map {|meal| meal.customer}
+    # creating hash where the customer keys value is number of meals for this restaurant
+    freq_count = restaurant_customers.inject(Hash.new(0)) { |customer, freq| customer[freq] += 1; customer }
+    # returns customer with most meals for this restaurant
+    freq_count.max_by {freq_count.values}[0]
+  end
+
+end
+
+class Meal
+
+  attr_reader :customer, :restaurant
+
+  @@all = []
+
+  def initialize(customer, restaurant)
+    @restaurant = restaurant
+    @customer = customer
+    @@all << self
+  end
+
+  def self.all
+    @@all
+  end
+
+end
+
+class Customer
+
+  def favorite_restaurant
+    # finding all meals with this customer object
+    customer = Meal.all.select {|meal| meal.customer == self}
+    # creating array of all restaurants on this customer object
+    customers_restaurants = customer.map {|meal| meal.restaurant}
+    # creating hash where the restaurants keys value is number of meals for this customer
+    freq_count = customers_restaurants.inject(Hash.new(0)) { |restaurant, freq| restaurant[freq] += 1; restaurant }
+    # returns restaurant with most meals for this customer
+    freq_count.max_by {freq_count.values}[0]
+  end
+
+end
+```
+
+Neste caso a classe Meal está juntado todas as referencias de Restaurant e Customer.
+
 12. Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.
+
+```js
+class Car
+    @engine = engine
+end
+
+class Engine
+  def start
+    p "vrum vrum"
+  end
+  def stop
+    p "irirhii riihiri"
+  end
+end
+
+e = Engine.new
+c = Car.new(e)
+```
+
+Neste exemplo vemos que um objeto Engine foi criado e passado para o objeto Car na sua inicialização. Neste caso mesmo que o objeto Car seja destruído o objeto Engine ainda vai existir.
 
 13. Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.
 
+```js
+class Poop
+  .call()
+
+class Bark
+  .call()
+
+class Clean
+  .call()
+
+class Man
+  def poop()
+    eat = Poop.new()
+    eat.call()
+  end
+
+  def clean()
+    clean = Clean.new()
+    clean.call()
+  end
+end
+
+class Dog
+  def bark()
+    bark = Bark.new()
+    bark.call()
+  end
+end
+```
+
+As classes `Poop`, `Bark` e `Clean` estão sendo usadas para compor as classes `Man` e `Dog`.
+
 14. Módulo - divisão de um sistema em muitos componentes funcionais.
 
+```js
+module Actions
+  def walk
+   puts "Walking"
+  end
+
+  def speak
+   puts "Speaking"
+  end
+
+  def sleep
+   puts "Sleeping"
+  end
+
+  def eat
+   puts "Eating"
+  end
+end
+```
+
 15. Construtores - sub-rotina chamada para criar um objeto.
+
+```js
+class Human
+  def initialize name, nasc
+    @name = name
+    @nasc = nasc
+  end
+end
+```

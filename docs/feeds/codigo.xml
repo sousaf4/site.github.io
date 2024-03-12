@@ -218,22 +218,160 @@ end&lt;/code&gt;&lt;/pre&gt;
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;O método &lt;code&gt;make_coffee&lt;/code&gt; não está coeso ou alinhado como o objetivo da classe &lt;code&gt;Library&lt;/code&gt;. Ou seja a coesão está baixa.&lt;/p&gt;
 &lt;ol start=&quot;11&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Módulo - divisão de um sistema em muitos componentes funcionais.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Construtores - sub-rotina chamada para criar um objeto.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Um para muitos&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;
+
+  &lt;span class=&quot;token literal-property property&quot;&gt;attr_reader&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;cars
+
+  def initialize
+    @cars &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  end
+
+  def &lt;span class=&quot;token function&quot;&gt;add_car&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;car&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    # saving each car object &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; an array
+    @cars &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; car
+    # saving the current person object refered to &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; self
+    # to the car objects person variable
+    car&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;person &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; self
+  end
+
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Car&lt;/span&gt;
+
+  &lt;span class=&quot;token literal-property property&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;person
+
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Muitos para muitos.&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Restaurant&lt;/span&gt;
+
+  def best_patron
+    # finding all meals &lt;span class=&quot;token keyword&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; restaurant object
+    restaurant &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Meal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;all&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;select &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;meal&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; meal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;restaurant &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    # creating array &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; all customers on &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; restaurant object
+    restaurant_customers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; restaurant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;map &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;meal&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; meal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;customer&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    # creating hash where the customer keys value is number &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; meals &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; restaurant
+    freq_count &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; restaurant_customers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;inject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;Hash&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;customer&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; freq&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; customer&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;freq&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; customer &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    # returns customer &lt;span class=&quot;token keyword&quot;&gt;with&lt;/span&gt; most meals &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; restaurant
+    freq_count&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;max_by &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;freq_count&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;values&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  end
+
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Meal&lt;/span&gt;
+
+  &lt;span class=&quot;token literal-property property&quot;&gt;attr_reader&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;customer&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;restaurant
+
+  @@all &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+  def &lt;span class=&quot;token function&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;customer&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; restaurant&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    @restaurant &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; restaurant
+    @customer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; customer
+    @@all &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; self
+  end
+
+  def self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;all
+    @@all
+  end
+
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Customer&lt;/span&gt;
+
+  def favorite_restaurant
+    # finding all meals &lt;span class=&quot;token keyword&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; customer object
+    customer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Meal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;all&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;select &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;meal&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; meal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;customer &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    # creating array &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; all restaurants on &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; customer object
+    customers_restaurants &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; customer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;map &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;meal&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; meal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;restaurant&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    # creating hash where the restaurants keys value is number &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; meals &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; customer
+    freq_count &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; customers_restaurants&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;inject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;Hash&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;restaurant&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; freq&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; restaurant&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;freq&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; restaurant &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    # returns restaurant &lt;span class=&quot;token keyword&quot;&gt;with&lt;/span&gt; most meals &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; customer
+    freq_count&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;max_by &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;freq_count&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;values&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  end
+
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Neste caso a classe Meal está juntado todas as referencias de Restaurant e Customer.&lt;/p&gt;
+&lt;ol start=&quot;12&quot;&gt;
+&lt;li&gt;Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Car&lt;/span&gt;
+    @engine &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; engine
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Engine&lt;/span&gt;
+  def start
+    p &lt;span class=&quot;token string&quot;&gt;&quot;vrum vrum&quot;&lt;/span&gt;
+  end
+  def stop
+    p &lt;span class=&quot;token string&quot;&gt;&quot;irirhii riihiri&quot;&lt;/span&gt;
+  end
+end
+
+e &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Engine&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;new
+&lt;span class=&quot;token class-name&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Car&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Neste exemplo vemos que um objeto Engine foi criado e passado para o objeto Car na sua inicialização. Neste caso mesmo que o objeto Car seja destruído o objeto Engine ainda vai existir.&lt;/p&gt;
+&lt;ol start=&quot;13&quot;&gt;
+&lt;li&gt;Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Poop&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Bark&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Clean&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Man&lt;/span&gt;
+  def &lt;span class=&quot;token function&quot;&gt;poop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    eat &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Poop&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;eat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  end
+
+  def &lt;span class=&quot;token function&quot;&gt;clean&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    clean &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Clean&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;clean&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  end
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Dog&lt;/span&gt;
+  def &lt;span class=&quot;token function&quot;&gt;bark&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    bark &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Bark&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;bark&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  end
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As classes &lt;code&gt;Poop&lt;/code&gt;, &lt;code&gt;Bark&lt;/code&gt; e &lt;code&gt;Clean&lt;/code&gt; estão sendo usadas para compor as classes &lt;code&gt;Man&lt;/code&gt; e &lt;code&gt;Dog&lt;/code&gt;.&lt;/p&gt;
+&lt;ol start=&quot;14&quot;&gt;
+&lt;li&gt;Módulo - divisão de um sistema em muitos componentes funcionais.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;module Actions
+  def walk
+   puts &lt;span class=&quot;token string&quot;&gt;&quot;Walking&quot;&lt;/span&gt;
+  end
+
+  def speak
+   puts &lt;span class=&quot;token string&quot;&gt;&quot;Speaking&quot;&lt;/span&gt;
+  end
+
+  def sleep
+   puts &lt;span class=&quot;token string&quot;&gt;&quot;Sleeping&quot;&lt;/span&gt;
+  end
+
+  def eat
+   puts &lt;span class=&quot;token string&quot;&gt;&quot;Eating&quot;&lt;/span&gt;
+  end
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;15&quot;&gt;
+&lt;li&gt;Construtores - sub-rotina chamada para criar um objeto.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Human&lt;/span&gt;
+  def initialize name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; nasc
+    @name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name
+    @nasc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nasc
+  end
+end&lt;/code&gt;&lt;/pre&gt;
 </content>
   </entry>
   <entry>

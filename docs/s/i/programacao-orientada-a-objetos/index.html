@@ -295,22 +295,160 @@ end</code></pre>
 end</code></pre>
 <p>O método <code>make_coffee</code> não está coeso ou alinhado como o objetivo da classe <code>Library</code>. Ou seja a coesão está baixa.</p>
 <ol start="11">
-<li>
-<p>Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.</p>
-</li>
-<li>
-<p>Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.</p>
-</li>
-<li>
-<p>Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.</p>
-</li>
-<li>
-<p>Módulo - divisão de um sistema em muitos componentes funcionais.</p>
-</li>
-<li>
-<p>Construtores - sub-rotina chamada para criar um objeto.</p>
-</li>
+<li>Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.</li>
 </ol>
+<p>Um para muitos</p>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Person</span>
+
+  <span class="token literal-property property">attr_reader</span> <span class="token operator">:</span>cars
+
+  def initialize
+    @cars <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  end
+
+  def <span class="token function">add_car</span><span class="token punctuation">(</span>car<span class="token punctuation">)</span>
+    # saving each car object <span class="token keyword">in</span> an array
+    @cars <span class="token operator">&lt;&lt;</span> car
+    # saving the current person object refered to <span class="token keyword">as</span> self
+    # to the car objects person variable
+    car<span class="token punctuation">.</span>person <span class="token operator">=</span> self
+  end
+
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Car</span>
+
+  <span class="token literal-property property">attr_accessor</span> <span class="token operator">:</span>person
+
+end</code></pre>
+<p>Muitos para muitos.</p>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Restaurant</span>
+
+  def best_patron
+    # finding all meals <span class="token keyword">with</span> <span class="token keyword">this</span> restaurant object
+    restaurant <span class="token operator">=</span> Meal<span class="token punctuation">.</span>all<span class="token punctuation">.</span>select <span class="token punctuation">{</span><span class="token operator">|</span>meal<span class="token operator">|</span> meal<span class="token punctuation">.</span>restaurant <span class="token operator">==</span> self<span class="token punctuation">}</span>
+    # creating array <span class="token keyword">of</span> all customers on <span class="token keyword">this</span> restaurant object
+    restaurant_customers <span class="token operator">=</span> restaurant<span class="token punctuation">.</span>map <span class="token punctuation">{</span><span class="token operator">|</span>meal<span class="token operator">|</span> meal<span class="token punctuation">.</span>customer<span class="token punctuation">}</span>
+    # creating hash where the customer keys value is number <span class="token keyword">of</span> meals <span class="token keyword">for</span> <span class="token keyword">this</span> restaurant
+    freq_count <span class="token operator">=</span> restaurant_customers<span class="token punctuation">.</span><span class="token function">inject</span><span class="token punctuation">(</span><span class="token parameter">Hash<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">|</span>customer<span class="token punctuation">,</span> freq<span class="token operator">|</span> customer<span class="token punctuation">[</span>freq<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span> customer <span class="token punctuation">}</span>
+    # returns customer <span class="token keyword">with</span> most meals <span class="token keyword">for</span> <span class="token keyword">this</span> restaurant
+    freq_count<span class="token punctuation">.</span>max_by <span class="token punctuation">{</span>freq_count<span class="token punctuation">.</span>values<span class="token punctuation">}</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+  end
+
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Meal</span>
+
+  <span class="token literal-property property">attr_reader</span> <span class="token operator">:</span>customer<span class="token punctuation">,</span> <span class="token operator">:</span>restaurant
+
+  @@all <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+  def <span class="token function">initialize</span><span class="token punctuation">(</span>customer<span class="token punctuation">,</span> restaurant<span class="token punctuation">)</span>
+    @restaurant <span class="token operator">=</span> restaurant
+    @customer <span class="token operator">=</span> customer
+    @@all <span class="token operator">&lt;&lt;</span> self
+  end
+
+  def self<span class="token punctuation">.</span>all
+    @@all
+  end
+
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Customer</span>
+
+  def favorite_restaurant
+    # finding all meals <span class="token keyword">with</span> <span class="token keyword">this</span> customer object
+    customer <span class="token operator">=</span> Meal<span class="token punctuation">.</span>all<span class="token punctuation">.</span>select <span class="token punctuation">{</span><span class="token operator">|</span>meal<span class="token operator">|</span> meal<span class="token punctuation">.</span>customer <span class="token operator">==</span> self<span class="token punctuation">}</span>
+    # creating array <span class="token keyword">of</span> all restaurants on <span class="token keyword">this</span> customer object
+    customers_restaurants <span class="token operator">=</span> customer<span class="token punctuation">.</span>map <span class="token punctuation">{</span><span class="token operator">|</span>meal<span class="token operator">|</span> meal<span class="token punctuation">.</span>restaurant<span class="token punctuation">}</span>
+    # creating hash where the restaurants keys value is number <span class="token keyword">of</span> meals <span class="token keyword">for</span> <span class="token keyword">this</span> customer
+    freq_count <span class="token operator">=</span> customers_restaurants<span class="token punctuation">.</span><span class="token function">inject</span><span class="token punctuation">(</span><span class="token parameter">Hash<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">|</span>restaurant<span class="token punctuation">,</span> freq<span class="token operator">|</span> restaurant<span class="token punctuation">[</span>freq<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span> restaurant <span class="token punctuation">}</span>
+    # returns restaurant <span class="token keyword">with</span> most meals <span class="token keyword">for</span> <span class="token keyword">this</span> customer
+    freq_count<span class="token punctuation">.</span>max_by <span class="token punctuation">{</span>freq_count<span class="token punctuation">.</span>values<span class="token punctuation">}</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+  end
+
+end</code></pre>
+<p>Neste caso a classe Meal está juntado todas as referencias de Restaurant e Customer.</p>
+<ol start="12">
+<li>Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Car</span>
+    @engine <span class="token operator">=</span> engine
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Engine</span>
+  def start
+    p <span class="token string">"vrum vrum"</span>
+  end
+  def stop
+    p <span class="token string">"irirhii riihiri"</span>
+  end
+end
+
+e <span class="token operator">=</span> Engine<span class="token punctuation">.</span>new
+<span class="token class-name">c</span> <span class="token operator">=</span> Car<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span></code></pre>
+<p>Neste exemplo vemos que um objeto Engine foi criado e passado para o objeto Car na sua inicialização. Neste caso mesmo que o objeto Car seja destruído o objeto Engine ainda vai existir.</p>
+<ol start="13">
+<li>Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Poop</span>
+  <span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Bark</span>
+  <span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Clean</span>
+  <span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Man</span>
+  def <span class="token function">poop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    eat <span class="token operator">=</span> Poop<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">eat</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  end
+
+  def <span class="token function">clean</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    clean <span class="token operator">=</span> Clean<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">clean</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  end
+end
+
+<span class="token keyword">class</span> <span class="token class-name">Dog</span>
+  def <span class="token function">bark</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    bark <span class="token operator">=</span> Bark<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">bark</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  end
+end</code></pre>
+<p>As classes <code>Poop</code>, <code>Bark</code> e <code>Clean</code> estão sendo usadas para compor as classes <code>Man</code> e <code>Dog</code>.</p>
+<ol start="14">
+<li>Módulo - divisão de um sistema em muitos componentes funcionais.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js">module Actions
+  def walk
+   puts <span class="token string">"Walking"</span>
+  end
+
+  def speak
+   puts <span class="token string">"Speaking"</span>
+  end
+
+  def sleep
+   puts <span class="token string">"Sleeping"</span>
+  end
+
+  def eat
+   puts <span class="token string">"Eating"</span>
+  end
+end</code></pre>
+<ol start="15">
+<li>Construtores - sub-rotina chamada para criar um objeto.</li>
+</ol>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Human</span>
+  def initialize name<span class="token punctuation">,</span> nasc
+    @name <span class="token operator">=</span> name
+    @nasc <span class="token operator">=</span> nasc
+  end
+end</code></pre>
 
     </section>
     <footer class="article-metadata">
