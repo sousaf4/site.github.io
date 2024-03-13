@@ -25,6 +25,7 @@
   end
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Uma classe é um modelo para a criação de objetos (uma estrutura de dados específica), fornecendo valores iniciais para o estado (variáveis ​​ou atributos de membro) e implementações de comportamento (funções ou métodos de membro).&lt;/p&gt;
+&lt;p&gt;Cada classe pode ter um construtor e métodos para incrementar a lógica do seu funcionamento. O construtor é um método usado para criar um objeto e especifíca todos os valores necessários para sua criação. No caso do Ruby o construtor é a palavra-chave &lt;code&gt;initialize&lt;/code&gt;&lt;/p&gt;
 &lt;ol start=&quot;2&quot;&gt;
 &lt;li&gt;Objetos - é uma instância de uma classe. Ele tem identidade, estado e comportamento.&lt;/li&gt;
 &lt;/ol&gt;
@@ -50,7 +51,7 @@ joao&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__id__&lt;span
     puts &lt;span class=&quot;token string&quot;&gt;&quot;Eu sou #{@nome} e nasci em #{@nasc}&quot;&lt;/span&gt;
   end
 end&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;O encapsulamento envolve agrupar dentro de uma única entidade toda a informação e operações necessárias para&lt;/p&gt;
+&lt;p&gt;O encapsulamento envolve agrupar dentro de uma única entidade toda a informação e operações necessárias para seu funcionamento lógico e expor apenas o necessário a outros objetos.&lt;/p&gt;
 &lt;ol start=&quot;4&quot;&gt;
 &lt;li&gt;Abstração - Fornecer ao &#39;mundo&#39; exterior apenas as funcionalidades do objeto sem precisar revelar a implementação.&lt;/li&gt;
 &lt;/ol&gt;
@@ -68,6 +69,7 @@ forma &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Quadrado&lt;sp
 
 forma&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;area&lt;/span&gt;
 &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;25&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;É como um restaurante onde você pede um prato específico mas não sabe como ele é feito, apenas recebe o pedido e pode degustar.&lt;/p&gt;
 &lt;ol start=&quot;5&quot;&gt;
 &lt;li&gt;Herança - a capacidade de uma classe derivar os atributos e métodos de outra classe.&lt;/li&gt;
 &lt;/ol&gt;
@@ -165,12 +167,7 @@ end
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;A classe &lt;code&gt;Results&lt;/code&gt; recebe o objeto da classe &lt;code&gt;Calc&lt;/code&gt; e envia mensagens para ele usando o método &lt;code&gt;call&lt;/code&gt;&lt;/p&gt;
 &lt;ol start=&quot;8&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Vinculação&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Acoplamento - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Acoplamento - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ShoppingCart&lt;/span&gt;
   &lt;span class=&quot;token literal-property property&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;items
@@ -200,7 +197,7 @@ end
   end
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Neste segundo exemplo o acoplamento está baixo o que é o ideal. A classe Order só sabe que deve enviar uma mensagem para &lt;code&gt;cart&lt;/code&gt; obtendo o preço total dos itens.&lt;/p&gt;
-&lt;ol start=&quot;10&quot;&gt;
+&lt;ol start=&quot;9&quot;&gt;
 &lt;li&gt;Coesão - é a proximidade que os atributos e métodos dentro de uma classe. Objetivo ideal: alta coesão.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Library&lt;/span&gt;
@@ -217,7 +214,7 @@ end&lt;/code&gt;&lt;/pre&gt;
   end
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;O método &lt;code&gt;make_coffee&lt;/code&gt; não está coeso ou alinhado como o objetivo da classe &lt;code&gt;Library&lt;/code&gt;. Ou seja a coesão está baixa.&lt;/p&gt;
-&lt;ol start=&quot;11&quot;&gt;
+&lt;ol start=&quot;10&quot;&gt;
 &lt;li&gt;Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Um para muitos&lt;/p&gt;
@@ -293,7 +290,7 @@ end
 
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Neste caso a classe Meal está juntado todas as referencias de Restaurant e Customer.&lt;/p&gt;
-&lt;ol start=&quot;12&quot;&gt;
+&lt;ol start=&quot;11&quot;&gt;
 &lt;li&gt;Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Car&lt;/span&gt;
@@ -312,7 +309,7 @@ end
 e &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Engine&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;new
 &lt;span class=&quot;token class-name&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Car&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Neste exemplo vemos que um objeto Engine foi criado e passado para o objeto Car na sua inicialização. Neste caso mesmo que o objeto Car seja destruído o objeto Engine ainda vai existir.&lt;/p&gt;
-&lt;ol start=&quot;13&quot;&gt;
+&lt;ol start=&quot;12&quot;&gt;
 &lt;li&gt;Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Poop&lt;/span&gt;
@@ -343,7 +340,7 @@ end
   end
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;As classes &lt;code&gt;Poop&lt;/code&gt;, &lt;code&gt;Bark&lt;/code&gt; e &lt;code&gt;Clean&lt;/code&gt; estão sendo usadas para compor as classes &lt;code&gt;Man&lt;/code&gt; e &lt;code&gt;Dog&lt;/code&gt;.&lt;/p&gt;
-&lt;ol start=&quot;14&quot;&gt;
+&lt;ol start=&quot;13&quot;&gt;
 &lt;li&gt;Módulo - divisão de um sistema em muitos componentes funcionais.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;module Actions
@@ -362,16 +359,20 @@ end&lt;/code&gt;&lt;/pre&gt;
   def eat
    puts &lt;span class=&quot;token string&quot;&gt;&quot;Eating&quot;&lt;/span&gt;
   end
-end&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&quot;15&quot;&gt;
-&lt;li&gt;Construtores - sub-rotina chamada para criar um objeto.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Human&lt;/span&gt;
-  def initialize name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; nasc
+end
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Human&lt;/span&gt;
+  include Actions
+
+  def initialize name
     @name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name
-    @nasc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nasc
   end
-end&lt;/code&gt;&lt;/pre&gt;
+end
+
+h &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Human&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Júlio César&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+h&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;speak
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; Speaking&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
   </entry>
   <entry>

@@ -19,6 +19,8 @@ end
 
 Uma classe é um modelo para a criação de objetos (uma estrutura de dados específica), fornecendo valores iniciais para o estado (variáveis ​​ou atributos de membro) e implementações de comportamento (funções ou métodos de membro).
 
+Cada classe pode ter um construtor e métodos para incrementar a lógica do seu funcionamento. O construtor é um método usado para criar um objeto e especifíca todos os valores necessários para sua criação. No caso do Ruby o construtor é a palavra-chave `initialize`
+
 2. Objetos - é uma instância de uma classe. Ele tem identidade, estado e comportamento.
 
 ```js
@@ -49,7 +51,7 @@ class Humano
 end
 ```
 
-O encapsulamento envolve agrupar dentro de uma única entidade toda a informação e operações necessárias para
+O encapsulamento envolve agrupar dentro de uma única entidade toda a informação e operações necessárias para seu funcionamento lógico e expor apenas o necessário a outros objetos.
 
 4. Abstração - Fornecer ao 'mundo' exterior apenas as funcionalidades do objeto sem precisar revelar a implementação.
 
@@ -69,6 +71,8 @@ forma = Quadrado.new(5)
 forma.area
 => 25
 ```
+
+É como um restaurante onde você pede um prato específico mas não sabe como ele é feito, apenas recebe o pedido e pode degustar.
 
 5. Herança - a capacidade de uma classe derivar os atributos e métodos de outra classe.
 
@@ -179,9 +183,7 @@ end
 
 A classe `Results` recebe o objeto da classe `Calc` e envia mensagens para ele usando o método `call`
 
-8. Vinculação
-
-9. Acoplamento - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.
+8. Acoplamento - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.
 
 ```js
 class ShoppingCart
@@ -219,7 +221,7 @@ end
 
 Neste segundo exemplo o acoplamento está baixo o que é o ideal. A classe Order só sabe que deve enviar uma mensagem para `cart` obtendo o preço total dos itens.
 
-10. Coesão - é a proximidade que os atributos e métodos dentro de uma classe. Objetivo ideal: alta coesão.
+9. Coesão - é a proximidade que os atributos e métodos dentro de uma classe. Objetivo ideal: alta coesão.
 
 ```js
 class Library
@@ -239,7 +241,7 @@ end
 
 O método `make_coffee` não está coeso ou alinhado como o objetivo da classe `Library`. Ou seja a coesão está baixa.
 
-11. Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.
+10. Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.
 
 Um para muitos
 
@@ -323,7 +325,7 @@ end
 
 Neste caso a classe Meal está juntado todas as referencias de Restaurant e Customer.
 
-12. Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.
+11. Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.
 
 ```js
 class Car
@@ -345,7 +347,7 @@ c = Car.new(e)
 
 Neste exemplo vemos que um objeto Engine foi criado e passado para o objeto Car na sua inicialização. Neste caso mesmo que o objeto Car seja destruído o objeto Engine ainda vai existir.
 
-13. Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.
+12. Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.
 
 ```js
 class Poop
@@ -379,7 +381,7 @@ end
 
 As classes `Poop`, `Bark` e `Clean` estão sendo usadas para compor as classes `Man` e `Dog`.
 
-14. Módulo - divisão de um sistema em muitos componentes funcionais.
+13. Módulo - divisão de um sistema em muitos componentes funcionais.
 
 ```js
 module Actions
@@ -399,15 +401,17 @@ module Actions
    puts "Eating"
   end
 end
-```
 
-15. Construtores - sub-rotina chamada para criar um objeto.
-
-```js
 class Human
-  def initialize name, nasc
+  include Actions
+
+  def initialize name
     @name = name
-    @nasc = nasc
   end
 end
+
+h = Human.new('Júlio César')
+
+h.speak
+// => Speaking
 ```
