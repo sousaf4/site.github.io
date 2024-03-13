@@ -15,8 +15,9 @@
     <link href="https://rdms.me/s/i/programacao-orientada-a-objetos/"/>
     <updated>2024-03-10T17:34:35Z</updated>
     <id>https://rdms.me/s/i/programacao-orientada-a-objetos/</id>
-    <content xml:lang="pt-BR" type="html">&lt;ol&gt;
-&lt;li&gt;Classes - é um conjunto de atributos e métodos que são usados para projetar um tipo de dado abstrato. Eles reunem os dados e operações sobre os dados num único objeto.&lt;/li&gt;
+    <content xml:lang="pt-BR" type="html">&lt;p&gt;Os conceitos que falaremos a seguir são: Classes, Objetos, Mensagem, Métodos, Construtor, Encapsulamento, Abstração, Herança, Polimorfismo, Acoplamento, Coesão, Associação, Agregação, Composição, Módulo.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Classes&lt;/em&gt; - é um conjunto de atributos e métodos que são usados para projetar um tipo de dado abstrato. Eles reunem os dados e operações sobre os dados num único objeto.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Humano&lt;/span&gt;
   def initialize nome&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; nasc
@@ -27,7 +28,7 @@ end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Uma classe é um modelo para a criação de objetos (uma estrutura de dados específica), fornecendo valores iniciais para o estado (variáveis ​​ou atributos de membro) e implementações de comportamento (funções ou métodos de membro).&lt;/p&gt;
 &lt;p&gt;Cada classe pode ter um construtor e métodos para incrementar a lógica do seu funcionamento. O construtor é um método usado para criar um objeto e especifíca todos os valores necessários para sua criação. No caso do Ruby o construtor é a palavra-chave &lt;code&gt;initialize&lt;/code&gt;&lt;/p&gt;
 &lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;Objetos - é uma instância de uma classe. Ele tem identidade, estado e comportamento.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Objetos&lt;/em&gt; - é uma instância de uma classe. Ele tem identidade, estado e comportamento.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;joao &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Humano&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;João&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1900&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; #&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Humano&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x00005644152a2f60&lt;/span&gt;
@@ -39,7 +40,7 @@ joao&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__id__&lt;span
 &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;260&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Nesse exemplo vimos a criação do objeto joao com os atributos nome e nascimento que são o seu estado atual.&lt;/p&gt;
 &lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;Encapsulamento - agrupar atributos e métodos essenciais em um único objeto e protegê-los. Também pode referir-se à limitação do acesso direto a alguns desses dados, como os componentes de um objeto.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Encapsulamento&lt;/em&gt; - agrupar atributos e métodos essenciais em um único objeto e protegê-los. Também pode referir-se à limitação do acesso direto a alguns desses dados, como os componentes de um objeto.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Humano&lt;/span&gt;
   def initialize nome&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; nasc
@@ -53,7 +54,7 @@ joao&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__id__&lt;span
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;O encapsulamento envolve agrupar dentro de uma única entidade toda a informação e operações necessárias para seu funcionamento lógico e expor apenas o necessário a outros objetos.&lt;/p&gt;
 &lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;Abstração - Fornecer ao &#39;mundo&#39; exterior apenas as funcionalidades do objeto sem precisar revelar a implementação.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Abstração&lt;/em&gt; - Fornecer ao &#39;mundo&#39; exterior apenas as funcionalidades do objeto sem precisar revelar a implementação.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Quadrado&lt;/span&gt;
   def initialize lado
@@ -71,7 +72,7 @@ forma&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;25&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;É como um restaurante onde você pede um prato específico mas não sabe como ele é feito, apenas recebe o pedido e pode degustar.&lt;/p&gt;
 &lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;Herança - a capacidade de uma classe derivar os atributos e métodos de outra classe.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Herança&lt;/em&gt; - a capacidade de uma classe derivar os atributos e métodos de outra classe.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Human&lt;/span&gt;
   def initialize name
@@ -88,7 +89,7 @@ end
 
 john &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Man&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;John Doe&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1900&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&quot;6&quot;&gt;
-&lt;li&gt;Polimorfirmos - várias classes podem ter mesmo nome de método com comportamentos diferentes. Uma mensagem pode ser exibida em mais de uma forma.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Polimorfirmos&lt;/em&gt; - várias classes podem ter mesmo nome de método com comportamentos diferentes. Uma mensagem pode ser exibida em mais de uma forma.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Por meio de herança e interface. Também substituição de método&lt;/p&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Forma&lt;/span&gt;
@@ -132,7 +133,7 @@ end
 &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;// =&gt; 30&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&quot;7&quot;&gt;
-&lt;li&gt;Mensagem - É quando um objeto faz a solicitação de execução de um método de outro objeto.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Mensagem&lt;/em&gt; - É quando um objeto faz a solicitação de execução de um método de outro objeto.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Calc&lt;/span&gt;
   def &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -167,7 +168,7 @@ end
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;A classe &lt;code&gt;Results&lt;/code&gt; recebe o objeto da classe &lt;code&gt;Calc&lt;/code&gt; e envia mensagens para ele usando o método &lt;code&gt;call&lt;/code&gt;&lt;/p&gt;
 &lt;ol start=&quot;8&quot;&gt;
-&lt;li&gt;Acoplamento - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Acoplamento&lt;/em&gt; - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ShoppingCart&lt;/span&gt;
   &lt;span class=&quot;token literal-property property&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;items
@@ -198,7 +199,7 @@ end
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Neste segundo exemplo o acoplamento está baixo o que é o ideal. A classe Order só sabe que deve enviar uma mensagem para &lt;code&gt;cart&lt;/code&gt; obtendo o preço total dos itens.&lt;/p&gt;
 &lt;ol start=&quot;9&quot;&gt;
-&lt;li&gt;Coesão - é a proximidade que os atributos e métodos dentro de uma classe. Objetivo ideal: alta coesão.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Coesão&lt;/em&gt; - é a proximidade que os atributos e métodos dentro de uma classe. Objetivo ideal: alta coesão.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Library&lt;/span&gt;
   def loan
@@ -215,7 +216,7 @@ end&lt;/code&gt;&lt;/pre&gt;
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;O método &lt;code&gt;make_coffee&lt;/code&gt; não está coeso ou alinhado como o objetivo da classe &lt;code&gt;Library&lt;/code&gt;. Ou seja a coesão está baixa.&lt;/p&gt;
 &lt;ol start=&quot;10&quot;&gt;
-&lt;li&gt;Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Associação&lt;/em&gt; - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Um para muitos&lt;/p&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;
@@ -291,7 +292,7 @@ end
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Neste caso a classe Meal está juntado todas as referencias de Restaurant e Customer.&lt;/p&gt;
 &lt;ol start=&quot;11&quot;&gt;
-&lt;li&gt;Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Agregação&lt;/em&gt; - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Car&lt;/span&gt;
     @engine &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; engine
@@ -310,7 +311,7 @@ e &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Engine&lt;span cla
 &lt;span class=&quot;token class-name&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Car&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Neste exemplo vemos que um objeto Engine foi criado e passado para o objeto Car na sua inicialização. Neste caso mesmo que o objeto Car seja destruído o objeto Engine ainda vai existir.&lt;/p&gt;
 &lt;ol start=&quot;12&quot;&gt;
-&lt;li&gt;Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Composição&lt;/em&gt; - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Poop&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -341,7 +342,7 @@ end
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;As classes &lt;code&gt;Poop&lt;/code&gt;, &lt;code&gt;Bark&lt;/code&gt; e &lt;code&gt;Clean&lt;/code&gt; estão sendo usadas para compor as classes &lt;code&gt;Man&lt;/code&gt; e &lt;code&gt;Dog&lt;/code&gt;.&lt;/p&gt;
 &lt;ol start=&quot;13&quot;&gt;
-&lt;li&gt;Módulo - divisão de um sistema em muitos componentes funcionais.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Módulo&lt;/em&gt; - divisão de um sistema em muitos componentes funcionais.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;module Actions
   def walk

@@ -6,7 +6,9 @@ tags: ["codigo"]
 scriptstyles: ["syntax-coding"]
 ---
 
-1. Classes - é um conjunto de atributos e métodos que são usados para projetar um tipo de dado abstrato. Eles reunem os dados e operações sobre os dados num único objeto.
+Os conceitos que falaremos a seguir são: Classes, Objetos, Mensagem, Métodos, Construtor, Encapsulamento, Abstração, Herança, Polimorfismo, Acoplamento, Coesão, Associação, Agregação, Composição, Módulo.
+
+1. _Classes_ - é um conjunto de atributos e métodos que são usados para projetar um tipo de dado abstrato. Eles reunem os dados e operações sobre os dados num único objeto.
 
 ```js
 class Humano
@@ -21,7 +23,7 @@ Uma classe é um modelo para a criação de objetos (uma estrutura de dados espe
 
 Cada classe pode ter um construtor e métodos para incrementar a lógica do seu funcionamento. O construtor é um método usado para criar um objeto e especifíca todos os valores necessários para sua criação. No caso do Ruby o construtor é a palavra-chave `initialize`
 
-2. Objetos - é uma instância de uma classe. Ele tem identidade, estado e comportamento.
+2. _Objetos_ - é uma instância de uma classe. Ele tem identidade, estado e comportamento.
 
 ```js
 joao = Humano.new("João", Date.new(1900, 1, 1));
@@ -36,7 +38,7 @@ joao.__id__;
 
 Nesse exemplo vimos a criação do objeto joao com os atributos nome e nascimento que são o seu estado atual.
 
-3. Encapsulamento - agrupar atributos e métodos essenciais em um único objeto e protegê-los. Também pode referir-se à limitação do acesso direto a alguns desses dados, como os componentes de um objeto.
+3. _Encapsulamento_ - agrupar atributos e métodos essenciais em um único objeto e protegê-los. Também pode referir-se à limitação do acesso direto a alguns desses dados, como os componentes de um objeto.
 
 ```js
 class Humano
@@ -53,7 +55,7 @@ end
 
 O encapsulamento envolve agrupar dentro de uma única entidade toda a informação e operações necessárias para seu funcionamento lógico e expor apenas o necessário a outros objetos.
 
-4. Abstração - Fornecer ao 'mundo' exterior apenas as funcionalidades do objeto sem precisar revelar a implementação.
+4. _Abstração_ - Fornecer ao 'mundo' exterior apenas as funcionalidades do objeto sem precisar revelar a implementação.
 
 ```js
 class Quadrado
@@ -74,7 +76,7 @@ forma.area
 
 É como um restaurante onde você pede um prato específico mas não sabe como ele é feito, apenas recebe o pedido e pode degustar.
 
-5. Herança - a capacidade de uma classe derivar os atributos e métodos de outra classe.
+5. _Herança_ - a capacidade de uma classe derivar os atributos e métodos de outra classe.
 
 ```js
 class Human
@@ -93,7 +95,7 @@ end
 john = Man.new("John Doe", Date.new(1900,1,1))
 ```
 
-6. Polimorfirmos - várias classes podem ter mesmo nome de método com comportamentos diferentes. Uma mensagem pode ser exibida em mais de uma forma.
+6. _Polimorfirmos_ - várias classes podem ter mesmo nome de método com comportamentos diferentes. Uma mensagem pode ser exibida em mais de uma forma.
 
 Por meio de herança e interface. Também substituição de método
 
@@ -145,7 +147,7 @@ sum(10,20)
 // => 30
 ```
 
-7. Mensagem - É quando um objeto faz a solicitação de execução de um método de outro objeto.
+7. _Mensagem_ - É quando um objeto faz a solicitação de execução de um método de outro objeto.
 
 ```js
 class Calc
@@ -183,7 +185,7 @@ end
 
 A classe `Results` recebe o objeto da classe `Calc` e envia mensagens para ele usando o método `call`
 
-8. Acoplamento - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.
+8. _Acoplamento_ - é o grau de dependência entre duas classes e o quanto ela pode ser usada isoladamente. As alterações de uma classe pode gerar alterações também em outras.
 
 ```js
 class ShoppingCart
@@ -221,7 +223,7 @@ end
 
 Neste segundo exemplo o acoplamento está baixo o que é o ideal. A classe Order só sabe que deve enviar uma mensagem para `cart` obtendo o preço total dos itens.
 
-9. Coesão - é a proximidade que os atributos e métodos dentro de uma classe. Objetivo ideal: alta coesão.
+9. _Coesão_ - é a proximidade que os atributos e métodos dentro de uma classe. Objetivo ideal: alta coesão.
 
 ```js
 class Library
@@ -241,7 +243,7 @@ end
 
 O método `make_coffee` não está coeso ou alinhado como o objetivo da classe `Library`. Ou seja a coesão está baixa.
 
-10. Associação - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.
+10. _Associação_ - é a conexão entre duas classes que pode se dar um-para-um, um-para-muitos, muitos-para-um, muitos-para-muitos. Exemplo: um médico e seus pacientes que podem existir independentes um do outro mas tem uma associação entre eles.
 
 Um para muitos
 
@@ -325,7 +327,7 @@ end
 
 Neste caso a classe Meal está juntado todas as referencias de Restaurant e Customer.
 
-11. Agregação - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.
+11. _Agregação_ - um objeto faz parte de um todo mas pode existir separado. É uma forma especial de associação. Se o objeto pai deixa de existir o objeto filho não deixa. Exemplo: departamento e funcionário. O departamento pode possuir o funcionário mas o contrário não é verdade.
 
 ```js
 class Car
@@ -347,7 +349,7 @@ c = Car.new(e)
 
 Neste exemplo vemos que um objeto Engine foi criado e passado para o objeto Car na sua inicialização. Neste caso mesmo que o objeto Car seja destruído o objeto Engine ainda vai existir.
 
-12. Composição - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.
+12. _Composição_ - um objeto faz parte de um todo e não pode existir separado. É uma forma especial da agregação. Se o objeto pai deixa de existir os objetos filhos também vão.
 
 ```js
 class Poop
@@ -381,7 +383,7 @@ end
 
 As classes `Poop`, `Bark` e `Clean` estão sendo usadas para compor as classes `Man` e `Dog`.
 
-13. Módulo - divisão de um sistema em muitos componentes funcionais.
+13. _Módulo_ - divisão de um sistema em muitos componentes funcionais.
 
 ```js
 module Actions

@@ -1,6 +1,7 @@
 ---
 title: Ideia de software para professores
 summary: Esse projeto de software tem por finalidade esboçar funcionalidades para os professores darem aulas online.
+date: 2024-02-29T09:42:45 -03:00
 tags: ["software"]
 ---
 
