@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notas - Estudos - Rodolfo Maciel</title>
+    <title>Principios de Programação Orientada a Objetos - Rodolfo Maciel</title>
     
 
-    <meta name='title' content='Notas - Estudos'>
+    <meta name='title' content='Principios de Programação Orientada a Objetos'>
     <meta name='description' content=''>
     <meta name="theme-color" content="#A8A6A9" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0A1312" media="(prefers-color-scheme: dark)">
@@ -14,15 +14,15 @@
     <meta name=twitter:site content='https://rdms.me'>
     <meta name=twitter:card content="summary_large_image" />
     <meta name=twitter:image content=''>
-    <meta name=twitter:title content='Notas - Estudos'>
+    <meta name=twitter:title content='Principios de Programação Orientada a Objetos'>
     <meta name=twitter:description content=''>
 
-    <meta property=og:title content='Notas - Estudos'>
+    <meta property=og:title content='Principios de Programação Orientada a Objetos'>
     <meta property=og:description content=''>
-    <meta property=og:type content='paginas'>
+    <meta property=og:type content='notass'>
     <meta property=og:url content=''>
     <meta property=og:image content=''>
-    <meta property=og:updated_time content='Wed Jan 31 2024 15:25:53 GMT-0300 (Horário Padrão de Brasília)'>
+    <meta property=og:updated_time content='Thu Mar 21 2024 09:07:16 GMT-0300 (Horário Padrão de Brasília)'>
 
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="https://rdms.me" />
@@ -75,80 +75,73 @@
 
       
       <main class="main">
-        <article class="article h-entry" itemtype="https://schema.org/WebPage">
+        <article
+    class="h-entry article" 
+    role="article" 
+    itemscope 
+    itemtype="http://schema.org/BlogPosting">
     <header>
-        <h1 class="p-name" itemprop="name">Notas - Estudos</h1>
+        <h1 class="p-name article-title" itemprop="headline">Principios de Programação Orientada a Objetos</h1>
         
     </header>
-    <section class="e-content">
-        <header class="h-feed hfeed">
-<p class="p-summary site-description">Últimas anotações e aprendizados</p>
-</header>
-<ul class='list'><li class="h-entry hentry list-item">
-    <a href="/s/n/principios-de-programacao-orientada-a-objetos/" class="u-url" rel="bookmark" >
-      <span  class="p-name entry-title" >Principios de Programação Orientada a Objetos</span>
-    </a>
-  </li><li class="h-entry hentry list-item">
-    <a href="/s/n/lista-dos-padroes-de-design/" class="u-url" rel="bookmark" >
-      <span  class="p-name entry-title" >Lista dos Padrões de Design</span>
-    </a>
-  </li><li class="h-entry hentry list-item">
-    <a href="/s/n/diagrama-para-software-professor/" class="u-url" rel="bookmark" >
-      <span  class="p-name entry-title" >Diagrama para Software Professor</span>
-    </a>
-  </li><li class="h-entry hentry list-item">
-    <a href="/s/n/formas-de-construir-uma-prova-matematica/" class="u-url" rel="bookmark" >
-      <span  class="p-name entry-title" >Formas de Construir uma Prova Matemática</span>
-    </a>
-  </li><li class="h-entry hentry list-item">
-    <a href="/s/n/solucao-level-8-tutorial-world/" class="u-url" rel="bookmark" >
-      <span  class="p-name entry-title" >Solucao Level 8 - Tutorial World</span>
-    </a>
-  </li><li class="h-entry hentry list-item">
-    <a href="/s/n/as-tendencias-na-educacao-matematica/" class="u-url" rel="bookmark" >
-      <span  class="p-name entry-title" >As Tendências na Educação Matemática</span>
-    </a>
-  </li><li class="h-entry hentry list-item">
-    <a href="/s/n/introducao-ao-ssh/" class="u-url" rel="bookmark" >
-      <span  class="p-name entry-title" >Introdução ao SSH</span>
-    </a>
-  </li><li class="h-entry hentry list-item">
-    <a href="/s/n/servidores-de-chaves-publicas-gpg/" class="u-url" rel="bookmark" >
-      <span  class="p-name entry-title" >Servidores de Chaves Públicas GPG</span>
-    </a>
-  </li><li class="h-entry hentry list-item">
-    <a href="/s/n/gpg-criptgografia-de-arquivos-e-emails/" class="u-url" rel="bookmark" >
-      <span  class="p-name entry-title" >GPG - Criptgografia de Arquivos e Emails</span>
-    </a>
-  </li></ul>
+    <section class="e-content" itemprop="articleBody">
+        <ol>
+<li>
+<p>Single of Responsability</p>
+<ul>
+<li>Cada classe, objeto, módulo deve ter apenas uma finalidade.</li>
+<li>Beneficios: reutilizar codigo, facil refatoracao, teste mais simples e facil rastreamento de bugs</li>
+</ul>
+</li>
+<li>
+<p>Open Closed</p>
+<ul>
+<li>Classes e objetos abertos para extensão mas fechados para alteração.</li>
+<li>Não implementar na própria classe mas usar interfaces para implementações externas.</li>
+</ul>
+</li>
+<li>
+<p>Liskov Substituition</p>
+<ul>
+<li>Criar classes bases apenas com o necessário e adicionar métodos conforme a necessidade</li>
+</ul>
+</li>
+<li>
+<p>Interface Segregation</p>
+<ul>
+<li>Não obrigar uma classe a implementar algo sem sentido para ela.</li>
+<li>Podemos alcançar isso com divisão de interfaces.</li>
+</ul>
+</li>
+<li>
+<p>Dependency Inversion</p>
+<ul>
+<li>Uma classe não deve depender de algo externo.</li>
+</ul>
+</li>
+</ol>
+<h3>Referencias</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=6SfrO3D4dHM">SOLID fica fácil com essas Ilustrações</a></li>
+<li><a href="https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898">The SOLID Principles in Pictures</a></li>
+</ul>
 
     </section>
     <footer class="article-metadata">
         <p>
-            <span 
-                rel="author"
-                class="h-card p-author"
-                itemprop="author"
-                itemprop="publisher"
-                itemscope
-                itemtype="https://schema.org/Person">
-                Publicado por
-                <a class="u-url"
-                   rel="me"
-                   href="https://rdms.me">
-                    <img 
-                        style="display: inline; width:12px"
-                        class="u-photo"
-                        src="/midias/icons/minha-foto.avif"
-                        alt="https://rdms.me">
-                    <span 
-                        itemprop="name">
-                            Rodolfo Maciel
-                    </span>
-                </a>
+            <span rel="author" class="h-card p-author" itemprop="author" itemprop="publisher" itemscope itemtype="https://schema.org/Person">Publicado por
+            <a class="u-url" rel="me" href="https://rdms.me">
+                <img style="display: inline; width:12px; border-radius:50%;" class="u-photo" src="/midias/icons/minha-foto.avif" alt="https://rdms.me">
+                <span itemprop="name">Rodolfo Maciel</span>
+            </a>
             </span>
             em <span class="dt-published"  itemprop="datePublished">
-                <time  datetime="Wed Jan 31 2024 15:25:53 GMT-0300 (Horário Padrão de Brasília)">31/01/2024</time></span>
+                <time  datetime="Thu Mar 21 2024 09:07:16 GMT-0300 (Horário Padrão de Brasília)">21/03/2024</time></span>
+        </p>
+        
+        <p>
+            <span>URL:</span><input class="u-url permalink" id="urlacopiar" type="text" value="https://rdms.me/s/n/principios-de-programacao-orientada-a-objetos/">
+            <button id="botaocopiar1">Copiar</button>
         </p>
     </footer>
 </article>
