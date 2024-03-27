@@ -1,6 +1,11 @@
-Criacao - A Criação de Jeová
-Oracao - Perseverem em Oração
-Ministerio - Efetue Seu Ministério
-Profecia - Palavra Profética
-Exemplos - Imite Sua Fé
-Qualidades - Nova Personalidade
+Criacao ------ A Criação de Jeová
+Profecia ----- Palavra Profética
+Ministerio --- Efetue Seu Ministério
+
+Jeová -------- Nosso Pai Nos Céus
+Oracao ------- Perseverem em Oração
+Qualidades --- Nova Personalidade
+
+História ----- Minhas Testemunhas
+Exemplos ----- Imite Sua Fé
+Jesus -------- Meu Filho, O Amado
