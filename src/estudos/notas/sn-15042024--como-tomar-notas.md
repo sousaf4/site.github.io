@@ -20,3 +20,11 @@ Os principios do <span lang='de'>Zettelkasten</span> são:
 6. Indique as referencias e fontes das notas.
 7. Quando existem conexões entre varias notas explique suas relações e implicações através de uma nota temática.
 8. Questões para esclarecer ideias: Que? Quem? Quando? Quanto? Onde? Como? Porque?
+
+MODELO
+
+- Titulo
+- Resumos
+- Aplicações
+- Conexões
+- Fontes
