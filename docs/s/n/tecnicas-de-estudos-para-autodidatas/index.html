@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como as linguagens de programação são projetadas - Rodolfo Maciel</title>
+    <title>Tecnicas de estudos para Autodidatas - Rodolfo Maciel</title>
     
 
-    <meta name='title' content='Como as linguagens de programação são projetadas'>
+    <meta name='title' content='Tecnicas de estudos para Autodidatas'>
     <meta name='description' content=''>
     <meta name="theme-color" content="#A8A6A9" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0A1312" media="(prefers-color-scheme: dark)">
@@ -14,15 +14,15 @@
     <meta name=twitter:site content='https://rdms.me'>
     <meta name=twitter:card content="summary_large_image" />
     <meta name=twitter:image content=''>
-    <meta name=twitter:title content='Como as linguagens de programação são projetadas'>
+    <meta name=twitter:title content='Tecnicas de estudos para Autodidatas'>
     <meta name=twitter:description content=''>
 
-    <meta property=og:title content='Como as linguagens de programação são projetadas'>
+    <meta property=og:title content='Tecnicas de estudos para Autodidatas'>
     <meta property=og:description content=''>
     <meta property=og:type content='notass'>
     <meta property=og:url content=''>
     <meta property=og:image content=''>
-    <meta property=og:updated_time content='Wed Apr 17 2024 08:46:21 GMT-0300 (Horário Padrão de Brasília)'>
+    <meta property=og:updated_time content='Tue Apr 30 2024 13:40:42 GMT-0300 (Horário Padrão de Brasília)'>
 
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="https://rdms.me" />
@@ -81,83 +81,55 @@
     itemscope 
     itemtype="http://schema.org/BlogPosting">
     <header>
-        <h1 class="p-name article-title" itemprop="headline">Como as linguagens de programação são projetadas</h1>
+        <h1 class="p-name article-title" itemprop="headline">Tecnicas de estudos para Autodidatas</h1>
         
     </header>
     <section class="e-content" itemprop="articleBody">
-        <p>(*) - (* 5 9)<br>
-(/) - (/ 9 3)<br>
-(-) - (- 5 9)<br>
-(+) - (+ 5 9)<br>
-(^) - (^ 5 9)<br>
-(!) - (! 5)<br>
-(~) - (~ 16 4)<br>
-(¬) - (¬ true)<br>
-(&amp;) - (&amp; true false)<br>
-(|) - (| true false)<br>
-(=) - (5 = 5)<br>
-(==) - (5 == '5')<br>
-(&gt;) - (&gt; 6 5)<br>
-(&lt;) - (&lt; 6 5)<br>
-(&gt;=) - (&gt;= 6 5)<br>
-(&lt;=) - (&lt;= 6 5)<br>
-(%) - (% 6 5)<br>
-(') - ('symbol)<br>
-('') - ('string')<br>
-(&quot;&quot;) - (% 6 5 &quot;comment&quot;)<br>
-(@) - /classe, heranca, construtores<br>
-atributos, mensagens<br>
--- (var0 : - 3 + 5 * 4 + 1 2 )<br>
--- (var0 : 1 2 + 4 * 5 + 3 - )<br>
--- (@fn3 \a b : + a b)<br>
--- (@fn1 ..args : + ..args)<br>
-($) -<br>
-(:) - :@fn1 5 9 :@fn2 'A' '4'<br>
-(.) - .@fn1 5 9 .@fn2 'A' '4'<br>
-(,) - @fn1 5 9, @fn2 'A' '4',<br>
-(;) - @fn1 5 9; @fn2 'A' '4';<br>
-() - :;<br>
-(1 2 3 4 5 6 7 8 9 0) - numeros<br>
-{} [] ()</p>
-<p>&quot;some todos numeros do tipo inteiro de uma lista.&quot;<br>
-(@sum-all \list : + ..list )<br>
-(@cond1 \number : &gt;= number 5<br>
-(- number 5)<br>
-(+ number 5))</p>
-<pre class="language-lisp" tabindex="0"><code class="language-lisp"><span class="token comment">;; expressoes</span>
-<span class="token punctuation">(</span><span class="token car">@var0</span> <span class="token punctuation">(</span><span class="token car">*</span> <span class="token number">9</span> <span class="token punctuation">(</span><span class="token car">-</span> <span class="token number">10</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-<span class="token comment">;; variaveis</span>
-<span class="token punctuation">(</span><span class="token car">@var1</span> <span class="token number">47</span><span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token car">@var2</span> <span class="token quoted-symbol variable symbol">'string</span>'<span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token car">@var3</span> <span class="token number">2.6</span><span class="token punctuation">)</span>
-
-<span class="token comment">;; funcoes</span>
-<span class="token punctuation">(</span><span class="token car">@fn1</span> arg1 arg2 <span class="token punctuation">(</span><span class="token car">+</span> arg1 arg2<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token car">@fn1</span> ..args <span class="token punctuation">(</span><span class="token car">+</span> ..args<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token car">@fn1</span> number <span class="token punctuation">(</span><span class="token car">+</span>:
-    <span class="token splice symbol variable">,fn1</span> <span class="token punctuation">(</span><span class="token car">-</span> number <span class="token number">1</span><span class="token punctuation">)</span>
-    <span class="token splice symbol variable">,fn1</span> <span class="token punctuation">(</span><span class="token car">-</span> number <span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token car">@$</span>,<span class="token comment">;.:?\)</span>
-
-<span class="token punctuation">(</span><span class="token car">@fn1</span> arg1 arg2 arg3 <span class="token lisp-property property">:+</span> arg3 <span class="token lisp-property property">:*</span> arg2 arg1<span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token lisp-property property">:fn1</span> <span class="token number">3</span> <span class="token number">5</span> <span class="token number">9</span><span class="token punctuation">)</span>
-
-.,<span class="token comment">;:</span></code></pre>
-<p>tipos</p>
+        <ol>
+<li>
+<p>Aprenda menos conteúdo por sessão de estudo.</p>
+</li>
+<li>
+<p>Faça um plano de aprendizado.</p>
+</li>
+<li>
+<p>Foco profundo e aprendizado intenso.</p>
 <ul>
-<li>escalares - inteiros, racionais, booleanos, caracteres.</li>
-<li>compostos - tuplas, listas, matrizes,</li>
-</ul>
-<p>como sao listas em diversas linguagens</p>
+<li>Elimine todas as distrações
 <ul>
-<li>{1 5 9 6 3 8}</li>
-<li>[1 5 9 6 3 8]</li>
-<li>(1 5 9 6 3 8)</li>
-<li>/1 5 9 6 3 8/</li>
-<li>'1 5 9 6 3 8</li>
+<li>Desligue smartphone, use fone de ouvido, retire objetos que distraem,</li>
 </ul>
+</li>
+<li>Prepare o corpo e a mente.
+<ul>
+<li>Tome café, durma um pouco antes da sessão, faça respiração profunda, exercite-se antes, ouça música durante a sessão, faça uso da técnica pomodoro.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Combata a procrastinação.</p>
+<ul>
+<li>Relembre os motivos e objetivos do seu estudo, estabeleça o estudo como rotina.</li>
+<li>Tenha a mentalidade certa para não desistir. Foque nos benefícios dos seus estudos, acredite que vai traspassar todos os obstáculos, veja os desafios como oportunidades de crescer.</li>
+</ul>
+</li>
+<li>
+<p>Não esqueça do básico: dormir bem, comer bem e exercitar-se</p>
+<ul>
+<li>Durma sempre no mesmo horário. Apronte o ambiente do quarto para isso.</li>
+<li>Alimentação saudável envolve vegetais, gorduras boas e proteínas adequadas e por último carboidratos complexos, amidos e açucares.</li>
+<li>Movimente-se ao longo do dia, passeios, treinos de resistencia, relaxamento e etc.</li>
+</ul>
+</li>
+<li>
+<p>Use os métodos adequados de aprendizado para cada objetivo.</p>
+<ul>
+<li>Aprendizado espaçado, expericiencial,</li>
+<li>Método de Feynman.</li>
+</ul>
+</li>
+</ol>
 
     </section>
     <footer class="article-metadata">
@@ -169,11 +141,11 @@ atributos, mensagens<br>
             </a>
             </span>
             em <span class="dt-published"  itemprop="datePublished">
-                <time  datetime="Wed Apr 17 2024 08:46:21 GMT-0300 (Horário Padrão de Brasília)">17/04/2024</time></span>
+                <time  datetime="Tue Apr 30 2024 13:40:42 GMT-0300 (Horário Padrão de Brasília)">30/04/2024</time></span>
         </p>
         
         <p>
-            <span>URL:</span><input class="u-url permalink" id="urlacopiar" type="text" value="https://rdms.me/s/n/como-as-linguagens-de-programacao-sao-projetadas/">
+            <span>URL:</span><input class="u-url permalink" id="urlacopiar" type="text" value="https://rdms.me/s/n/tecnicas-de-estudos-para-autodidatas/">
             <button id="botaocopiar1">Copiar</button>
         </p>
     </footer>
